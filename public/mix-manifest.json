@@ -1,0 +1,23 @@
+{
+    "/js/global.js": "/js/global.js",
+    "/js/fab.js": "/js/fab.js",
+    "/js/dataTables.js": "/js/dataTables.js",
+    "/css/print.css": "/css/print.css",
+    "/css/app.css": "/css/app.css",
+    "/assets/data/audio-bibles.json": "/assets/data/audio-bibles.json",
+    "/assets/data/bibles.json": "/assets/data/bibles.json",
+    "/assets/data/bibles_sourced_table.json": "/assets/data/bibles_sourced_table.json",
+    "/assets/data/bibles_table.json": "/assets/data/bibles_table.json",
+    "/assets/data/countries.json": "/assets/data/countries.json",
+    "/assets/data/countries_table.json": "/assets/data/countries_table.json",
+    "/assets/data/films.json": "/assets/data/films.json",
+    "/assets/data/films_table.json": "/assets/data/films_table.json",
+    "/assets/data/languages.json": "/assets/data/languages.json",
+    "/assets/data/languages_table.json": "/assets/data/languages_table.json",
+    "/assets/data/libraries.json": "/assets/data/libraries.json",
+    "/assets/data/organizations.json": "/assets/data/organizations.json",
+    "/assets/data/organizations_fobai_table.json": "/assets/data/organizations_fobai_table.json",
+    "/assets/data/organizations_table.json": "/assets/data/organizations_table.json",
+    "/assets/data/resources.json": "/assets/data/resources.json",
+    "/assets/data/resources_table.json": "/assets/data/resources_table.json"
+}

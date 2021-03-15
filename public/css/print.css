@@ -1,0 +1,5 @@
+#footer,
+#subheader,
+#header nav {
+  display: none !important;
+}
