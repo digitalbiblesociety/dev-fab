@@ -1,10 +1,14 @@
 @extends('_layouts.main')
 
-@section('header')
+@section('subheader')
     <style>
         thead tr th:first-child,
         tr td:first-child {
             display: none;
+        }
+        .banner-heading {
+            z-index: 9;
+            position: relative;
         }
     </style>
 @endsection
@@ -14,19 +18,16 @@
     @include('_partials.banner', [
         'title'           => trans('fab.countries.title'),
         'subtitle'        => trans('fab.countries.subtitle'),
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
-        'icon'            => '/img/icons.svg#faqs'
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg'
     ])
 
     <div class="row">
         <div class="small-hide medium-2">
-            <fieldset id="regions" class="filters" data-table="countries" data-name="co">
+            <fieldset id="regions" class="filters" data-table="countries" data-selector="#continent_id">
                 <legend class="filter-title" data-i18n="fields.filterregion">{{ trans('fab.fields.region') }}</legend>
                 <input id="all-regions" type="radio" name="continent_id[]" value="" checked />
                 <label for="all-regions" data-i18n="fields.all" class="text-center">
-                    <svg class="icon" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <use xlink:href="/img/icons.svg#menu_countries"></use>
-                    </svg>
+                    <svg class="icon" xmlns:xlink="https://www.w3.org/1999/xlink"><use xlink:href="/img/icons.svg#menu_countries"></use></svg>
                     {{ trans('fab.fields.all') }}
                 </label>
                 @foreach(\Common\Modals\Country\CountryContinent::all() as $continent)
@@ -44,7 +45,7 @@
                    data-searchplaceholder="{{ trans('fab.search.title') }}">
                 <thead>
                     <tr>
-                        <th data-invisible>{{ trans('fab.fields_continent') }}</th>
+                        <th id="continent_id">{{ trans('fab.fields_continent') }}</th>
                         <th>{{ trans('fab.fields.name') }}</th>
                         <th>{{ trans('fab.fields.population') }}</th>
                     </tr>

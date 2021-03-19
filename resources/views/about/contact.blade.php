@@ -27,7 +27,6 @@
         'title'     => 'Contact',
         'subtitle'  => '',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'icon'      => '/img/icons.svg#faqs',
         'tabs' => [
             '/about' => 'about',
             '/about/faq' => 'faq',

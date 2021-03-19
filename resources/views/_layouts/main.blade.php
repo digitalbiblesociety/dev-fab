@@ -1,5 +1,9 @@
 @extends('wrapper')
 
+@section('header')
+    @yield('subheader')
+@endsection
+
 @section('translations')
 
     <div id="i18n_wrap_open"></div>

@@ -1,6 +1,6 @@
 @extends('_layouts.main')
 
-@section('header')
+@section('subheader')
     <style>
         .orgs a {
             height: 140px;

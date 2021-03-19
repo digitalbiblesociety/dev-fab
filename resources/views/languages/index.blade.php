@@ -5,8 +5,7 @@
     @include('_partials.banner', [
         'title'     => trans('fab.languages.title'),
         'subtitle'  => trans('fab.languages.subtitle'),
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
-        'icon'      => '/img/icons.svg#faqs'
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg'
     ])
 
     <div class="row">

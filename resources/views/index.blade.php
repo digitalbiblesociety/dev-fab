@@ -23,10 +23,11 @@
             font-size: 1.25rem;
             line-height: 2;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 1rem auto;
+            padding-bottom:1rem;
+            border-bottom: thin solid #222;
             text-align: center;
         }
-
     </style>
 @endsection
 
@@ -37,11 +38,30 @@
     </div>
 
     <div class="tagline">
-        <p> {{ trans('fab.index.stat_line', [
-                'numBibles'        => number_format(\Common\Modals\Bible\Bible::count()),
-                'numOrganizations' => \Common\Modals\Organization\Organization::count(),
-                'numResources'     => number_format(\Common\Modals\Resource\Resource::count())
-            ]) }}</p>
+        <p> {!! trans('fab.index.stat_line', [
+                'numBibles'        => "<a href='".route('bibles.index')."'>".number_format(\Common\Modals\Bible\Bible::count())."</a>",
+                'numOrganizations' => "<a href='".route('organizations.index')."'>".\Common\Modals\Organization\Organization::count()."</a>",
+                'numResources'     => "<a href='".route('languages.index')."'>".number_format(\Common\Modals\Resource\Resource::count())."</a>"
+            ])  !!}</p>
+    </div>
+
+    <div class="row text-center">
+        <div class="medium-3">
+            <img src="/img/fab_color_language.svg" />
+            {{ trans('fab.index.question_looking_for_bible') }}
+        </div>
+        <div class="medium-3">
+            <img src="/img/fab_color_traveler.svg" />
+            {{ trans('fab.index.question_traveling') }}
+        </div>
+        <div class="medium-3">
+            <img src="/img/fab_color_group.svg" />
+            {{ trans('fab.index.question_missionary') }}
+        </div>
+        <div class="medium-3">
+            <img src="/img/fab_color_present.svg" />
+            {{ trans('fab.index.question_outreach') }}
+        </div>
     </div>
 
 @endsection

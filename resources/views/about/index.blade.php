@@ -15,7 +15,6 @@
         'title'           => 'About',
         'subtitle'        => 'The Worldwide Directory of Bibles in every Language.',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'icon'      => '/img/icons.svg#menu_about',
         'tabs'      => [
             '/about'          => 'About',
             '/about/faq'      => 'FAQ',
