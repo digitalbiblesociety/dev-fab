@@ -1,68 +1,67 @@
 @extends('_layouts.main')
 
+@section('header')
+    <style>
+        thead tr th:first-child,
+        tr td:first-child {
+            display: none;
+        }
+    </style>
+@endsection
+
 @section('main')
 
     @include('_partials.banner', [
-    'title'     => 'Countries',
-    'subtitle'  => 'Discover the World\'s Languages by Country',
-    'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
-    'icon'      => '/img/icons.svg#faqs'
-])
+        'title'           => trans('fab.countries.title'),
+        'subtitle'        => trans('fab.countries.subtitle'),
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
+        'icon'            => '/img/icons.svg#faqs'
+    ])
 
     <div class="row">
         <div class="small-hide medium-2">
             <fieldset id="regions" class="filters" data-table="countries" data-name="co">
-                <legend class="filter-title" data-i18n="fields.filterregion">Region</legend>
-
+                <legend class="filter-title" data-i18n="fields.filterregion">{{ trans('fab.fields.region') }}</legend>
                 <input id="all-regions" type="radio" name="continent_id[]" value="" checked />
                 <label for="all-regions" data-i18n="fields.all" class="text-center">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#menu_countries"></use></svg>
-                    All</label>
-
-                <input id="EU" type="radio" name="continent_id[]" value="EU" />
-                <label for="EU" data-i18n="wiki.region_europe">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_EU"></use></svg>
-                    Europe
+                    <svg class="icon" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <use xlink:href="/img/icons.svg#menu_countries"></use>
+                    </svg>
+                    {{ trans('fab.fields.all') }}
                 </label>
-
-                <input id="AS" type="radio" name="continent_id[]" value="AS" />
-                <label for="AS" data-i18n="wiki.region_asia">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_AS"></use></svg>
-                    Asia</label>
-
-                <input id="NA" type="radio" name="continent_id[]" value="NA" />
-                <label for="NA" data-i18n="wiki.region_northAmerica">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_NA"></use></svg>
-                    North America</label>
-
-                <input id="AF" type="radio" name="continent_id[]" value="AF" />
-                <label for="AF" data-i18n="wiki.region_africa">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_AF"></use></svg>
-                    Africa</label>
-
-                <input id="SA" type="radio" name="continent_id[]" value="SA" />
-                <label for="SA" data-i18n="wiki.region_southAmerica">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_SA"></use></svg>
-                    South America</label>
-
-                <input id="OC" type="radio" name="continent_id[]" value="OC" />
-                <label for="OC" data-i18n="wiki.region_oceania">
-                    <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_OC"></use></svg>
-                    Oceania</label>
+                @foreach(\Common\Modals\Country\CountryContinent::all() as $continent)
+                    @if($continent->id == 'AN') @continue @endif
+                    <input id="{{ $continent->id }}" type="radio" name="continent_id[]" value="{{ $continent->id }}" />
+                    <label for="{{ $continent->id }}" data-i18n="wiki.region_europe">
+                        <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#continent_{{ $continent->id }}"></use></svg>
+                        {{ $continent->currentTranslation->name ?? $continent->name }}
+                    </label>
+                @endforeach
             </fieldset>
         </div>
         <div class="medium-10">
             <table id="countries" class="table responsive" cellspacing="0" width="100%"
-                   data-route="countries_table" data-searchplaceholder="Filter Countries">
+                   data-searchplaceholder="{{ trans('fab.search.title') }}">
                 <thead>
                     <tr>
-                        <th data-column-name="co" data-invisible>Continent</th>
-                        <th data-column-name="tt" data-image="/img/flags.svg#" data-filename="id"></th>
-                        <th data-column-name="tt" data-path="countries" data-link="id">Name</th>
-                        <th data-column-name="po">Population</th>
+                        <th data-invisible>{{ trans('fab.fields_continent') }}</th>
+                        <th>{{ trans('fab.fields.name') }}</th>
+                        <th>{{ trans('fab.fields.population') }}</th>
                     </tr>
                 </thead>
                 <tbody>
+                @foreach($countries as $country)
+                    <tr>
+                        <td>{{ $country->continent_id }}</td>
+                        <td>
+                            <a href="{{ route('countries.show', $country->id) }}">
+                                <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#{{ $country->id }}"></use></svg>
+                                {{ $country->currentTranslation->name ?? $country->name }}
+                            </a>
+                        </td>
+                        <td>{{ number_format($country->population) }}</td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

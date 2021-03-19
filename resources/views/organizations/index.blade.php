@@ -1,6 +1,6 @@
 @extends('_layouts.main')
 
-@section('subheader')
+@section('header')
     <style>
         .dataTables_header {
             width: 50%;
@@ -60,13 +60,13 @@
 @section('main')
 
     @include('_partials.banner', [
-        'title'           => 'Partners & Bible Organizations',
+        'title'           => trans('fab.organizations.title'),
         'subtitle'        => '',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
         'icon'            => '',
         'tabs'            => [
-            '/fobai' => 'fobai',
-            '/organizations/'      => 'organizations'
+            route('organizations.fobai')  => trans('fab.organizations.fobai.title'),
+            route('organizations.index')  => trans('fab.organizations.title')
         ]
     ])
 
@@ -74,7 +74,7 @@
 
         <table id="organizations" class="table responsive" cellspacing="0" width="100%"
                data-route="organizations_table"
-               data-searchplaceholder="Filter by Name or Language">
+               data-searchplaceholder="{{ trans('fab.search.title') }}">
             <thead>
             <tr>
                 <th data-column-name="tt" data-i18n="field.name" data-link="id" data-path="organizations">organizations</th>

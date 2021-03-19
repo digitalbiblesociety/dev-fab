@@ -9,7 +9,8 @@ class CountriesController extends Controller
 {
     public function index()
     {
-        return view('countries.index');
+        $countries = Country::with('currentTranslation')->get();
+        return view('countries.index', compact('countries'));
     }
 
     public function show($id)

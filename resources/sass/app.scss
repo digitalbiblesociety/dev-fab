@@ -1,9 +1,0 @@
-@import '../bower_components/foundation-sites/scss/foundation';
-@import "settings";
-@include foundation-everything();
-
-@import "style";
-// data tables
-@import "datatables";
-
-.row {padding: 0 15px}

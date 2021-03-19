@@ -11,15 +11,15 @@ Route::group(['prefix' => i18n::setLocale()], function()
 {
     Route::view('/',                  'index');
 
-    Route::get('languages/{id}',      [LanguagesController::class, 'show']);
-    Route::get('languages',           [LanguagesController::class, 'index']);
-    Route::get('countries/{id}',      [CountriesController::class, 'show']);
-    Route::get('countries',           [CountriesController::class, 'index']);
-    Route::get('organizations/{id}',  [OrganizationsController::class, 'show']);
-    Route::get('fobai',               [OrganizationsController::class, 'fobai']);
-    Route::get('organizations',       [OrganizationsController::class, 'index']);
-    Route::get('bibles/{id}',         [BiblesController::class, 'show']);
-    Route::get('bibles',              [BiblesController::class, 'index']);
+    Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
+    Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
+    Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
+    Route::get('countries',           [CountriesController::class, 'index'])->name('countries.index');
+    Route::get('organizations/{id}',  [OrganizationsController::class, 'show'])->name('organizations.show');
+    Route::get('fobai',               [OrganizationsController::class, 'fobai'])->name('organizations.fobai');
+    Route::get('organizations',       [OrganizationsController::class, 'index'])->name('organizations.index');
+    Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
+    Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');
 
     Route::view('about',              'about.index')->name('about');
     Route::view('about/contact',      'about.contact')->name('contact');

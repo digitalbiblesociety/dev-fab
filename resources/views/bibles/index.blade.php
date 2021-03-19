@@ -3,8 +3,8 @@
 @section('main')
 
     @include('_partials.banner', [
-        'title'           => 'Bibles',
-        'subtitle'        => 'Search the Unity Bible Directory in every Language',
+        'title'           => trans('fab.bibles.title'),
+        'subtitle'        => trans('fab.bibles.subtitle'),
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg',
         'icon'            => '/img/icons.svg#faqs'
     ])
@@ -13,14 +13,14 @@
 
         <table id="bibles" class="table responsive" cellspacing="0" width="100%"
                data-route="bibles_table"
-               data-searchplaceholder="Filter by Name or Language">
+               data-searchplaceholder="{{ trans('fab.search.title') }}">
             <thead>
             <tr>
-                <th data-column-name="ln" data-i18n="field.language" data-link="is" data-path="languages">Language</th>
-                <th data-column-name="tt" data-i18n="field.title" data-link="id" data-path="bibles">Title</th>
-                <th data-column-name="tv" data-i18n="field.title_vernacular" data-link="id" data-path="bibles">Vernacular</th>
-                <th data-column-name="cn" data-i18n="field.countries" data-link="ci" data-path="countries">Country</th>
-                <th data-column-name="dt" data-i18n="field.date">Date</th>
+                <th data-column-name="ln" data-i18n="field.language" data-link="is" data-path="languages">{{ trans('fab.languages.title') }}</th>
+                <th data-column-name="tt" data-i18n="field.title" data-link="id" data-path="bibles">{{ trans('fab.fields.name') }}</th>
+                <th data-column-name="tv" data-i18n="field.title_vernacular" data-link="id" data-path="bibles">{{ trans('fab.fields.vname') }}</th>
+                <th data-column-name="cn" data-i18n="field.countries" data-link="ci" data-path="countries">{{ trans('fab.countries.title') }}</th>
+                <th data-column-name="dt" data-i18n="field.date">{{ trans('fab.fields.date') }}</th>
             </tr>
             </thead>
             <tbody>

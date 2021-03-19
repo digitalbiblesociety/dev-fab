@@ -1,0 +1,37 @@
+:root
+{
+  --primary-color: #085078;
+  --secondary-color: #85d8ce;
+  --primary-background-color: #fcd5ce;
+  --subnav-bg: transparent;
+}
+@import "../../../shin/assets/sass/global";
+@import "../../../shin/assets/sass/components/header";
+@import "../../../shin/assets/sass/components/datatables";
+
+
+nav[role=tablist] a {
+  background-color: #FFF;
+}
+
+main {padding:0}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#subheader {
+  background-color: #E2E2E2;
+  height: 40px;
+}
+
+#subheader input {
+  max-width:240px;
+}
+
+.logo-text {
+  font-size: 1.75em;
+  text-indent: 1em;
+  color: #626262;
+}

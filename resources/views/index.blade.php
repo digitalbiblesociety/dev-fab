@@ -37,7 +37,11 @@
     </div>
 
     <div class="tagline">
-        <p>Find-A-Bible serves as a catalogue of links to <a href="/bibles/">4,480 Bible Versions</a> and <a href="/resources/">30,514 Biblical Resources</a> from <a href="/organizations/">909 Organizations</a></p>
+        <p> {{ trans('fab.index.stat_line', [
+                'numBibles'        => number_format(\Common\Modals\Bible\Bible::count()),
+                'numOrganizations' => \Common\Modals\Organization\Organization::count(),
+                'numResources'     => number_format(\Common\Modals\Resource\Resource::count())
+            ]) }}</p>
     </div>
 
 @endsection

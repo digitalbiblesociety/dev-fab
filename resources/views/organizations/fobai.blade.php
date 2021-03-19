@@ -1,6 +1,6 @@
 @extends('_layouts.main')
 
-@section('subheader')
+@section('header')
     <style>
         .orgs a {
             height: 140px;
@@ -25,13 +25,13 @@
 @section('main')
 
     @include('_partials.banner', [
-        'title'           => 'FOBAI',
+        'title'           => trans('fab.organizations.fobai.title'),
         'subtitle'        => '',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
         'icon'            => '',
         'tabs'           => [
-            '/fobai'           => 'fobai',
-            '/organizations/'  => 'organizations'
+            route('organizations.fobai')  => trans('fab.organizations.fobai.title'),
+            route('organizations.index')  => trans('fab.organizations.title')
         ]
     ])
 
