@@ -36,12 +36,39 @@
             ['url' => route('about'), 'name' => trans('fab.nav.about')]
         ]
     ])
-    @include('_partials.nav.subheader')
+
 
     <main>
-        <div id="search_results"></div>
+		{{-- @include('_layouts.search') --}}
         @yield('main')
     </main>
+
+
+
+    <template id="search_results_template">
+        <div class="row">
+            <div class="medium-8 small-12 flex-center column">
+                <h2 data-i18n="search.bible_title">Bibles</h2>
+                <section data-type="bibles"></section>
+            </div>
+            <div class="medium-4 small-6 column">
+                <h2 data-i18n="search.language_title">Language</h2>
+                <section data-type="language"></section>
+            </div>
+            <div class="medium-4 small-6 column">
+                <h2 data-i18n="search.country_title">Countries</h2>
+                <section data-type="countries"></section>
+            </div>
+            <div class="medium-4 small-6 column">
+                <h2 data-i18n="search.resource_title">Resources</h2>
+                <section data-type="resources"></section>
+            </div>
+            <div class="medium-4 small-6 column">
+                <h2 data-i18n="search.organization_title">Organizations</h2>
+                <section data-type="organizations"></section>
+            </div>
+        </div>
+    </template>
 
 @endsection
 

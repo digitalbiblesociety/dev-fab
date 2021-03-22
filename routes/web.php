@@ -6,10 +6,11 @@ use App\Http\Controllers\LanguagesController;
 use App\Http\Controllers\CountriesController;
 use App\Http\Controllers\OrganizationsController;
 use App\Http\Controllers\BiblesController;
+use App\Http\Controllers\HomeController;
 
 Route::group(['prefix' => i18n::setLocale()], function()
 {
-    Route::view('/',                  'index');
+    Route::get('/',                   [HomeController::class, 'index'])->name('home');
 
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
@@ -17,6 +18,7 @@ Route::group(['prefix' => i18n::setLocale()], function()
     Route::get('countries',           [CountriesController::class, 'index'])->name('countries.index');
     Route::get('organizations/{id}',  [OrganizationsController::class, 'show'])->name('organizations.show');
     Route::get('fobai',               [OrganizationsController::class, 'fobai'])->name('organizations.fobai');
+    Route::get('organization/map',    [OrganizationsController::class, 'map'])->name('organizations.map');
     Route::get('organizations',       [OrganizationsController::class, 'index'])->name('organizations.index');
     Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
     Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');

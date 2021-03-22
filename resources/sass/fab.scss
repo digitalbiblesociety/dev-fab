@@ -8,7 +8,8 @@
 @import "../../../shin/assets/sass/global";
 @import "../../../shin/assets/sass/components/header";
 @import "../../../shin/assets/sass/components/datatables";
-
+@import "map";
+@import "search";
 
 nav[role=tablist] a {
   background-color: #FFF;

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Common\Modals\Organization\Organization;
 use Illuminate\Http\Request;
 
@@ -10,7 +9,14 @@ class OrganizationsController extends Controller
 {
     public function index()
     {
+
         return view('organizations.index');
+    }
+
+    public function map()
+    {
+        $organizations = Organization::whereNotNull('icon')->whereNotNull('latitude')->whereNotNull('longitude')->select('id','slug','logo','latitude','longitude')->get();
+        return view('organizations.map',compact('organizations'));
     }
 
     public function fobai()

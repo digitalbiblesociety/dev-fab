@@ -17,5 +17,6 @@
     "/assets/data/organizations_fobai_table.json": "/assets/data/organizations_fobai_table.json",
     "/assets/data/organizations_table.json": "/assets/data/organizations_table.json",
     "/assets/data/resources.json": "/assets/data/resources.json",
-    "/assets/data/resources_table.json": "/assets/data/resources_table.json"
+    "/assets/data/resources_table.json": "/assets/data/resources_table.json",
+    "/js/map.js": "/js/map.js"
 }
