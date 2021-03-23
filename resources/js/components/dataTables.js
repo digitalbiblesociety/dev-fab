@@ -61,7 +61,7 @@ $(document).ready(function () {
         columns[index] = {
           name: column.data('column-name'),
           data: column.data('column-name'),
-          visible: (column.data('invisible') != undefined) ? false : true,
+          visible: column.data('invisible') === undefined,
           render: function (data, type, row, meta) {
             if (suffix) data = data + suffix
             if (prefix) data = prefix + data

@@ -1236,15 +1236,77 @@ main > h1 {
     padding-top: 0.3rem;
   }
 }
-/**#search_results         {position:absolute;top:0;left:0;right:0;bottom:0;background:#fff;z-index:99;display:flex;
-                        color:#222;padding:0 30px;justify-content:space-between;overflow:scroll}
-#search_results:empty   {display:none}
-#search_results:empty + #search_results_close {display: none}
-#search_results_close {display: block;position:absolute;top:100px;right:10px;z-index:99 }
+#search_results {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 99;
+  display: flex;
+  color: #222;
+  padding: 0 30px;
+  justify-content: space-between;
+  overflow: scroll;
+}
 
+#search_results:empty {
+  display: none;
+}
 
-#search_results div[data-count="0"] {display: none}
-*/
+#search_results a {
+  display: block;
+  background-color: #f2f2f2;
+  color: #222;
+  margin: 6px 12px 16px 0;
+  border: thin solid var(--primary-color);
+  height: 72px;
+  border-radius: 3px;
+  padding: 6px 9px 2px 9px;
+  min-width: 150px;
+  max-width: 360px;
+  float: left;
+}
+
+#search_results a h3 {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+#search_results a b {
+  color: #48b;
+}
+
+#search_results h2 {
+  font-size: 1.2rem;
+  padding-top: 16px;
+  margin: 16px 0 9px 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#search_results h2 svg {
+  height: 24px;
+  width: 28px;
+  display: inline-block;
+  margin: 0 12px -5px 0;
+}
+
+#search_results .lang {
+  position: relative;
+  bottom: -22px;
+  float: right;
+  font-size: 0.8rem;
+}
+
+#search_results div[data-count="0"] {
+  display: none;
+}
+
 #banner {
   position: relative;
   background-color: #222;
@@ -1972,18 +2034,16 @@ table#DataTables_Table_0 {
 }
 .filters {
   margin: 0 0 2em 0;
-  width: 100%;
-  max-width: 180px;
   border: thin solid #e2e2e2;
   border-radius: 0.3em;
   padding: 0.5em;
+  width: 100%;
 }
 
 .filters legend {
   text-align: center;
   border-radius: 0.4em 0.4em 0 0;
   padding: 0.2em 0.5em 0 0.5em;
-  font-size: 0.92em;
   color: #777;
 }
 
@@ -1998,8 +2058,6 @@ table#DataTables_Table_0 {
   height: 24px;
   width: 100%;
   padding: 0.25em 0 0 0.3em;
-  font-size: 0.82rem;
-  letter-spacing: 0.01rem;
   text-align: left;
   color: #666;
 }

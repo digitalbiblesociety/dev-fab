@@ -2,14 +2,11 @@
 
 @section('subheader')
     <style>
-        thead tr th:first-child,
-        tr td:first-child {
+        thead tr th:nth-child(-n + 3),
+        tr td:nth-child(-n + 3) {
             display: none;
         }
-        .banner-heading {
-            z-index: 9;
-            position: relative;
-        }
+
     </style>
 @endsection
 
@@ -23,7 +20,17 @@
 
     <div class="row">
         <div class="small-hide medium-2">
-            <fieldset id="regions" class="filters" data-table="countries" data-selector="#continent_id">
+            <aside>
+            <fieldset class="filters" data-table="countries" data-selector="#independence">
+                <legend class="filter-title" data-i18n="fields.filterregion">{{ trans('fab.fields.region') }}</legend>
+                <input id="independent_countries" type="radio" name="unique_countries[]" value="1" checked />
+                <label for="independent_countries" data-i18n="fields.all" class="text-center">{{ trans('fab.fields.all') }}</label>
+
+                <input id="territories" type="radio" name="unique_countries[]" value="" />
+                <label for="territories" data-i18n="fields.all" class="text-center">{{ trans('fab.countries.territory') }}</label>
+            </fieldset>
+
+            <fieldset class="filters" data-table="countries" data-selector="#continent_id">
                 <legend class="filter-title" data-i18n="fields.filterregion">{{ trans('fab.fields.region') }}</legend>
                 <input id="all-regions" type="radio" name="continent_id[]" value="" checked />
                 <label for="all-regions" data-i18n="fields.all" class="text-center">
@@ -39,41 +46,29 @@
                     </label>
                 @endforeach
             </fieldset>
+            </aside>
         </div>
         <div class="medium-10">
-            <table id="countries" class="table responsive" cellspacing="0" width="100%"
-                   data-searchplaceholder="{{ trans('fab.search.title') }}">
+            <table id="countries" class="table responsive" cellspacing="0" width="100%" data-route="countries_table" data-searchplaceholder="{{ trans('fab.search.title') }}">
                 <thead>
                     <tr>
-                        <th id="continent_id">{{ trans('fab.fields_continent') }}</th>
-                        <th>{{ trans('fab.fields.name') }}</th>
-                        <th>{{ trans('fab.fields.population') }}</th>
+                        <th data-column-name="id">{{ trans('fab.tt') }}</th>
+                        <th id="continent_id" data-column-name="co">{{ trans('fab.tt') }}</th>
+                        <th id="independence" data-column-name="in">{{ trans('fab.tt') }}</th>
+                        <th data-column-name="id" data-image="img/flags.svg#" data-filename="id"></th>
+                        <th data-column-name="tt" data-link="id" data-path="countries">{{ trans('fab.fields.name') }}</th>
+                        <th data-column-name="tv">{{ trans('fab.fields.vname') }}</th>
+                        <th data-column-name="po">{{ trans('fab.fields.population') }}</th>
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($countries as $country)
-                    <tr>
-                        <td>{{ $country->continent_id }}</td>
-                        <td>
-                            <a href="{{ route('countries.show', $country->id) }}">
-                                <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#{{ $country->id }}"></use></svg>
-                                {{ $country->currentTranslation->name ?? $country->name }}
-                            </a>
-                        </td>
-                        <td>{{ number_format($country->population) }}</td>
-                    </tr>
-                @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-
 @endsection
 
 @section('subfooter')
-    <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="{{ mix('js/dataTables.js') }}"></script>
 @endsection

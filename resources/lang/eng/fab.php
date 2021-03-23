@@ -84,6 +84,7 @@ return [
             'region' => 'Region',
             'of_region' => 'A country of ',
             'continent' => 'Continent',
+            'territory' => 'Territory'
         ],
         'languages' => [
             'title' => 'Languages',

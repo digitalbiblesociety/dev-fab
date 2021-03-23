@@ -5,8 +5,7 @@
     @include('_partials.banner', [
         'title'           => trans('fab.bibles.title'),
         'subtitle'        => trans('fab.bibles.subtitle'),
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg',
-        'icon'            => '/img/icons.svg#faqs'
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg'
     ])
 
     <div class="row">
