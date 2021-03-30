@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Common\Modals\Country\Country;
-use Illuminate\Http\Request;
+use DigitalBibleSociety\Shin\Models\Country\Country;
 use i18n;
 
 class CountriesController extends Controller

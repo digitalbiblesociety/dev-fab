@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Common\Modals\Country\Country;
-use Common\Modals\Organization\Organization;
+use DigitalBibleSociety\Shin\Models\Country\Country;
+use DigitalBibleSociety\Shin\Models\Organization\Organization;
 
 class HomeController extends Controller
 {

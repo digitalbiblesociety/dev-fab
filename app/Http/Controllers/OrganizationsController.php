@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Common\Modals\Organization\Organization;
+use DigitalBibleSociety\Shin\Models\Organization\Organization;
 use Illuminate\Http\Request;
 
 class OrganizationsController extends Controller

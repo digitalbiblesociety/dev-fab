@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Common\Modals\Bible\Bible;
+use DigitalBibleSociety\Shin\Models\Bible\Bible;
 use Illuminate\Http\Request;
 
 class BiblesController extends Controller

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Common\Modals\Language\Language;
+use DigitalBibleSociety\Shin\Models\Language\Language;
 
 class LanguagesController extends Controller
 {
