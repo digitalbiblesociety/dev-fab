@@ -24,7 +24,7 @@
 
 @section('main')
 
-    @include('_partials.banner', [
+    @include('shin::_partials.banner', [
         'title'           => trans('fab.organizations.fobai.title'),
         'subtitle'        => '',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',

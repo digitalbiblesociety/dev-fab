@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $organizations = Organization::select('slug','latitude','longitude')->get();
-        $countries = Country::with('persecution')->get();
+        $countries     = Country::with('persecution')->get();
         return view('index', compact('countries', 'organizations'));
     }
 

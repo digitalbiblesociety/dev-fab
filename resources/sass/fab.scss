@@ -5,9 +5,9 @@
   --primary-background-color: #fcd5ce;
   --subnav-bg: transparent;
 }
-@import "../../../shin/assets/sass/global";
-@import "../../../shin/assets/sass/components/header";
-//@import "../../../shin/assets/sass/components/datatables";
+@import "vendor/digitalbiblesociety/shin/src/resources/sass/global";
+@import "vendor/digitalbiblesociety/shin/src/resources/sass/components/header";
+@import "vendor/digitalbiblesociety/shin/src/resources/sass/components/datatables";
 @import "map";
 @import "search";
 

@@ -17,9 +17,16 @@
 
 @section('main')
 
+    @include('shin::_partials.nav.subnav', [
+        'links' => [
+            'a' => 'b',
+            'c' => 'd'
+        ]
+    ])
+    <div id="btn_search" class="activate-search"><span>&#9906;</span></div>
     <div id="map1">
 
-        <div class="activate-search" id="btn-search"><span>&#9906;</span></div>
+
 
         <div class="continent-nav row">
             <a class="small-2 africa" title="{{trans('fab.index.africa')}}">
@@ -44,14 +51,6 @@
 
     </div>
 
-    <div class="map-options">
-        <div class="row">
-            <div class="small-4"><span id="view_christians">{{ trans('fab.index.christianPercentage') }}</span></div>
-            <div class="small-4"><span id="view_persecution">{{ trans('fab.index.worldWatchList') }}</span></div>
-            <div><span id="view_organizations">{{ trans('fab.organizations.title') }}</span></div>
-        </div>
-    </div>
-
     <div class="christian-percent-key row">
         <div class="small-1">0%</div>
         <div class="small-10 info-gradient"></div>
@@ -65,10 +64,10 @@
 
     <div class="tagline text-center">
         <p> {!! trans('fab.index.stat_line', [
-                'numBibles'        => "<a href='".route('bibles.index')."'>".number_format(\Common\Modals\Bible\Bible::count())."</a>",
-                'numOrganizations' => "<a href='".route('organizations.index')."'>".\Common\Modals\Organization\Organization::count()."</a>",
-                'numLangs'         => "<a href='".route('languages.index')."'>".\Common\Modals\Language\Language::count()."</a>",
-                'numResources'     => "<a href='".route('languages.index')."'>".number_format(\Common\Modals\Resource\Resource::count())."</a>"
+                'numBibles'        => "<a href='".route('bibles.index')."'>".number_format(\DigitalBibleSociety\Shin\Models\Bible\Bible::count())."</a>",
+                'numOrganizations' => "<a href='".route('organizations.index')."'>".\DigitalBibleSociety\Shin\Models\Organization\Organization::count()."</a>",
+                'numLangs'         => "<a href='".route('languages.index')."'>".\DigitalBibleSociety\Shin\Models\Language\Language::count()."</a>",
+                'numResources'     => "<a href='".route('languages.index')."'>".number_format(\DigitalBibleSociety\Shin\Models\Resource\Resource::count())."</a>"
             ])  !!}</p>
     </div>
 
@@ -94,7 +93,7 @@
 @endsection
 
 @section('footer')
-    <script ></script>
+    @parent
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="{{ mix('js/map.js') }}"></script>
     <script>

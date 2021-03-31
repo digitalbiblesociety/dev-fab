@@ -32,7 +32,7 @@ mix.scripts([
     'resources/js/components/map/map.js',
     'resources/js/components/map/jquery-jvectormap-world-mill-en.js'], 'public/js/map.js');
 
-mix.js('resources/js/global.js', 'js')
+mix.js('resources/js/app.js', 'public/js/app.js')
    .js('resources/js/components/dataTables.js', 'js').sourceMaps()
 
 mix.browserSync({proxy: 'findbible.test'})

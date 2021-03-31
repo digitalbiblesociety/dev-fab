@@ -11,7 +11,7 @@
 
 @section('main')
 
-    @include('_partials.banner', [
+    @include('shin::_partials.banner', [
         'title'     => 'FAQ',
         'subtitle'  => '',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',

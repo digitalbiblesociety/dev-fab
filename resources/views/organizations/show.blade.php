@@ -42,7 +42,7 @@
 
 @section('main')
 
-    @include('_partials.banner', [
+    @include('shin::_partials.banner', [
         'title'           => $organization->slug,
         'subtitle'        => ''
     ])

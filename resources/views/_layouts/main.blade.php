@@ -1,4 +1,9 @@
-@extends('wrapper')
+@extends('shin::wrapper')
+
+@section('header')
+    @parent
+    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+@endsection
 
 @section('translations')
 
@@ -7,7 +12,7 @@
         <nav>
             @foreach(i18n::getSupportedLocales() as $iso => $language)
                 <a href="{{ i18n::getLocalizedURL($iso) }}">
-                    {{ \Common\Modals\Language\LanguageTranslation::where('source_iso',$iso)->where('translation_iso',i18n::getCurrentLocale())->first()->name ?? $language['name'] }}
+                    {{ \DigitalBibleSociety\Shin\Models\Language\LanguageTranslation::where('source_iso',$iso)->where('translation_iso',i18n::getCurrentLocale())->first()->name ?? $language['name'] }}
                 </a>
             @endforeach
             <div id="i18n_wrap_close">X</div>
@@ -18,7 +23,7 @@
 
 @section('body')
 
-    @include('_partials.nav.header', [
+    @include('shin::_partials.nav.header', [
         'logo' => '/img/logo.svg',
         'logo_tagline' => trans('fab.title'),
         'logo_height' => '40px',
@@ -32,14 +37,48 @@
             ['url' => route('about'), 'name' => trans('fab.nav.about')]
         ]
     ])
+    @yield('subnav')
+    @include('shin::_partials.search.search')
 
 
     <main>
-		{{-- @include('_layouts.search') --}}
         @yield('main')
     </main>
 
-
+    <footer id="footer">
+            <section>
+                <h4 class="text-center">Forum of Bible Agencies</h4>
+                <div class="row">
+                    <div class="small-6">
+                        <a rel="noopener" href="http://www.forum-intl.org/" target="_blank">Forum of Bible Agencies</a>
+                        <a rel="noopener" href="http://www.forum-intl.net/resources" target="_blank">Translation Group</a>
+                    </div>
+                    <div class="small-6">
+                        <a rel="noopener" href="http://www.forum-intl.org/membership" target="_blank">Members</a>
+                        <a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">Forum Facebook</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h4 class="text-center">Find a Bible</h4>
+                <hr><div class="row">
+                    <div class="small-6">
+                        <a href="/about/faq">FAQs</a>
+                        <a href="/organizations">Partners</a>
+                    </div>
+                    <div class="small-6">
+                        <a href="/about/contact">Feedback</a>
+                        <a href="/about/privacy">Privacy</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a rel="noopener" href="http://www.forum-intl.net/" target="_blank"><img src="https://images.bible.cloud/fab/logos/forum-logo.svg"></a>
+                <div class="copyright"><a href="https://www.dbs.org" target="_blank">© 2021 Digital Bible Society</a>
+                </div>
+            </section>
+        </div>
+    </footer>
 
     <template id="search_results_template">
         <div class="row">
@@ -67,3 +106,6 @@
     </template>
 
 @endsection
+
+@section('footer_scripts')
+    <script src="{{ mix('/js/app.js') }}"></script>
