@@ -82,23 +82,19 @@
 
     <template id="search_results_template">
         <div class="row">
-            <div class="medium-8 small-12 flex-center column">
+            <div class="medium-3 small-6">
+                <h2 data-i18n="search.language_title">Language</h2>
+                <section data-type="languages"></section>
+            </div>
+            <div class="medium-6 small-12 flex-center">
                 <h2 data-i18n="search.bible_title">Bibles</h2>
                 <section data-type="bibles"></section>
             </div>
-            <div class="medium-4 small-6 column">
-                <h2 data-i18n="search.language_title">Language</h2>
-                <section data-type="language"></section>
-            </div>
-            <div class="medium-4 small-6 column">
+            <div class="medium-3 small-6">
                 <h2 data-i18n="search.country_title">Countries</h2>
                 <section data-type="countries"></section>
             </div>
-            <div class="medium-4 small-6 column">
-                <h2 data-i18n="search.resource_title">Resources</h2>
-                <section data-type="resources"></section>
-            </div>
-            <div class="medium-4 small-6 column">
+            <div class="medium-12 small-6">
                 <h2 data-i18n="search.organization_title">Organizations</h2>
                 <section data-type="organizations"></section>
             </div>
