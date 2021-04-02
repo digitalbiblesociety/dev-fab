@@ -37,11 +37,10 @@
             ['url' => route('about'), 'name' => trans('fab.nav.about')]
         ]
     ])
-    @yield('subnav')
-    @include('shin::_partials.search.search')
-
+    @include('shin::_partials.nav.subheader')
 
     <main>
+        <div id="search_results"></div>
         @yield('main')
     </main>
 
@@ -104,4 +103,5 @@
 @endsection
 
 @section('footer_scripts')
-    <script src="{{ mix('/js/app.js') }}"></script>
+    <script defer src="{{ mix('/js/app.js') }}"></script>
+@endsection

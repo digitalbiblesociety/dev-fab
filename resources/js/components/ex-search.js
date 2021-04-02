@@ -1,40 +1,25 @@
 import axios from 'axios'
 import Fuse from 'fuse.js'
 
-window.onload = function() {
-
-    let openCtrl = document.getElementById('btn_search'),
-        closeCtrl = document.getElementById('btn_search_close'),
-        inputSearch = document.getElementById('search_input');
-
-    axios.get('/data/site_index.json').then(site => {
-
-        const fuse = new Fuse(site.data, {
-            shouldSort: true,
-            includeMatches: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 50,
-            maxPatternLength: 12,
-            minMatchCharLength: 1,
-            keys: ["tt", "tv"]
-        })
-
-        openCtrl.addEventListener('click', openSearch);
-        closeCtrl.addEventListener('click', closeSearch);
-        document.addEventListener('keyup', function (e) {
-            if (e.key === "Escape") {
-                closeSearch()
-            }
-        })
-
-        inputSearch.addEventListener('input', e => {
-            instantSearch(fuse, inputSearch)
-        })
-
+let inputSearch = document.getElementById('search_input');
+axios.get('/data/site_index.json').then(site => {
+    const fuse = new Fuse(site.data, {
+        shouldSort: true,
+        includeMatches: true,
+        threshold: 0.4,
+        location: 0,
+        distance: 50,
+        maxPatternLength: 12,
+        minMatchCharLength: 1,
+        keys: ["tt", "tv"]
     })
-
-}
+    document.addEventListener('keyup', function (e) {
+        if (e.key === "Escape") {
+            closeSearch()
+        }
+    })
+    inputSearch.addEventListener('input', e => {instantSearch(fuse, inputSearch) })
+})
 
 let instantSearch = function (fuse, inputSearch) {
     let searchResults = document.getElementById('search_results')
@@ -49,7 +34,7 @@ let instantSearch = function (fuse, inputSearch) {
 
     let results_html = ''
     let results_ordered    = {}
-    let template = document.querySelector('#search_results_template')
+    let template = document.getElementById('search_results_template')
 
     let total_count = 0
     results.every(function(result, index) {
@@ -69,8 +54,6 @@ let instantSearch = function (fuse, inputSearch) {
 
         return (total_count > 25) ? false : true
     })
-
-
 
     let searchResults_template = template.content.cloneNode(true)
     let search_sections = searchResults_template.querySelectorAll("section")

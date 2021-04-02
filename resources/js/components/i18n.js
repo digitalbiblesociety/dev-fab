@@ -1,18 +1,12 @@
-window.onload = function(){
-    let i18nwrap = document.querySelector('#i18n_wrap')
-    let i18nwrap_open = document.querySelector('#i18n_wrap_open')
-    let i18nwrap_close = document.querySelector('#i18n_wrap_close')
 
-    if(i18nwrap_open) {
-        i18nwrap_open.onclick = function() {
-            i18nwrap.className = 'active'
-        }
-    }
+    let i18nwrap = document.getElementById('i18n_wrap')
+    document.getElementById('i18n_wrap_open').addEventListener("click", function () {
+        i18nwrap.className = 'active'
+    });
+    document.getElementById('i18n_wrap_close').addEventListener("click", function () {
+        i18nwrap.className = ''
+    });
 
-    if(i18nwrap_close) {
-        i18nwrap_close.onclick = function() {
-            i18nwrap.className = ''
-        }
-    }
 
-}
+
+

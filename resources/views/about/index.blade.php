@@ -6,6 +6,14 @@
     </style>
 @endsection
 
+@section('subnav')
+    @include('shin::_partials.nav.subnav', [
+    'links' => [
+        'about' => 'About'
+    ]
+])
+@endsection
+
 @section('main')
 
     @include('shin::_partials.banner', [
