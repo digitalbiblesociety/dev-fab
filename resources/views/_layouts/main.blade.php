@@ -12,8 +12,12 @@
         <nav>
             @foreach(i18n::getSupportedLocales() as $iso => $language)
                 <a href="{{ i18n::getLocalizedURL($iso) }}">
+                    @if($iso != 'eng')
                     {{ \DigitalBibleSociety\Shin\Models\Language\LanguageTranslation::where('source_iso',$iso)
                         ->where('translation_iso',i18n::getCurrentLocale())->first()->name ?? $language['name'] }}
+                    @else
+                        {{ $language['name'] }}
+                    @endif
                 </a>
             @endforeach
             <div id="i18n_wrap_close">X</div>
@@ -32,7 +36,7 @@
         'logo_url' => i18n_link('/'),
         'donate' => false,
         'links'   => [
-            ['url' => route('bibles.index'), 'name' => trans('shin::fields.bible.title')],
+            ['url' => route('bibles.index'), 'name' => trans('shin::fields.bibles')],
             ['url' => route('languages.index'), 'name' => trans('shin::fields.languages')],
             ['url' => route('countries.index'), 'name' => trans('shin::fields.countries')],
             ['url' => route('organizations.index'), 'name' => trans('shin::fields.partners')],

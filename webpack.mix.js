@@ -33,6 +33,6 @@ mix.scripts([
     'resources/js/components/map/jquery-jvectormap-world-mill-en.js'], 'public/js/map.js');
 
 mix.js('resources/js/app.js', 'public/js/app.js')
-   .js('resources/js/components/dataTables.js', 'js').sourceMaps()
+   .js('vendor/digitalbiblesociety/shin/src/resources/js/components/dataTables.js', 'js').sourceMaps()
 
 mix.browserSync({proxy: 'findbible.test'})
