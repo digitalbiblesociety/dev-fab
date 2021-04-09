@@ -15,7 +15,7 @@
 #hide-search-wrapper.active                 {color:#333}
 .activate-search                            {z-index: 3;background-color: rgba(0,0,0,0.5);height: 44px;width: 44px;line-height: 44px;font-size: 2em;position: absolute;left: 10px;top: 121px;border-radius: 3px;text-align: center;}
 .activate-search span                       {display:block;color:#fff;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg)}
-#preview                                    {display:none;position:absolute;top:61px;left:0;right:0;width:100%;text-align:center;height:400px;background:rgba(0,0,0,.75);overflow:scroll}
+#preview                                    {display:none;position:absolute;top:61px;left:0;right:0;width:100%;text-align:center;height:500px;background:rgba(0,0,0,.75);overflow:scroll}
 #preview h3                                 {color:#fff}
 #searchbox                                  {
     background-color: rgba(0,0,0,0.4);
@@ -53,7 +53,7 @@
 .jvectormap-zoomout:hover                   {background-color:#222}
 .jvectormap-container .jvectormap-zoomin    {top:1em}
 .jvectormap-container .jvectormap-zoomout   {top:3em}
-#map1 {position: relative;height: 400px}
+#map1 {position: relative;height: 64vh}
 .continent-nav      {background-color:rgba(0,0,0,.2);position:absolute;margin-left:auto;left:0;right:0;bottom:0;z-index:9}
 .continent-nav svg  {height: 40px;margin: 0 auto; display: block}
 @media only screen and (min-width:40.063em) {

@@ -3,14 +3,10 @@
 @section('subheader')
     <title>World Map | Find a Bible</title>
     <style>
-        .tagline {
-            margin: 2rem 0;
-            font-size: 1.4rem;
-            line-height: 1.5;
-        }
-        .jvectormap-marker {
-            display: none;
-        }
+        .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
+        .jvectormap-marker {display: none;}
+        .answers    {margin: 36px 10%; max-width:400px;}
+
 
     </style>
 @endsection
@@ -19,8 +15,10 @@
 
     @include('shin::_partials.nav.subnav', [
         'links' => [
-            'a' => 'b',
-            'c' => 'd'
+            'a' => 'Christians',
+            'b' => 'Organizations',
+            'c' => 'Persecution'
+
         ]
     ])
     <div id="btn_search" class="activate-search"><span>&#9906;</span></div>
@@ -71,23 +69,34 @@
             ])  !!}</p>
     </div>
 
-    <div class="row text-center">
+    <div class="row text-center questions">
         <div class="medium-3">
-            <img src="/img/fab_color_language.svg" />
+            <img src="/img/fab_color_language.svg" /><br>
             {{ trans('app.index.question_looking_for_bible') }}
         </div>
         <div class="medium-3">
-            <img src="/img/fab_color_traveler.svg" />
+            <img src="/img/fab_color_traveler.svg" /><br>
             {{ trans('app.index.question_traveling') }}
         </div>
         <div class="medium-3">
-            <img src="/img/fab_color_group.svg" />
+            <img src="/img/fab_color_group.svg" /><br>
             {{ trans('app.index.question_missionary') }}
         </div>
         <div class="medium-3">
-            <img src="/img/fab_color_present.svg" />
+            <img src="/img/fab_color_present.svg" /><br>
             {{ trans('app.index.question_outreach') }}
         </div>
+    </div>
+
+    <div class="row answers">
+        <div class="column">
+            <img src="https://images.bible.cloud/fab_color_globe.svg"/>
+        </div>
+         <div class="column">
+                {{ trans('app.index.answer_provide') }}<br>
+                {{ trans('app.index.answer_help') }}<br>
+                {{ trans('app.index.answer_contact') }}
+         </div>
     </div>
 
 @endsection

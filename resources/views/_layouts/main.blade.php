@@ -36,11 +36,11 @@
         'logo_url' => i18n_link('/'),
         'donate' => false,
         'links'   => [
-            ['url' => route('bibles.index'), 'name' => trans('shin::fields.bibles')],
-            ['url' => route('languages.index'), 'name' => trans('shin::fields.languages')],
-            ['url' => route('countries.index'), 'name' => trans('shin::fields.countries')],
-            ['url' => route('organizations.index'), 'name' => trans('shin::fields.partners')],
-            ['url' => route('about'), 'name' => trans('shin::fields.about')]
+            ['url' => route('bibles.index'),'icon' => 'bible', 'name' => trans('shin::fields.bible.title')],
+            ['url' => route('languages.index'), 'icon' => 'menu_languages', 'name' => trans('shin::fields.languages')],
+            ['url' => route('countries.index'),'icon' => 'menu_countries', 'name' => trans('shin::fields.countries')],
+            ['url' => route('organizations.index'),'icon' => 'people_agencies', 'name' => trans('shin::fields.partners')],
+            ['url' => route('about'), 'icon' => 'menu_about', 'name' => trans('shin::fields.about')]
         ]
     ])
     @include('shin::_partials.nav.subheader')
