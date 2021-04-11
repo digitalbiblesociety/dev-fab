@@ -70,20 +70,6 @@
         ]
     ])
 
-    <div class="row small-center">
-
-        <table id="organizations" class="table responsive" cellspacing="0" width="100%"
-               data-route="organizations"
-               data-searchplaceholder="{{ trans('app.search.title') }}">
-            <thead>
-            <tr>
-                <th data-column-name="tt" data-i18n="field.name" data-link="id" data-path="organizations">organizations</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-
-    </div>
+    @include('shin::organizations.index')
 
 @endsection
