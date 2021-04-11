@@ -51,38 +51,51 @@
     </main>
 
     <footer id="footer">
-            <section>
-                <h4 class="text-center">{{ trans('app.footer.forum.title') }}</h4>
-                <div class="row">
-                    <div class="small-6">
-                        <a rel="noopener" href="http://www.forum-intl.org/" target="_blank">{{ trans('app.footer.forum.title') }}</a>
-                        <a rel="noopener" href="http://www.forum-intl.net/resources" target="_blank">{{ trans('app.footer.forum.translationGroup') }}</a>
-                    </div>
-                    <div class="small-6">
-                        <a rel="noopener" href="http://www.forum-intl.org/membership" target="_blank">{{ trans('app.footer.forum.members') }}</a>
-                        <a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">{{ trans('app.footer.forum.members') }}</a>
-                    </div>
+        <div class="footer-box">
+            <h4>{{ trans('app.footer.forum.title') }}</h4>
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li><a rel="noopener" href="http://www.forum-intl.org/" target="_blank">{{ trans('app.footer.forum.title') }}</a></li>
+                        <li><a rel="noopener" href="http://www.forum-intl.net/resources" target="_blank">{{ trans('app.footer.forum.translationGroup') }}</a></li>
+                    </ul>
                 </div>
-            </section>
-            <section>
-                <h4 class="text-center">{{ trans('app.title') }}</h4>
-                <hr><div class="row">
-                    <div class="small-6">
-                        <a href="/about/faq">{{ trans('shin::fields.faq') }}</a>
-                        <a href="/organizations">{{ trans('shin::fields.partners') }}</a>
-                    </div>
-                    <div class="small-6">
-                        <a href="/about/contact">{{ trans('shin::fields.contact') }}</a>
-                        <a href="/about/privacy">{{ trans('shin::fields.privacy') }}</a>
-                    </div>
+                <div class="column footer-links">
+                    <ul>
+                        <li><a rel="noopener" href="http://www.forum-intl.org/membership" target="_blank">{{ trans('app.footer.forum.members') }}</a></li>
+                        <li><a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">{{ trans('shin::fields.facebook') }}</a></li>
+                    </ul>
                 </div>
-            </section>
-            <section>
-                <a rel="noopener" href="http://www.forum-intl.net/" target="_blank"><img src="https://images.bible.cloud/fab/logos/forum-logo.svg"></a>
-                <div class="copyright"><a href="https://www.dbs.org" target="_blank">© 2021 {{ trans('shin::fields.digital') }}</a>
-                </div>
-            </section>
+            </div>
         </div>
+
+        <div class="footer-box">
+            <h4>{{ trans('app.title') }}</h4>
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li><a href="/about/faq">{{ trans('shin::fields.faq') }}</a></li>
+                        <li><a href="/organizations">{{ trans('shin::fields.partners') }}</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><a href="/about/contact">{{ trans('shin::fields.contact') }}</a></li>
+                        <li><a href="/about/privacy">{{ trans('shin::fields.privacy') }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <div class="row">
+                <img src="https://images.bible.cloud/fab/logos/forum-logo.svg" class="footer-logo">
+            </div>
+            <div class="row copyright">
+                <a href="https://www.dbs.org" target="_blank">© 2021 {{ trans('shin::fields.digital') }}</a>
+            </div>
+        </div>
+
     </footer>
 
     <template id="search_results_template">

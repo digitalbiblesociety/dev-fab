@@ -1,14 +1,19 @@
+<style>
+    .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
+    .jvectormap-marker {display: none;}
+    div.questions  {margin:2.5em 5%;}  @media (max-width:46em){div.questions {display:none;}}
+    .questions img  {margin-bottom: .8em;}
+    div.answers    {margin: 2em auto; width: 60%; display:flex;} @media (max-width:46em){div.answers {width:80%;}}
+    .answers-image {margin-right:2em;}
+    .answers-svg   {width:12em;}
+
+</style>
+<title>World Map | Find a Bible</title>
+
 @extends('_layouts.main')
 
 @section('subheader')
-    <title>World Map | Find a Bible</title>
-    <style>
-        .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
-        .jvectormap-marker {display: none;}
-        .answers    {margin: 36px 10%; max-width:400px;}
 
-
-    </style>
 @endsection
 
 @section('main')
@@ -61,12 +66,12 @@
     </div>
 
     <div class="tagline text-center">
-        <p> {!! trans('app.index.stat_line', [
+        <h4> {!! trans('app.index.stat_line', [
                 'numBibles'        => "<a href='".route('bibles.index')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Bible\Bible::count())."</a>",
                 'numOrganizations' => "<a href='".route('organizations.index')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Organization\Organization::count())."</a>",
                 'numLangs'         => "<a href='".route('languages.index')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Language\Language::count())."</a>",
                 'numResources'     => "<a href='".route('languages.index')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Resource\Resource::count())."</a>"
-            ])  !!}</p>
+            ])  !!}.</h4>
     </div>
 
     <div class="row text-center questions">
@@ -88,14 +93,14 @@
         </div>
     </div>
 
-    <div class="row answers">
-        <div class="column">
-            <img src="https://images.bible.cloud/fab_color_globe.svg"/>
+    <div class="answers">
+        <div class="answers-image">
+            <img class="answers-svg" src="https://images.bible.cloud/fab_color_globe.svg"/>
         </div>
-         <div class="column">
-                {{ trans('app.index.answer_provide') }}<br>
-                {{ trans('app.index.answer_help') }}<br>
-                {{ trans('app.index.answer_contact') }}
+         <div class="answers-text">
+                {{ trans('app.index.answer_provide') }} Find-A-Bible seeks to provide comprehensive data on existing Bible resources in the 6000+ language of the world.<br>
+                {{ trans('app.index.answer_help') }} Would you help us ensure that Bible resources can be discovered, secured, and shared? If you know of Bible resources not found in this directory, let us know!<br>
+                <a></a> {{ trans('app.index.answer_contact') }} Contact Us for more information!</a><br>
          </div>
     </div>
 
