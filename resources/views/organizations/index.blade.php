@@ -73,7 +73,7 @@
     <div class="row small-center">
 
         <table id="organizations" class="table responsive" cellspacing="0" width="100%"
-               data-route="organizations_table"
+               data-route="organizations"
                data-searchplaceholder="{{ trans('app.search.title') }}">
             <thead>
             <tr>
@@ -86,12 +86,4 @@
 
     </div>
 
-@endsection
-
-@section('subfooter')
-    <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
-    <script src="{{ mix('js/dataTables.js') }}"></script>
 @endsection
