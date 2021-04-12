@@ -15,6 +15,13 @@
     <title>World Map | Find a Bible</title>
 @endsection
 
+@section('subnav')
+    <nav role="tablist">
+        <a id="view_persecution">{{ trans('shin::fields.world_watch_list') }}</a>
+        <a id="view_christians">{{ trans('shin::fields.christians') }}</a>
+        <a id="view_organizations">{{ trans('shin::fields.organizations') }}</a>
+    </nav>
+@endsection
 
 @section('main')
 
