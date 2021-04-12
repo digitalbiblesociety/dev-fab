@@ -1,4 +1,8 @@
-<style>
+@extends('_layouts.main')
+
+@section('header')
+@parent
+    <style>
     .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
     .jvectormap-marker {display: none;}
     div.questions  {margin:2.5em 5%;}  @media (max-width:46em){div.questions {display:none;}}
@@ -8,24 +12,11 @@
     .answers-svg   {width:12em;}
 
 </style>
-<title>World Map | Find a Bible</title>
-
-@extends('_layouts.main')
-
-@section('subheader')
-
+    <title>World Map | Find a Bible</title>
 @endsection
 
+
 @section('main')
-
-    @include('shin::_partials.nav.subnav', [
-        'links' => [
-            'a' => 'Christians',
-            'b' => 'Organizations',
-            'c' => 'Persecution'
-
-        ]
-    ])
 
     <div id="map1">
         <div class="continent-nav row">
@@ -165,7 +156,7 @@
                     }
                 },
                 onRegionClick:function(event, code) {
-                    $(location).attr("href", "{{URL::to('/')}}/countries/"+$('#map1').vectorMap('get', 'mapObject').getRegionName(code));
+                    $(location).attr("href", "{{URL::to('/')}}/countries/"+ code);
                 },
                 onMarkerClick: function (event, index) {
                     $(location).attr("href", "{{URL::to('/')}}/organizations/" + organizations[index].slug);
