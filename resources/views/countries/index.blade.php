@@ -11,7 +11,12 @@
 @endsection
 
 @section('main')
-
+    @include('shin::_partials.banner', [
+        'title'           => trans('app.countries.title'),
+        'subtitle'        => trans('app.countries.subtitle'),
+        'icon'            => 'menu_countries',
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg'
+    ])
     @include('shin::countries.index')
 
 @endsection

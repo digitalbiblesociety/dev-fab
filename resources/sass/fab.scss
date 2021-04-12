@@ -18,11 +18,17 @@ nav[role=tablist] a {
 main {padding:0}
 
 .row, #header   {max-width: 1200px;margin: 0 auto;}
+#header .logo-text {font-size: 1.7em;text-indent: .5em;color:#222; text-transform: uppercase};
+#header #logo img   {width:50px; height:50px;}
+
+.banner.gradient .banner-image:after    {content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+                    background: linear-gradient(180deg,rgba(167,207,223,.65) 0,rgba(35,83,138,.8));}
+
 
 #footer         {background-color: #222; font-size:.92rem; display:flex; flex-direction: row; justify-content: space-around;
                 min-height: 120px; padding: 2vw;  @media (max-width:40em) {flex-direction: column}}
 .footer-box     {display: flex; flex-direction:column; flex-basis:90%; justify-content: flex-start; align-content: baseline;
-    @media (max-width:40em){flex-basis:30%; margin-top:1.5rem;} }
+    @media (max-width:40em){flex-basis:30%; margin-top:1.5rem;}}
 .footer-box ul  {margin: 0 20px;text-transform: capitalize;}
 
 #footer a {color:#ccc}
@@ -38,14 +44,14 @@ main {padding:0}
 
 #subheader input, #translation_wrap {
     height: 30px;color: #222;font-size: .9rem;
-    box-shadow: inset 2px 4px 7px -2px rgb(51 51 51 / 25%);border-radius: 6px;border: thin solid #e8e8e8;}
+    box-shadow: inset 2px 4px 7px -2px rgb(51 51 51 / 25%);border: thin solid #e8e8e8;}
 
 #subheader input {
-    margin: 0 1rem; width: 100%; text-indent: 2.6rem;max-width:100px; position:absolute; right:36px;
-    background: url(/img/search_glass.svg) no-repeat 10px #e2e2e2; background-size: 16px 16px;}
+    margin: 0 1rem; text-indent: 2.6rem; position:absolute; right:36px;
+    background: url(/img/search_glass.svg) no-repeat 6px #f2f2f2; background-size: 16px 16px;}
 #i18n_wrap_open     {margin: 0; background-color: #f2f2f2; position:absolute; right:12px;}
 
-.logo-text {font-size: 1.75em;text-indent: 1em;color: #626262;};
+
 
 
 
