@@ -1,29 +1,31 @@
-@extends('_layouts.main')
-
-@section('header')
-@parent
-    <style>
+<style>
     .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
     .jvectormap-marker {display: none;}
-    div.questions  {margin:2.5em 5%;}  @media (max-width:46em){div.questions {display:none;}}
+    div.questions  {margin:2.5em auto;}  @media (max-width:46em){div.questions {display:none;}}
     .questions img  {margin-bottom: .8em;}
     div.answers    {margin: 2em auto; width: 60%; display:flex;} @media (max-width:46em){div.answers {width:80%;}}
     .answers-image {margin-right:2em;}
     .answers-svg   {width:12em;}
 
 </style>
-    <title>World Map | Find a Bible</title>
-@endsection
+<title>World Map | Find a Bible</title>
 
-@section('subnav')
-    <nav role="tablist">
-        <a id="view_persecution">{{ trans('shin::fields.world_watch_list') }}</a>
-        <a id="view_christians">{{ trans('shin::fields.christians') }}</a>
-        <a id="view_organizations">{{ trans('shin::fields.organizations') }}</a>
-    </nav>
+@extends('_layouts.main')
+
+@section('subheader')
+
 @endsection
 
 @section('main')
+
+    @include('shin::_partials.nav.subnav', [
+        'links' => [
+            'a' => 'Organizations',
+            'b' => 'Christians',
+            'c' => 'Persecution'
+
+        ]
+    ])
 
     <div id="map1">
         <div class="continent-nav row">
