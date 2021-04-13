@@ -1,22 +1,21 @@
-@extends('_layouts.main')
-
-@section('subheader')
+@section('header')
+    @parent
+    <title>World Map | Find a Bible</title>
     <style>
-        thead tr th:nth-child(-n + 3),
-        tr td:nth-child(-n + 3) {
-            display: none;
-        }
-
+        aside.column  {min-width:200px; margin:1rem 1rem 0 0;}
     </style>
 @endsection
 
+
+
+@extends('_layouts.main')
+
+@section('subheader')
+
+@endsection
+
 @section('main')
-    @include('shin::_partials.banner', [
-        'title'           => trans('app.countries.title'),
-        'subtitle'        => trans('app.countries.subtitle'),
-        'icon'            => 'menu_countries',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg'
-    ])
+
     @include('shin::countries.index')
 
 @endsection
