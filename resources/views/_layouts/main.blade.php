@@ -40,7 +40,7 @@
             ['url' => route('languages.index'), 'icon' => 'menu_languages', 'name' => trans('shin::fields.languages')],
             ['url' => route('countries.index'),'icon' => 'menu_countries', 'name' => trans('shin::fields.countries')],
             ['url' => route('organizations.index'),'icon' => 'people_agencies', 'name' => trans('shin::fields.partners')],
-            ['url' => route('about'), 'icon' => 'menu_about', 'name' => trans('shin::fields.about')]
+            ['url' => route('about'), 'icon' => 'nav_info', 'name' => trans('shin::fields.about')]
         ]
     ])
     @include('shin::_partials.nav.subheader')
