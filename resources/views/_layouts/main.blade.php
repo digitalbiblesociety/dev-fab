@@ -52,18 +52,18 @@
 
     <footer id="footer">
         <div class="footer-box">
-            <h4>{{ trans('app.footer.forum.title') }}</h4>
+            <h4>{{ trans('shin::fields.fobai') }}</h4>
             <div class="row">
                 <div class="column">
                     <ul>
-                        <li><a rel="noopener" href="http://www.forum-intl.org/" target="_blank">{{ trans('app.footer.forum.title') }}</a></li>
-                        <li><a rel="noopener" href="http://www.forum-intl.net/resources" target="_blank">{{ trans('app.footer.forum.translationGroup') }}</a></li>
+                        <li><a rel="noopener" href="https://forum-intl.org/" target="_blank">{{ trans('shin::fields.fobai') }}</a></li>
+                        <li><a rel="noopener" href="https://forum-intl.org/resources/" target="_blank">{{ trans('shin::fields.resources') }}</a></li>
                     </ul>
                 </div>
                 <div class="column footer-links">
                     <ul>
-                        <li><a rel="noopener" href="http://www.forum-intl.org/membership" target="_blank">{{ trans('app.footer.forum.members') }}</a></li>
-                        <li><a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">{{ trans('shin::fields.facebook') }}</a></li>
+                        <li><a rel="noopener" href="https://forum-intl.org/membership" target="_blank">{{ trans('shin::fields.partners') }}</a></li>
+                        <li><a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">Facebook</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 <img src="https://images.bible.cloud/fab/logos/forum-logo.svg" class="footer-logo">
             </div>
             <div class="row copyright">
-                <a href="https://www.dbs.org" target="_blank">© 2021 {{ trans('shin::fields.digital') }}</a>
+                <a href="https://www.dbs.org" target="_blank">© 2021 {{ trans('shin::fields.dbs') }}</a>
             </div>
         </div>
 
@@ -101,20 +101,20 @@
     <template id="search_results_template">
         <div class="row">
             <div class="medium-3 small-6">
-                <h2 data-i18n="search.language_title">{{ trans('fields.languages') }}</h2>
-                <section data-type="languages"></section>
+                <h2 data-i18n="search.language_title">{{ trans('shin::fields.languages') }}</h2>
+                <section data-type="languages" class="search-languages"></section>
             </div>
-            <div class="medium-6 small-12 flex-center">
-                <h2 data-i18n="search.bible_title">{{ trans('fields.bibles') }}</h2>
-                <section data-type="bibles"></section>
+            <div class="medium-5 small-12">
+                <h2 data-i18n="search.bible_title">{{ trans('shin::fields.bibles') }}</h2>
+                <section data-type="bibles" class="search-bibles"></section>
             </div>
-            <div class="medium-3 small-6">
-                <h2 data-i18n="search.country_title">{{ trans('fields.countries') }}</h2>
-                <section data-type="countries"></section>
+            <div class="medium-2 small-6">
+                <h2 data-i18n="search.country_title">{{ trans('shin::fields.countries') }}</h2>
+                <section data-type="countries" class="search-countries"></section>
             </div>
-            <div class="medium-12 small-6">
-                <h2 data-i18n="search.organization_title">{{ trans('fields.organizations') }}</h2>
-                <section data-type="organizations"></section>
+            <div class="medium-2 small-6">
+                <h2 data-i18n="search.organization_title">{{ trans('shin::fields.organizations') }}</h2>
+                <section data-type="organizations" class="search-organizations"></section>
             </div>
         </div>
     </template>
