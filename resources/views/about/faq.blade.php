@@ -9,18 +9,20 @@
 </style>
 @endsection
 
+@section('subnav')
+
+    @include('shin::_partials.nav.subnav', [
+    'links' => [
+        '/about'          => trans('shin::fields.about'),
+        '#'      => trans('shin::fields.faq'),
+        '/about/contact'  => trans('shin::fields.contact')
+     ]
+    ])
+
+@endsection
+
 @section('main')
 
-    @include('shin::_partials.banner', [
-        'title'     => trans('shin::fields.faq'),
-        'subtitle'  => trans('app.about.faq_subtitle'),
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'tabs' => [
-            i18n_link('/about')         => trans('shin::fields.about'),
-            i18n_link('/about/faq')     => trans('shin::fields.faq'),
-            i18n_link('/about/contact') => trans('shin::fields.contact'),
-        ]
-    ])
 
     <div class="row small-center" id="faq">
         <div class="small-10 medium-10">

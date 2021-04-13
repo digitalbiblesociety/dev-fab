@@ -60,10 +60,6 @@
 @section('main')
 
     @include('shin::_partials.banner', [
-        'title'           => trans('app.organizations.title'),
-        'subtitle'        => '',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'icon'            => '',
         'tabs'            => [
             route('organizations.fobai')  => trans('app.organizations.fobai.title'),
             route('organizations.index')  => trans('app.organizations.title')

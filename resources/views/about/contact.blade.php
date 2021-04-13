@@ -1,17 +1,18 @@
 @extends('_layouts.main')
+@section('subnav')
+
+    @include('shin::_partials.nav.subnav', [
+    'links' => [
+        '/about'          => trans('shin::fields.about'),
+        '/about/faq'      => trans('shin::fields.faq'),
+        '#'  => trans('shin::fields.contact')
+     ]
+    ])
+
+@endsection
 
 @section('main')
 
-    @include('shin::_partials.banner', [
-        'title'     => trans('shin::fields.contact'),
-        'subtitle'  => '',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'tabs' => [
-            i18n_link('/about')         => trans('shin::fields.about'),
-            i18n_link('/about/faq')     => trans('shin::fields.faq'),
-            i18n_link('/about/contact') => trans('shin::fields.contact'),
-        ]
-    ])
 
     <form action="https://formspree.io/jon@dbs.org" method="POST" _lpchecked="1" class="row small-center">
         <div class="small-9">
