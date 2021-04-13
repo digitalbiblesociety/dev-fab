@@ -57,18 +57,21 @@
     </style>
 @endsection
 
+
+@section('subnav')
+
+    @include('shin::_partials.nav.subnav', [
+    'links' => [
+        '#'           => trans('shin::fields.agencies'),
+        '/organizations/fobai'      => 'FOBAI',
+        '/organizations/map'   => trans('shin::fields.map')
+     ]
+    ])
+
+@endsection
+
 @section('main')
 
-    @include('shin::_partials.banner', [
-        'title'           => trans('shin::fields.partners'),
-        'subtitle'        => '',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
-        'icon'            => '',
-        'tabs'            => [
-            route('organizations.fobai')  => trans('shin::fields.fobai'),
-            route('organizations.index')  => trans('shin::fields.partners')
-        ]
-    ])
 
     @include('shin::organizations.index')
 
