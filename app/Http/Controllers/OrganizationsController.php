@@ -13,12 +13,6 @@ class OrganizationsController extends Controller
         return view('organizations.index');
     }
 
-    public function map()
-    {
-        $organizations = Organization::whereNotNull('icon')->whereNotNull('latitude')->whereNotNull('longitude')->select('id','slug','logo','latitude','longitude')->get();
-        return view('organizations.map',compact('organizations'));
-    }
-
     public function fobai()
     {
         $fab_id = Organization::where('slug','the-forum-of-bible-agencies')->select('id','slug')->first()->id;

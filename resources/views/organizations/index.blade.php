@@ -61,18 +61,14 @@
 @section('subnav')
 
     @include('shin::_partials.nav.subnav', [
-    'links' => [
-        '#'           => trans('shin::fields.agencies'),
-        '/organizations/fobai'      => 'FOBAI',
-        '/organizations/map'   => trans('shin::fields.map')
-     ]
+        'links' => [
+            '#'           => trans('shin::fields.agencies'),
+            '/fobai'      => 'FOBAI'
+        ]
     ])
 
 @endsection
 
 @section('main')
-
-
     @include('shin::organizations.index')
-
 @endsection
