@@ -24,7 +24,7 @@ class OrganizationsController extends Controller
 
     public function show($slug)
     {
-        $organization = Organization::where('slug',$slug)->first();
+        $organization = Organization::with('bibles')->where('slug',$slug)->first();
         return view('organizations.show', compact('organization'));
     }
 }
