@@ -49,7 +49,7 @@
 
     </div>
 
-    <div class="christian-percent-key row">
+    <div class="christian-percent-key">
         <div class="small-1">0%</div>
         <div class="small-10 info-gradient"></div>
         <div class="small-1">100%</div>
@@ -93,9 +93,9 @@
             <img class="answers-svg" src="https://images.bible.cloud/fab_color_globe.svg"/>
         </div>
          <div class="answers-text">
-                {{ trans('app.index.answer_provide') }} Find-A-Bible seeks to provide comprehensive data on existing Bible resources in the 6000+ language of the world.<br>
-                {{ trans('app.index.answer_help') }} Would you help us ensure that Bible resources can be discovered, secured, and shared? If you know of Bible resources not found in this directory, let us know!<br>
-                <a></a> {{ trans('app.index.answer_contact') }} Contact Us for more information!</a><br>
+                {{ trans('app.index.answer_provide') }}
+                {{ trans('app.index.answer_help') }}
+                {{ trans('app.index.answer_contact') }}
          </div>
     </div>
 
