@@ -28,20 +28,20 @@
 
     <div class="row small-center" id="faq">
         <div class="small-10 medium-10">
-        <h3>{{ trans('app.about.faq.faq_1_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_1_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_2_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_2_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_3_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_3_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_4_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_4_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_5_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_5_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_6_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_6_description') }}</p>
-        <h3>{{ trans('app.about.faq.faq_7_title') }}</h3>
-        <p>{{ trans('app.about.faq.faq_7_description') }}</p>
+        <h3>{{ trans('app.about.faq.1_title') }}</h3>
+        <p>{{ trans('app.about.faq.1_description') }}</p>
+        <h3>{{ trans('app.about.faq.2_title') }}</h3>
+        <p>{{ trans('app.about.faq.2_description') }}</p>
+        <h3>{{ trans('app.about.faq.3_title') }}</h3>
+        <p>{{ trans('app.about.faq.3_description') }}</p>
+        <h3>{{ trans('app.about.faq.4_title') }}</h3>
+        <p>{{ trans('app.about.faq.4_description') }}</p>
+        <h3>{{ trans('app.about.faq.5_title') }}</h3>
+        <p>{{ trans('app.about.faq.5_description') }}</p>
+        <h3>{{ trans('app.about.faq.6_title') }}</h3>
+        <p>{{ trans('app.about.faq.6_description') }}</p>
+        <h3>{{ trans('app.about.faq.7_title') }}</h3>
+        <p>{{ trans('app.about.faq.7_description') }}</p>
     </div>
     </div>
 
