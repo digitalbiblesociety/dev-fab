@@ -1,5 +1,10 @@
 @extends('_layouts.main')
 
+@section('header')
+    @parent
+    <title>{{ trans('shin::fields.agencies') }} | {{ trans('app.title') }}</title>
+@endsection
+
 @section('subheader')
     <style>
         .dataTables_header {

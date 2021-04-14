@@ -1,11 +1,13 @@
 @extends('_layouts.main')
 
+@section('header')
+    @parent
+    <title>{{ trans('shin::fields.faq') }} | {{ trans('app.title') }}</title>
+@endsection
+
 @section('subheader')
 <style>
-    #faq h3,
-    #faq p {
-        padding:1rem;
-    }
+    #faq h3, #faq p {padding:1rem;}
 </style>
 @endsection
 

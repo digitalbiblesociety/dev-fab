@@ -1,5 +1,9 @@
 @extends('_layouts.main')
 
+@section('header')
+    @parent
+    <title>{{ trans('shin::fields.about') }} | {{ trans('app.title') }}</title>
+@endsection
 
 @section('subnav')
 
