@@ -3,6 +3,10 @@
 @section('header')
     @parent
     <title>{{ trans('shin::fields.about') }} | {{ trans('app.title') }}</title>
+
+    <style>
+        .about-content  {margin: 1rem auto;max-width: 900px; padding:1em;}}
+    </style>
 @endsection
 
 @section('subnav')
@@ -21,7 +25,7 @@
 
 
 
-    <section class="medium-mt2">
+    <section class="medium-mt2 about-content">
         <div class="row">
             <div class="medium-6 row">
                 <div class="medium-2 flex-center"><img class="small-8" src="/img/about/project.svg"/></div>
@@ -35,7 +39,7 @@
                 <div class="medium-10">
                     <h4 class="medium-mb2">{{ trans('app.about.index.symposium_title') }}</h4>
                     <p>{{ trans('app.about.index.symposium_description') }}</p>
-                    <a target="_blank" rel="nofollow noopener" href="https://forum-intl.org/">Learn More</a>
+                    <p><a target="_blank" rel="nofollow noopener" href="https://forum-intl.org/">Learn More</a></p>
                 </div>
             </div>
             <div class="medium-6 row">
@@ -43,7 +47,7 @@
                 <div class="medium-10">
                     <h4 class="medium-mb2">{{ trans('app.about.index.volunteer_title') }}</h4>
                     <p>{{ trans('app.about.index.volunteer_description') }}</p>
-                    <a href="{{ i18n_link('about/contact') }}">{{ trans('shin::fields.contact') }}</a>
+                    <p><a href="{{ i18n_link('about/contact') }}">{{ trans('shin::fields.contact') }}</a></p>
                 </div>
             </div>
             <div class="medium-6 row">
@@ -51,7 +55,7 @@
                 <div class="medium-10">
                     <h4 class="medium-mb2">{{ trans('app.about.index.faq_title') }}</h4>
                     <p>{{ trans('app.about.index.faq_description') }}</p>
-                    <a href="{{ i18n_link('about/faq') }}">{{ trans('shin::fields.learn_more') }}</a>
+                    <p><a href="{{ i18n_link('about/faq') }}">{{ trans('shin::fields.learn_more') }}</a></p>
                 </div>
             </div>
         </div>
