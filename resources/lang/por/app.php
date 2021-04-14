@@ -8,6 +8,9 @@ return [
         'question_traveling'         => 'Você está viajando para o exterior com planos de compartilhar Bíblias e recursos entre regiões?',
         'question_missionary'        => 'Você apóia missionários que servem entre grupos de pessoas multilíngues?',
         'question_outreach'          => 'Você está procurando compartilhar recursos de áudio ou vídeo relacionados à Bíblia em seu próximo evangelismo?',
+        'answer_provide'             => 'Encontre uma Bíblia procura fornecer dados abrangentes sobre recursos bíblicos existentes na língua do mundo.',
+        'answer_help'                => 'Você nos ajudaria a garantir que os recursos bíblicos possam ser descobertos, protegidos e compartilhados? Se você souber de recursos bíblicos não encontrados neste diretório, avise-nos!',
+        'answer_contact'             => 'Contacte-nos para mais informações!',
     ],
     'bibles' => [
         'subtitle'                  => 'Pesquisando o diretório mundial de Bíblias em todos os idiomas.',

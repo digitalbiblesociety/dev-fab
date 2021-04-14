@@ -4,10 +4,13 @@ return [
         'title' => 'Localice una Biblia',
         'index' => [
             'stat_line' => 'Localice una Biblia proporciona hipervínculos a :numBibles Versiones de la Biblia y :numResources Recursos Bíblicos de :numOrganizations Organizaciones.',
-            'question_looking_for_bible' => 'Do you know someone who speaks another language and may be looking for a Bible?',
-            'question_traveling' => 'Are you traveling abroad with plans to share Bibles and resources across regions?',
-            'question_missionary' => 'Do you support missionaries who serve among multi-language people groups?',
-            'question_outreach' => 'Are you seeking to share Bible related Audio or Video resources on your next outreach?',
+            'question_looking_for_bible'   => '¿Conoce a alguien que hable otro idioma y esté buscando una Biblia?',
+            'question_traveling'           => '¿Viaja al extranjero con planes de compartir Biblias y recursos entre regiones?',
+            'question_missionary'          => '¿Apoya a los misioneros que sirven entre grupos de personas en varios idiomas?',
+            'question_outreach'            => '¿Está buscando compartir recursos de audio o video relacionados con la Biblia en su próximo alcance?',
+            'answer_provide'               => '"Find a Bible" busca proporcionar datos completos sobre los recursos bíblicos existentes en el idioma del mundo.',
+            'answer_help'                  => '¿Nos ayudaría a asegurarnos de que los recursos bíblicos se puedan descubrir, proteger y compartir? Si conoce recursos bíblicos que no se encuentran en este directorio, ¡háganoslo saber!',
+            'answer_contact'               => '¡Contáctenos para más información!',
         ],
         'bibles' => [
             'subtitle'                  => 'Búsqueda en el directorio mundial de biblias en todos los idiomas.',

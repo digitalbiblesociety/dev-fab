@@ -8,6 +8,9 @@ return [
         'question_traveling'           => 'Are you traveling abroad with plans to share Bibles and resources across regions?',
         'question_missionary'          => 'Do you support missionaries who serve among multi-language people groups?',
         'question_outreach'            => 'Are you seeking to share Bible related Audio or Video resources on your next outreach?',
+        'answer_provide'               => 'Find a Bible seeks to provide comprehensive data on existing Bible resources in the 6000+ language of the world.',
+        'answer_help'                  => 'Would you help us ensure that Bible resources can be discovered, secured, and shared? If you know of Bible resources not found in this directory, let us know!',
+        'answer_contact'               => 'Contact Us for more information!',
     ],
     'bibles' => [
         'subtitle'                  => 'Searching the Worldwide Directory of Bibles in every Language.',

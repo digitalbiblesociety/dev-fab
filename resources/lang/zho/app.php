@@ -6,9 +6,12 @@ return [
     'index' => [
         'stat_line' => '查圣经 提供了一个目录，该目录包含以下链接 :numBibles 圣经版本和 :numResources 来自 :numOrganizations 组织的资源。',
         'question_looking_for_bible' => '您是否认识会说另一种语言并正在寻找圣经的人？',
-        'question_traveling' => '您是否出国旅行并计划在各个地区共享圣经和资源？',
-        'question_missionary' => '您是否支持在多国语言人群中服务的传教士？',
-        'question_outreach' => '您是否要在下一次推广中共享与圣经相关的音频或视频资源？',
+        'question_traveling'         => '您是否出国旅行并计划在各个地区共享圣经和资源？',
+        'question_missionary'        => '您是否支持在多国语言人群中服务的传教士？',
+        'question_outreach'          => '您是否要在下一次推广中共享与圣经相关的音频或视频资源？',
+        'answer_provide'             => '《查找圣经》旨在以全球6000多种语言提供有关现有圣经资源的全面数据。',
+        'answer_help'                => '您是否可以帮助我们确保可以发现，保护和共享圣经资源？ 如果您知道此目录中找不到圣经资源，请告诉我们！',
+        'answer_contact'             => '联系我们获取更多信息！',
     ],
     'bibles' => [
         'subtitle'                  => '搜索每种语言的全球圣经目录。',
