@@ -1,8 +1,5 @@
 const mix = require('laravel-mix');
 
-//mix.copy('../bet/data/', 'public/assets/data');
-
-mix.sass('resources/sass/fab.scss', 'css/app.css').options({ processCssUrls: false });
 mix.scripts([
     'resources/js/components/map/jquery-jvectormap.js',
     'resources/js/components/map/jquery-mousewheel.js',
@@ -32,7 +29,9 @@ mix.scripts([
     'resources/js/components/map/map.js',
     'resources/js/components/map/jquery-jvectormap-world-mill-en.js'], 'public/js/map.js');
 
-mix.js('resources/js/app.js', 'public/js/app.js')
-   .js('vendor/digitalbiblesociety/shin/src/resources/js/components/dataTables.js', 'js').sourceMaps()
+mix.sass('resources/sass/print.scss', 'css/print.css')
+   .sass('resources/sass/fab.scss', 'css/app.css').options({ processCssUrls: false })
+   .js('resources/js/app.js', 'public/js/app.js')
+   .sourceMaps()
 
 mix.browserSync({proxy: 'findbible.test'})

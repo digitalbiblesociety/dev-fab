@@ -3,6 +3,7 @@
 @section('header')
     @parent
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('/css/print.css') }}" rel="stylesheet" media="print">
 @endsection
 
 @section('translations')
