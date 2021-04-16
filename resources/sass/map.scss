@@ -23,12 +23,10 @@
     color: #fff;
     height: 2.9rem;}
 .christian-percent-key,
-.world-main-faith-key,
-.world-watch-list-key                       {padding:25px;display:none}
-.world-main-faith-key div,
-.world-watch-list-key div                   {position:relative;display:inline-block;height:39px;font-size:14px;line-height:39px;text-indent:39px;margin-bottom:10px;text-align:center}
-.world-main-faith-key div:before,
-.world-watch-list-key div:before            {content:"";width:39px;height:39px;position:absolute;top:0;left:0;border:#ccc 1px solid}
+.world-main-faith-key                       {padding:25px;display:none}
+.world-main-faith-key div                   {position:relative;display:inline-block;height:39px;font-size:14px;line-height:39px;text-indent:39px;margin-bottom:10px;text-align:center}
+.world-main-faith-key div:before            {content:"";width:39px;height:39px;position:absolute;top:0;left:0;border:#ccc 1px solid}
+
 .world-main-faith-key .christianity:before  {background:#fff}
 .world-main-faith-key .muslim:before        {background:#abdda4}
 .world-main-faith-key .atheism:before       {background:#bbb}
@@ -39,8 +37,13 @@
 .world-watch-list-key .severe:before        {background:#d9a03f}
 .world-watch-list-key .moderate:before      {background:#a7a247}
 .world-watch-list-key .sparse:before        {background:#68a3b2}
-.christian-percent-key                      {display:flex;flex-direction:row;line-height:40px;margin-top:25px;padding:10px;max-width: 1000px;margin: 0 auto}
-.christian-percent-key .info-gradient       {height:40px;border-radius:10px;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#f0f0f0,endColorstr=#71a071);background-image:-moz-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-ms-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-o-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0%,#f0f0f0),color-stop(100%,#71a071))}
+.christian-percent-key                      {display:flex;flex-direction:row;line-height:25px;margin-top:12px;padding:10px;width: 60%;max-width:500px;margin: 0 auto}
+.christian-percent-key .info-gradient       {height:25px;border-radius:10px;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#f0f0f0,endColorstr=#71a071);background-image:-moz-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-ms-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-o-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0%,#f0f0f0),color-stop(100%,#71a071))}
+
+.world-watch-list-key                       {padding:25px; display:none; justify-content:center; width: 60%;max-width:500px;margin: 0 auto;}
+.world-watch-list-key div                   {position:relative;display:inline-block;height:25px;font-size:.8em;line-height:25px;text-indent:39px;margin-bottom:10px;text-align:center}
+.world-watch-list-key div:before            {content:"";width:25px;height:25px;position:absolute;top:0;left:0;border:#ccc 1px solid}
+.world-watch-legend                         {font-size:.9em;margin-right:1.5em;}
 .featured-biblecount h2                     {padding:75px}
 .map-options                                {background-color:#222;height:50px;width:100%}
 .map-options span                           {display:inline-block;width:100%;line-height:50px;color:#fff;text-align:center;cursor:pointer}

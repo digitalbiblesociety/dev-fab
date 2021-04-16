@@ -3,7 +3,7 @@
 @section('header')
     @parent
     <style>
-        .tagline {margin: 2rem 0;font-size: 1.4rem;line-height: 1.5;}
+        .tagline {margin: 1rem 0;font-size: 1.4rem;line-height: 1.5;}
         .jvectormap-marker {display: none;}
         div.questions  {margin:2.5em auto;}  @media (max-width:46em){div.questions {display:none;}}
         .questions img  {margin-bottom: .8em;}
@@ -50,14 +50,15 @@
     </div>
 
     <div class="christian-percent-key">
-        <div class="small-1">0%</div>
-        <div class="small-10 info-gradient"></div>
-        <div class="small-1">100%</div>
+        <div class="small-1 smaller">0%</div>
+        <div class="small-10 info-gradient smaller text-center"> Christian %</div>
+        <div class="small-1 smaller">100%</div>
     </div>
 
     <div class="world-watch-list-key row">
-        <div class="small-3 extreme">{{ trans('app.index.extremePersecution') }}</div>
-        <div class="small-3 severe">{{ trans('app.index.severePersecution') }}</div>
+        <span class="world-watch-legend">{{ trans('shin::fields.world_watch_list') }}:</span>
+        <div class="extreme">{{ trans('shin::fab.index.extremePersecution') }}</div>
+        <div class="severe">{{ trans('shin::fab.index.severePersecution') }}</div>
     </div>
 
     <div class="tagline text-center">
