@@ -67,8 +67,8 @@
 
     @include('shin::_partials.nav.subnav', [
         'links' => [
-            '#'           => trans('shin::fields.agencies'),
-            '/fobai'      => 'FOBAI'
+            '/fobai'      => 'FOBAI',
+            '#'           => trans('shin::fields.agencies')
         ]
     ])
 

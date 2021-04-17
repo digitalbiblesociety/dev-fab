@@ -17,8 +17,8 @@
 @section('subnav')
     @include('shin::_partials.nav.subnav', [
         'links' => [
-            '/organizations/'      => trans('shin::fields.agencies'),
-            '#'      => 'FOBAI'
+            '#'      => 'FOBAI',
+            '/organizations/'      => trans('shin::fields.agencies')
         ]
     ])
 @endsection
