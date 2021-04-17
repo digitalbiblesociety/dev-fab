@@ -103,7 +103,7 @@
 
         <div class="large-8">
             <section role="tabpanel" id="bibles" aria-hidden="false">
-            <table class="table responsive" cellspacing="0" width="100%">
+            <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -118,7 +118,7 @@
                     <tr>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title }}</a></td>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title_vernacular }}</a></td>
-                        <td><a href="/languages/{{ $bible->iso }}">{{ $bible->language->name }}</a></td>
+                        <td><a href="/languages/{{ $bible->iso }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
                         <td data-hidden>{{ $bible->iso }}</td>
                         <td>{{ $bible->date }}</td>
                     </tr>
@@ -126,8 +126,8 @@
                 </tbody>
             </table>
             </section>
-            <section role="tabpanel" id="resources" aria-hidden="true">
-                <table class="table responsive" cellspacing="0" width="100%">
+            <section id="resources" role="tabpanel" id="resources" aria-hidden="true">
+                <table id="resources_table" class="table responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>Title</th>
