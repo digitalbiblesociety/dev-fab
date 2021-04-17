@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use DigitalBibleSociety\Shin\Models\Bible\Bible;
+use DigitalBibleSociety\Shin\Models\Bible\BibleOrganization;
 use DigitalBibleSociety\Shin\Models\Bible\BibleEquivalent;
 use DigitalBibleSociety\Shin\Models\Organization\Organization;
 use DigitalBibleSociety\Shin\Models\Resource\Film;
 use DigitalBibleSociety\Shin\Models\Resource\Resource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OrganizationsController extends Controller
 {
     public function index()
     {
-
         return view('organizations.index');
     }
 
@@ -32,13 +33,13 @@ class OrganizationsController extends Controller
     {
         $organization = Organization::find($id);
 
-        $bibles = Bible::whereHas('equivalents', function($q) use($id){
-            $q->where('bible_equivalents.organization_id', $id);
-        })->orWhereHas('organizations', function($q) use($id){
-            $q->where('bible_organization.organization_id', $id);
-        })->orWhereHas('links', function($q) use($id){
-            $q->where('bible_links.organization_id', $id);
-        })->with('language')->get();
+        $bible_equivalents = BibleEquivalent::where('bible_equivalents.organization_id', $id)
+                                                   ->select('bible_id')->get()->pluck('bible_id')->toArray();
+        $bible_organization = BibleOrganization::where('bible_organization.organization_id', $id)
+            ->select('bible_id')->get()->pluck('bible_id')->toArray();
+        $bible_links = DB::connection('shin')->table('bible_links')->where('bible_links.organization_id', $id)
+            ->select('bible_id')->get()->pluck('bible_id')->toArray();
+        $bibles = Bible::whereIn('id',array_merge($bible_equivalents,$bible_organization,$bible_links))->with('language:name')->get();
 
         $resources = Resource::where('organization_id',$id)->get();
 
