@@ -27,7 +27,7 @@
 
     <div class="row orgs">
         @foreach($organizations as $org)
-            <a class="small-6 medium-4" href="/organizations/{{ $org->slug }}">{!! $org->logo !!}</a>
+            <a class="small-6 medium-4" href="/organizations/{{ $org->id }}">{!! $org->logo !!}</a>
         @endforeach
     </div>
 

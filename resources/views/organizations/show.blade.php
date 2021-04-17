@@ -43,7 +43,7 @@
 @section('main')
 
     @include('shin::_partials.banner', [
-        'title'           => $organization->slug,
+        'title'           => $organization->id,
         'subtitle'        => '',
         'tabs'  => [
             'bibles'     => "Bibles",

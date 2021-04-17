@@ -161,7 +161,7 @@
                     $(location).attr("href", "{{URL::to('/')}}/countries/"+ code);
                 },
                 onMarkerClick: function (event, index) {
-                    $(location).attr("href", "{{URL::to('/')}}/organizations/" + organizations[index].slug);
+                    $(location).attr("href", "{{URL::to('/')}}/organizations/" + organizations[index].id);
                 }
             });
 
