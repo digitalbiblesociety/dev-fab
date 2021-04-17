@@ -39,7 +39,6 @@
     </style>
 @endsection
 
-
 @section('main')
 
     @include('shin::_partials.banner', [
@@ -102,7 +101,7 @@
         </aside>
 
         <div class="large-8">
-            <section role="tabpanel" id="bibles" aria-hidden="false">
+            <section role="tabpanel" id="bibles" aria-hidden="{{ $bibles->count() == 0 ? 'true' : 'false' }}">
             <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
                 <thead>
                     <tr>
@@ -126,7 +125,7 @@
                 </tbody>
             </table>
             </section>
-            <section id="resources" role="tabpanel" id="resources" aria-hidden="true">
+            <section id="resources" role="tabpanel" id="resources" aria-hidden="{{ $bibles->count() == 0 ? 'false' : 'true' }}">
                 <table id="resources_table" class="table responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
@@ -138,9 +137,9 @@
                     <tbody>
                     @foreach($resources as $resource)
                         <tr>
-                            <td><a href="{{ $resource->link }}">{{ $resource->title }}</a></td>
-                            <td><a href="{{ $resource->link }}">{{ $resource->title_vernacular }}</a></td>
-                            <td><a href="/languages/{{ $resource->iso }}">{{ $resource->iso }}</a></td>
+                            <td><a href="{{ $resource['link'] }}">{{ $resource['title'] }}</a></td>
+                            <td><a href="{{ $resource['link'] }}">{{ $resource['title_vernacular'] }}</a></td>
+                            <td><a href="/languages/{{ $resource['iso'] }}">{{ $resource['iso'] }}</a></td>
                         </tr>
                     @endforeach
                     </tbody>

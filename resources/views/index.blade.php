@@ -121,7 +121,7 @@
 
             let organizations = [
                 @foreach($organizations as $organization)
-                    {latLng: [{{ $organization->latitude }}, {{$organization->longitude}}], name: "{{ $organization->slug }}"},
+                    {latLng: [{{ $organization->latitude }}, {{$organization->longitude}}], name: "{{ $organization->id }}"},
                 @endforeach
             ];
 
