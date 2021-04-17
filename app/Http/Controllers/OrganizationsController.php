@@ -19,10 +19,12 @@ class OrganizationsController extends Controller
 
     public function fobai()
     {
-        $fab_id = Organization::where('slug','the-forum-of-bible-agencies')->select('id','slug')->first()->id;
+        $fab_id = Organization::where('id','the-forum-of-bible-agencies')->select('id')->first()->id;
+
         $organizations = Organization::whereHas('relationships', function($q) use($fab_id){
             $q->where('organization_parent_id', '=', $fab_id);
         })->get();
+
         return view('organizations.fobai', compact('organizations'));
     }
 
