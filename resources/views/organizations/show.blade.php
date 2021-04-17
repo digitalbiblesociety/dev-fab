@@ -44,7 +44,11 @@
 
     @include('shin::_partials.banner', [
         'title'           => $organization->slug,
-        'subtitle'        => ''
+        'subtitle'        => '',
+        'tabs'  => [
+            'bibles'     => "Bibles",
+            'resources'  => "Resources"
+        ]
     ])
 
     <div class="row">
@@ -98,7 +102,8 @@
         </aside>
 
         <div class="large-8">
-            <table id="bibles" class="table responsive" cellspacing="0" width="100%">
+            <section role="tabpanel" id="bibles" aria-hidden="false">
+            <table class="table responsive" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -120,6 +125,27 @@
                 @endforeach
                 </tbody>
             </table>
+            </section>
+            <section role="tabpanel" id="resources" aria-hidden="true">
+                <table class="table responsive" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Title Vernacular</th>
+                        <th>iso</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($resources as $resource)
+                        <tr>
+                            <td><a href="{{ $resource->link }}">{{ $resource->title }}</a></td>
+                            <td><a href="{{ $resource->link }}">{{ $resource->title_vernacular }}</a></td>
+                            <td><a href="/languages/{{ $resource->iso }}">{{ $resource->iso }}</a></td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </section>
         </div>
 
     </div>

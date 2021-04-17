@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use DigitalBibleSociety\Shin\Models\Bible\Bible;
 use DigitalBibleSociety\Shin\Models\Bible\BibleEquivalent;
 use DigitalBibleSociety\Shin\Models\Organization\Organization;
+use DigitalBibleSociety\Shin\Models\Resource\Film;
+use DigitalBibleSociety\Shin\Models\Resource\Resource;
 use Illuminate\Http\Request;
 
 class OrganizationsController extends Controller
@@ -36,6 +38,8 @@ class OrganizationsController extends Controller
             $q->where('bible_links.organization_id', $id);
         })->with('language')->get();
 
-        return view('organizations.show', compact('organization', 'bibles'));
+        $resources = Resource::where('organization_id',$id)->get();
+
+        return view('organizations.show', compact('organization', 'bibles','resources'));
     }
 }
