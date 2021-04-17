@@ -56,9 +56,13 @@
     </div>
 
     <div class="world-watch-list-key row">
-        <span class="world-watch-legend">{{ trans('shin::fields.world_watch_list') }}:</span>
-        <div class="extreme">{{ trans('shin::fab.index.extremePersecution') }}</div>
-        <div class="severe">{{ trans('shin::fab.index.severePersecution') }}</div>
+        <div class="legend-container flex-center">
+            <div class="legend-title">{{ trans('shin::fields.world_watch_list') }}:</div>
+            <div class="legend-key extreme">{{ trans('shin::fab.index.extremePersecution') }}</div>
+            <div class="legend-key severe">{{ trans('shin::fab.index.severePersecution') }}</div>
+            <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
+                <svg class="legend-info"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#nav_info"></use></svg></a>
+        </div>
     </div>
 
     <div class="tagline text-center">

@@ -41,9 +41,11 @@
 .christian-percent-key .info-gradient       {height:25px;border-radius:10px;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#f0f0f0,endColorstr=#71a071);background-image:-moz-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-ms-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-o-linear-gradient(left,#f0f0f0 0%,#71a071 100%);background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0%,#f0f0f0),color-stop(100%,#71a071))}
 
 .world-watch-list-key                       {padding:25px; display:none; justify-content:center; width: 60%;max-width:500px;margin: 0 auto;}
-.world-watch-list-key div                   {position:relative;display:inline-block;height:25px;font-size:.8em;line-height:25px;text-indent:39px;margin-bottom:10px;text-align:center}
-.world-watch-list-key div:before            {content:"";width:25px;height:25px;position:absolute;top:0;left:0;border:#ccc 1px solid}
-.world-watch-legend                         {font-size:.9em;margin-right:1.5em;}
+.legend-title                               {font-size:.9em; padding: .2em 1em .2em .2em;}
+.legend-key                                 {position:relative;height:25px;font-size:.8em;line-height:25px;text-indent:36px; margin-right:1em;}
+.legend-key:before                          {content:"";width:25px;height:25px;position:absolute;top:0;left:0;border:#ccc 1px solid}
+.legend-info                                {height: 1em; width:1em; margin: .25em 0 0 .5em; fill:#888}
+.legend-info:hover                          {fill:var(--secondary-color)}
 .featured-biblecount h2                     {padding:75px}
 .map-options                                {background-color:#222;height:50px;width:100%}
 .map-options span                           {display:inline-block;width:100%;line-height:50px;color:#fff;text-align:center;cursor:pointer}
@@ -62,7 +64,7 @@
 @media only screen and (min-width:40.063em) {
     .continent-nav                          {border-top-right-radius:15px;border-top-left-radius:15px;left:50%;width:440px;margin-left:-220px!important}
 }
-.continent-nav a:hover                      {cursor:pointer}
+.continent-nav a:hover                      {cursor:pointer; fill:var(--secondary-color);}
 .text-left  {text-align: left}
 
 #search_input {
