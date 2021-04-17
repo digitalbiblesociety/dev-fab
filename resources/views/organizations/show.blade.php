@@ -109,7 +109,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($organization->bibles as $bible)
+                @foreach($bibles as $bible)
                     <tr>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title }}</a></td>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title_vernacular }}</a></td>

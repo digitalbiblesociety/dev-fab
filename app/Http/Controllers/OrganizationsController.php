@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use DigitalBibleSociety\Shin\Models\Bible\Bible;
+use DigitalBibleSociety\Shin\Models\Bible\BibleEquivalent;
 use DigitalBibleSociety\Shin\Models\Organization\Organization;
 use Illuminate\Http\Request;
 
@@ -22,9 +24,18 @@ class OrganizationsController extends Controller
         return view('organizations.fobai', compact('organizations'));
     }
 
-    public function show($slug)
+    public function show($id)
     {
-        $organization = Organization::with('bibles')->where('slug',$slug)->first();
-        return view('organizations.show', compact('organization'));
+        $organization = Organization::find($id);
+
+        $bibles = Bible::whereHas('equivalents', function($q) use($id){
+            $q->where('bible_equivalents.organization_id', $id);
+        })->orWhereHas('organizations', function($q) use($id){
+            $q->where('bible_organization.organization_id', $id);
+        })->orWhereHas('links', function($q) use($id){
+            $q->where('bible_links.organization_id', $id);
+        })->with('language')->get();
+
+        return view('organizations.show', compact('organization', 'bibles'));
     }
 }
