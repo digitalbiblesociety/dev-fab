@@ -38,7 +38,7 @@
         <div class="row">
             <div class="small-1"><img class="faq-icon" src="/img/fab_color_resources.svg" alt="Find.Bible Creation" /></div>
             <div class="small-11"><h3>{{ trans('app.about.faq.2_title') }}</h3></div>
-            <p>{{ trans('app.about.faq.2_description') }}</p>
+            <p>{!! trans('app.about.faq.2_description') !!}</p>
         </div>
 
         <div class="row">
@@ -62,13 +62,13 @@
         <div class="row">
             <div class="small-1"><img class="faq-icon" src="/img/fab_color_team.svg" alt="Find.Bible Team" /></div>
             <div class="small-11"><h3>{{ trans('app.about.faq.6_title') }}</h3></div>
-            <p>{{ trans('app.about.faq.6_description') }}</p>
+            <p>{!! trans('app.about.faq.6_description',  ['contactLink' => i18n_link('about/contact')]) !!}</p>
         </div>
 
         <div class="row">
             <div class="small-1"><img class="faq-icon" src="/img/fab_color_helping.svg" alt="Find.Bible Work" /></div>
             <div class="small-11"><h3>{{ trans('app.about.faq.7_title') }}</h3></div>
-            <p>{{ trans('app.about.faq.7_description') }}</p>
+            <p>{!! trans('app.about.faq.7_description',  ['contactLink' => i18n_link('about/contact')]) !!}</p>
         </div>
 
     </div>
