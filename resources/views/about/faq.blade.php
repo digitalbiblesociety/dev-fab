@@ -36,7 +36,7 @@
         </div>
 
         <div class="row">
-            <div class="small-1"><img class="faq-icon" src="/img/fab_color_resources.svg" alt="Find.Bible Creation" /></div>
+            <div class="small-1"><img class="faq-icon" src="/img/fab_color_globe.svg" alt="Find.Bible Creation" /></div>
             <div class="small-11"><h3>{{ trans('app.about.faq.2_title') }}</h3></div>
             <p>{!! trans('app.about.faq.2_description') !!}</p>
         </div>
