@@ -30,7 +30,7 @@
 @section('body')
 
     @include('shin::_partials.nav.header', [
-        'logo' => '/img/logo.svg',
+        'logo' => '/img/icon_fab_notitle.svg',
         'logo_tagline' => trans('app.title'),
         'logo_height' => '40px',
         'logo_width' => '40px',

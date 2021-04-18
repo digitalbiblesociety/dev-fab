@@ -17,9 +17,9 @@
 
 @section('subnav')
     <nav role="tablist">
-        <a id="view_persecution">{{ trans('shin::fields.world_watch_list') }}</a>
         <a id="view_christians">{{ trans('shin::fields.christians') }}</a>
         <a id="view_organizations">{{ trans('shin::fields.organizations') }}</a>
+        <a id="view_persecution">{{ trans('shin::fields.world_watch_list') }}</a>
     </nav>
 @endsection
 
@@ -51,13 +51,13 @@
 
     <div class="christian-percent-key">
         <div class="small-1 smaller">0%</div>
-        <div class="small-10 info-gradient smaller text-center"> Christian %</div>
-        <div class="small-1 smaller">100%</div>
+        <div class="small-10 info-gradient smaller text-center">Christian %</div>
+        <div class="small-1 smaller"> 100%</div>
     </div>
 
     <div class="world-watch-list-key row">
         <div class="legend-container flex-center">
-            <div class="legend-title">{{ trans('shin::fields.world_watch_list') }}:</div>
+            <div class="legend-title">{{ trans('shin::fab.index.persecution') }}:</div>
             <div class="legend-key extreme">{{ trans('shin::fab.index.extremePersecution') }}</div>
             <div class="legend-key severe">{{ trans('shin::fab.index.severePersecution') }}</div>
             <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
@@ -67,9 +67,9 @@
 
     <div class="organizations-key row">
         <div class="legend-container flex-center">
-            <div class="legend-title">{{ trans('shin::fields.fobai') }}:</div>
+            <div class="legend-title">{{ trans('shin::fields.agencies') }}:</div>
             <div class="legend-key fobai">{{ trans('shin::fields.fobai') }}</div>
-            <div class="legend-key org">{{ trans('shin::fields.partners') }}</div>
+            <div class="legend-key org">{{ trans('shin::fields.organizations') }}</div>
             <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
                 <svg class="legend-info"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#nav_info"></use></svg></a>
         </div>
@@ -175,7 +175,7 @@
                     }],
                     markers: [{
                         attribute: 'fill',
-                        scale: ['#FEE5D9', '#A50F15'],
+                        scale: ['#73d321', '#1486dc'],
                         values: organizations.reduce(function(p, c, i){ p[i] = c.fobai; return p }, {}),
                         min: 0,
                         max: 1
