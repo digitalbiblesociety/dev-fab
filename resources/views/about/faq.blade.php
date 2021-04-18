@@ -16,9 +16,9 @@
 
     @include('shin::_partials.nav.subnav', [
     'links' => [
-        '/about'          => trans('shin::fields.about'),
-        '#'      => trans('shin::fields.faq'),
-        '/about/contact'  => trans('shin::fields.contact')
+        i18n_link('/about')         => trans('shin::fields.about'),
+        '#'                         => trans('shin::fields.faq'),
+        i18n_link('/about/contact') => trans('shin::fields.contact')
      ]
     ])
 

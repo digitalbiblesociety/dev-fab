@@ -115,11 +115,11 @@
                 <tbody>
                 @foreach($bibles as $bible)
                     <tr>
-                        <td><a href="/languages/{{ $bible->iso }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
+                        <td><a href="{{ i18n_link("/languages/$bible->iso") }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
                         <td><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#{{ $bible->country_id }}"></use></svg> {{ optional($bible->country)->name ?? '' }}</td>
                         <td>{{ $bible->date }}</td>
-                        <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title }}</a></td>
-                        <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title_vernacular }}</a></td>
+                        <td><a href="{{ i18n_link("/bibles/$bible->id") }}">{{ $bible->title }}</a></td>
+                        <td><a href="{{ i18n_link("/bibles/$bible->id") }}">{{ $bible->title_vernacular }}</a></td>
                         <td data-hidden>{{ $bible->iso }}</td>
                     </tr>
                 @endforeach
@@ -140,7 +140,7 @@
                         <tr>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title'] }}</a></td>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title_vernacular'] }}</a></td>
-                            <td><a href="/languages/{{ $resource['iso'] }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
+                            <td><a href="{{ i18n_link("/languages/".$resource['iso']) }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
                         </tr>
                     @endforeach
                     </tbody>

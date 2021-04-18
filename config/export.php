@@ -47,7 +47,7 @@ return [
      *
      * If empty, your site will be exported to a `dist` folder.
      */
-    'disk' => null,
+    'disk' => 'prod',
 
     /*
      * Shell commands that should be run before the export starts when running
@@ -56,7 +56,7 @@ return [
      * You can skip these by adding a `--skip-{name}` flag to the command.
      */
     'before' => [
-        // 'assets' => '/usr/local/bin/yarn production',
+        'assets' => 'npm run production',
     ],
 
     /*

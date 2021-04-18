@@ -18,7 +18,7 @@
     @include('shin::_partials.nav.subnav', [
         'links' => [
             '#'      => 'FOBAI',
-            '/organizations/'      => trans('shin::fields.agencies')
+            i18n_link('/organizations/')      => trans('shin::fields.agencies')
         ]
     ])
 @endsection
@@ -27,7 +27,7 @@
 
     <div class="row orgs">
         @foreach($organizations as $org)
-            <a class="small-6 medium-4" href="/organizations/{{ $org->id }}">{!! $org->logo !!}</a>
+            <a class="small-6 medium-4" href="{{ i18n_link("/organizations/$org->id") }}">{!! $org->logo !!}</a>
         @endforeach
     </div>
 

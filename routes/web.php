@@ -8,7 +8,11 @@ use App\Http\Controllers\OrganizationsController;
 use App\Http\Controllers\BiblesController;
 use App\Http\Controllers\HomeController;
 
-Route::group(['prefix' => i18n::setLocale()], function()
+foreach (i18n::getSupportedLocales() as $iso => $locale) {
+    if($iso == 'eng') {
+        $iso = '';
+    }
+Route::group(['prefix' => $iso], function()
 {
     Route::get('/',                   [HomeController::class, 'index'])->name('home');
 
@@ -31,3 +35,4 @@ Route::group(['prefix' => i18n::setLocale()], function()
     Route::view('about/api',          'about.api')->name('api');
     Route::view('about/feedback',     'about.api')->name('feedback');
 });
+}

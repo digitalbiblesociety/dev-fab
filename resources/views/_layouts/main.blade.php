@@ -37,11 +37,11 @@
         'logo_url' => i18n_link('/'),
         'donate' => false,
         'links'   => [
-            ['url' => route('bibles.index'),'icon' => 'bible', 'name' => trans('shin::fields.bibles')],
-            ['url' => route('languages.index'), 'icon' => 'menu_languages', 'name' => trans('shin::fields.languages')],
-            ['url' => route('countries.index'),'icon' => 'menu_countries', 'name' => trans('shin::fields.countries')],
-            ['url' => route('organizations.fobai'),'icon' => 'people_agencies', 'name' => trans('shin::fields.agencies')],
-            ['url' => route('about'), 'icon' => 'nav_info', 'name' => trans('shin::fields.about')]
+            ['url' => i18n_link('bibles'),'icon' => 'bible', 'name' => trans('shin::fields.bibles')],
+            ['url' => i18n_link('languages'), 'icon' => 'menu_languages', 'name' => trans('shin::fields.languages')],
+            ['url' => i18n_link('countries'),'icon' => 'menu_countries', 'name' => trans('shin::fields.countries')],
+            ['url' => i18n_link('fobai'),'icon' => 'people_agencies', 'name' => trans('shin::fields.agencies')],
+            ['url' => i18n_link('about'), 'icon' => 'nav_info', 'name' => trans('shin::fields.about')]
         ]
     ])
     @include('shin::_partials.nav.subheader')
@@ -75,14 +75,14 @@
             <div class="row">
                 <div class="column">
                     <ul>
-                        <li><a href="/about/faq">{{ trans('shin::fields.faq') }}</a></li>
-                        <li><a href="/organizations">{{ trans('shin::fields.partners') }}</a></li>
+                        <li><a href="{{ i18n_link('/about/faq') }}">{{ trans('shin::fields.faq') }}</a></li>
+                        <li><a href="{{ i18n_link('/organizations') }}">{{ trans('shin::fields.partners') }}</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <ul>
-                        <li><a href="/about/contact">{{ trans('shin::fields.contact') }}</a></li>
-                        <li><a href="/about/privacy">{{ trans('shin::fields.privacy') }}</a></li>
+                        <li><a href="{{ i18n_link('/about/contact') }}">{{ trans('shin::fields.contact') }}</a></li>
+                        <li><a href="{{ i18n_link('/about/privacy') }}">{{ trans('shin::fields.privacy') }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 <img src="https://images.bible.cloud/fab/logos/forum-logo.svg" class="footer-logo">
             </div>
             <div class="row copyright">
-                <a href="https://www.dbs.org" target="_blank">© 2021 {{ trans('shin::fields.dbs') }}</a>
+                <a href="https://dbs.org" target="_blank">© 2021 {{ trans('shin::fields.dbs') }}</a>
             </div>
         </div>
 

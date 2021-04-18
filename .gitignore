@@ -12,5 +12,9 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .idea
+/dist/*
 
 /public/img/logos/
+
+# Local Netlify folder
+.netlify

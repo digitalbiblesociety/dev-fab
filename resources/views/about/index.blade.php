@@ -3,7 +3,6 @@
 @section('header')
     @parent
     <title>{{ trans('shin::fields.about') }} | {{ trans('app.title') }}</title>
-
     <style>
         .about-content  {margin: 1rem auto;max-width: 800px; padding:1em 10%;}
         .about          {margin-bottom:1.5em;}
@@ -15,9 +14,9 @@
 
     @include('shin::_partials.nav.subnav', [
     'links' => [
-        '#'           => trans('shin::fields.about'),
-        '/about/faq'      => trans('shin::fields.faq'),
-        '/about/contact'   => trans('shin::fields.contact')
+        '#'                         => trans('shin::fields.about'),
+        i18n_link('/about/faq')     => trans('shin::fields.faq'),
+        i18n_link('/about/contact') => trans('shin::fields.contact')
      ]
     ])
 
