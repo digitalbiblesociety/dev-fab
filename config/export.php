@@ -56,7 +56,7 @@ return [
      * You can skip these by adding a `--skip-{name}` flag to the command.
      */
     'before' => [
-        'assets' => 'npm run production',
+        'assets' => 'npm run production'
     ],
 
     /*
@@ -66,7 +66,8 @@ return [
      * You can skip these by adding a `--skip-{name}` flag to the command.
      */
     'after' => [
-        // 'deploy' => '/usr/local/bin/netlify deploy --prod',
+        'cname' => 'cd ../findbible-prod && echo "dev.find.bible" >| CNAME',
+        'deploy' => 'cd ../findbible-prod && git init && git add . && git commit -m "auto-push" && git branch -M main && git remote add origin git@github.com:digitalbiblesociety/fab-prod.git && git push -f -u origin main'
     ],
 
 ];
