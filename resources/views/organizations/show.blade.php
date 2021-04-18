@@ -1,49 +1,32 @@
 @extends('_layouts.main')
 
-@section('subheader')
+@section('header')
+    @parent
+    <title>{{ $organization->name }} | {{ trans('app.title') }}</title>
     <style>
-        #banner {
-            margin-bottom: 3rem;
-            text-align: center;
-            background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }});
-        }
-
-        #banner h1 {
-            padding: 3rem 0;
-        }
-
-        .logo {
-            margin: 0 auto;
-            max-width: 200px;
-            width: 100%;
-        }
-
-        .social-links {
-            text-align: center;
-        }
-
-        .social-links a {
-            font-size:1rem;
-        }
-
-        address {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        address b {
-            margin-top: 1rem;
-        }
+        #banner         {margin-bottom: 3rem; text-align: center;background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }});}
+        #banner h1      {padding: 3rem 0;}
+        .org-info       {padding: 0 1.5em;}
+        .logo           {margin: 0 auto;max-width: 200px;width: 100%;}
+        .social-links   {text-align: center;}
+        .social-links a {font-size: 1.5em; padding:0 .25em;}
+        address         {font-size: .8em; display: inline-flex;align-items: center;justify-content: center;flex-direction: column; font-style:normal;
+                        margin-bottom:2em;}
+        address b       {margin-top: 1rem;}
+        h5              {margin-top:2em;text-transform: uppercase}
     </style>
+@endsection
+
+@section('subnav')
+    <nav role="tablist">
+        <a id="view_bibles">{{ trans('shin::fields.bibles') }}</a>
+        <a id="view_resources">{{ trans('shin::fields.resources') }}</a>
+    </nav>
 @endsection
 
 @section('main')
 
     @include('shin::_partials.banner', [
-        'title'           => $organization->name,
-        'subtitle'        => '',
         'tabs'  => [
             'bibles'     => "Bibles",
             'resources'  => "Resources"
@@ -51,28 +34,34 @@
     ])
 
     <div class="row">
-        <aside class="medium-12 large-4 small-hide">
+        <aside class="medium-3 small-hide org-info">
             <div>
-
                 <div class="logo">{!! $organization->logo !!}</div>
 
             @if($organization->abbreviation)
                 <small>{{ $organization->abbreviation }}</small>
             @endif
+            <h5>{{ $organization->id }}</h5>
             <address>
-                <b>Address: </b>{{ $organization->address }}<br>
+                <b>Address: </b>{{ $organization->address }}
+                <b>Country: </b>{{ $organization->country }}
                 <b>Phone: </b>{{ $organization->phone }}<br>
                 <b>Email: </b>{{ $organization->email }}<br>
             </address>
             <nav class="social-links">
-            <a href="{{ $organization->url_facebook }}">
+            <a href="{{ $organization->url_facebook }}" target="_blank">
                 <svg class="icon">
                     <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social_facebook"></use>
                 </svg>
             </a>
-            <a href="{{ $organization->url_twitter }}">
+            <a href="{{ $organization->url_twitter }}" target="_blank">
                 <svg class="icon">
                     <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social_twitter"></use>
+                </svg>
+            </a>
+            <a href="{{ $organization->url_website }}" target="_blank">
+                <svg class="icon">
+                    <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#type_external"></use>
                 </svg>
             </a>
             </nav>
@@ -99,17 +88,17 @@
             </div>
         </aside>
 
-        <div class="large-8">
+        <div class="medium-9">
             <section role="tabpanel" id="bibles" aria-hidden="{{ $bibles->count() == 0 ? 'true' : 'false' }}">
             <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>{{ trans('shin::fields.languages') }}</th>
+                        <th data-sort-default="asc">{{ trans('shin::fields.languages') }}</th>
                         <th>{{ trans('shin::fields.country') }}</th>
                         <th>{{ trans('shin::fields.date') }}</th>
                         <th>{{ trans('shin::fields.title') }}</th>
                         <th>{{ trans('shin::fields.title_vernacular') }}</th>
-                        <th></th>
+                        <th>ISO</th>
                     </tr>
                 </thead>
                 <tbody>
