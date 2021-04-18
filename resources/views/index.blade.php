@@ -65,6 +65,16 @@
         </div>
     </div>
 
+    <div class="organizations-key row">
+        <div class="legend-container flex-center">
+            <div class="legend-title">{{ trans('shin::fields.fobai') }}:</div>
+            <div class="legend-key fobai">{{ trans('shin::fields.fobai') }}</div>
+            <div class="legend-key org">{{ trans('shin::fields.partners') }}</div>
+            <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
+                <svg class="legend-info"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#nav_info"></use></svg></a>
+        </div>
+    </div>
+
     <div class="tagline text-center">
         <h4> {!! trans('app.index.stat_line', [
                 'numBibles'        => "<a href='".route('bibles.index')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Bible\Bible::count())."</a>",
@@ -121,7 +131,18 @@
 
             let organizations = [
                 @foreach($organizations as $organization)
-                    {latLng: [{{ $organization->latitude }}, {{$organization->longitude}}], name: "{{ $organization->id }}"},
+                    {
+                        latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
+                        name: "{{ $organization->id }}",
+                        fobai: 0
+                    },
+                @endforeach
+                @foreach($fobai as $organization)
+                {
+                    latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
+                    name: "{{ $organization->id }}",
+                    fobai: 1
+                },
                 @endforeach
             ];
 
@@ -151,16 +172,16 @@
                 series:{
                     regions:[{
                         attribute:'fill'
+                    }],
+                    markers: [{
+                        attribute: 'fill',
+                        scale: ['#FEE5D9', '#A50F15'],
+                        values: organizations.reduce(function(p, c, i){ p[i] = c.fobai; return p }, {}),
+                        min: 0,
+                        max: 1
                     }]
                 },
                 markers: organizations,
-                markerStyle: {
-                    initial: {
-                        fill: '#F8E23B',
-                        stroke: '#383f47',
-
-                    }
-                },
                 onRegionClick:function(event, code) {
                     $(location).attr("href", "{{URL::to('/')}}/countries/"+ code);
                 },
@@ -176,6 +197,7 @@
                 let map = $('#map1').vectorMap('get', 'mapObject');
                 $(".world-watch-list-key").slideDown("slow");
                 $(".christian-percent-key").slideUp("slow");
+                $(".organizations-key").slideUp("slow");
                 $('.jvectormap-marker').hide();
 
                 map.series.regions[0].setValues(unset);
@@ -186,6 +208,7 @@
                 let map = $('#map1').vectorMap('get', 'mapObject');
                 $(".world-watch-list-key").slideUp("slow");
                 $(".christian-percent-key").slideUp("slow");
+                $(".organizations-key").slideUp("slow");
                 $('.jvectormap-marker').hide();
 
                 map.series.regions[0].setValues(unset);
@@ -196,6 +219,9 @@
             $('#view_organizations').click(function(e) {
                 let map = $('#map1').vectorMap('get', 'mapObject');
                 $('.jvectormap-marker').toggle();
+                $(".world-watch-list-key").slideUp("slow");
+                $(".christian-percent-key").slideUp("slow");
+                $(".organizations-key").slideDown("slow");
             });
         })
 

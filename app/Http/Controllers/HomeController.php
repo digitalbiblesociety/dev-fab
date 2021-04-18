@@ -10,9 +10,13 @@ class HomeController extends Controller
 
     public function index()
     {
-        $organizations = Organization::select('slug','latitude','longitude')->get();
+        $fab_id = Organization::where('id','the-forum-of-bible-agencies')->select('id')->first()->id;
+
+        $organizations = Organization::doesnthave('fobai')->get();
+        $fobai = Organization::has('fobai')->get();
+
         $countries     = Country::with('persecution')->get();
-        return view('index', compact('countries', 'organizations'));
+        return view('index', compact('countries', 'organizations','fobai'));
     }
 
 
