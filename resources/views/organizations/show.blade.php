@@ -42,7 +42,7 @@
 @section('main')
 
     @include('shin::_partials.banner', [
-        'title'           => $organization->id,
+        'title'           => $organization->name,
         'subtitle'        => '',
         'tabs'  => [
             'bibles'     => "Bibles",
@@ -52,15 +52,14 @@
 
     <div class="row">
         <aside class="medium-12 large-4 small-hide">
-            <div class="row">
-            <div class="large-12 small-4">
+            <div>
+
                 <div class="logo">{!! $organization->logo !!}</div>
-            </div>
+
             @if($organization->abbreviation)
                 <small>{{ $organization->abbreviation }}</small>
             @endif
-
-            <address class="large-12 small-8">
+            <address>
                 <b>Address: </b>{{ $organization->address }}<br>
                 <b>Phone: </b>{{ $organization->phone }}<br>
                 <b>Email: </b>{{ $organization->email }}<br>
@@ -105,21 +104,23 @@
             <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Title Vernacular</th>
-                        <th>Language</th>
-                        <th>iso</th>
-                        <th>date</th>
+                        <th>{{ trans('shin::fields.languages') }}</th>
+                        <th>{{ trans('shin::fields.country') }}</th>
+                        <th>{{ trans('shin::fields.date') }}</th>
+                        <th>{{ trans('shin::fields.title') }}</th>
+                        <th>{{ trans('shin::fields.title_vernacular') }}</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                 @foreach($bibles as $bible)
                     <tr>
+                        <td><a href="/languages/{{ $bible->iso }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
+                        <td><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#{{ $bible->country_id }}"></use></svg> {{ optional($bible->country)->name ?? '' }}</td>
+                        <td>{{ $bible->date }}</td>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title }}</a></td>
                         <td><a href="/bibles/{{ $bible->id }}">{{ $bible->title_vernacular }}</a></td>
-                        <td><a href="/languages/{{ $bible->iso }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
                         <td data-hidden>{{ $bible->iso }}</td>
-                        <td>{{ $bible->date }}</td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -129,9 +130,9 @@
                 <table id="resources_table" class="table responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Title Vernacular</th>
-                        <th>iso</th>
+                        <th>{{ trans('shin::fields.title') }}</th>
+                        <th>{{ trans('shin::fields.title_vernacular') }}</th>
+                        <th>{{ trans('shin::fields.languages') }}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -139,7 +140,7 @@
                         <tr>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title'] }}</a></td>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title_vernacular'] }}</a></td>
-                            <td><a href="/languages/{{ $resource['iso'] }}">{{ $resource['iso'] }}</a></td>
+                            <td><a href="/languages/{{ $resource['iso'] }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
                         </tr>
                     @endforeach
                     </tbody>

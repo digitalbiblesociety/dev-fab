@@ -39,9 +39,13 @@ class OrganizationsController extends Controller
             ->select('bible_id')->get()->pluck('bible_id')->toArray();
         $bible_links = DB::connection('shin')->table('bible_links')->where('bible_links.organization_id', $id)
             ->select('bible_id')->get()->pluck('bible_id')->toArray();
-        $bibles = Bible::whereIn('id',array_merge($bible_equivalents,$bible_organization,$bible_links))->with('language:name')->get();
+        $bibles = Bible::whereIn('id',array_merge($bible_equivalents,$bible_organization,$bible_links))->with('language:iso,name','country')->get();
 
-        $resources = Resource::where('organization_id',$id)->get();
+        $resources = Resource::where('organization_id',$id)->with('language:iso,name')
+                             ->select('title', 'title_vernacular','iso','link','type')->get()->toArray();
+        $films = Film::where('organization_id',$id)->with('language:iso,name')->select('title', 'title_vernacular','iso','url as link','type as film')
+                                                   ->get()->toArray();
+        $resources = array_merge($resources,$films);
 
         return view('organizations.show', compact('organization', 'bibles','resources'));
     }
