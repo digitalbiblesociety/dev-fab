@@ -19,19 +19,12 @@
 
 @section('subnav')
     <nav role="tablist">
-        <a id="view_bibles">{{ trans('shin::fields.bibles') }}</a>
-        <a id="view_resources">{{ trans('shin::fields.resources') }}</a>
+        <a id="view_bibles" href="#bibles">{{ trans('shin::fields.bibles') }}</a>
+        <a id="view_resources" href="#resources">{{ trans('shin::fields.resources') }}</a>
     </nav>
 @endsection
 
 @section('main')
-
-    @include('shin::_partials.banner', [
-        'tabs'  => [
-            'bibles'     => "Bibles",
-            'resources'  => "Resources"
-        ]
-    ])
 
     <div class="row">
         <aside class="medium-3 small-hide org-info">
