@@ -6,6 +6,7 @@
     <style>
         #banner         {margin-bottom: 3rem; text-align: center;background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }});}
         #banner h1      {padding: 3rem 0;}
+        .org-name       {font-size:1.8em; color: var(--primary-color); text-transform: uppercase; margin: 1.3em 0 .25em;}
         .org-info       {padding: 0 1.5em;}
         .logo           {margin: 0 auto;max-width: 200px;width: 100%;}
         .social-links   {text-align: center;}
@@ -13,7 +14,8 @@
         address         {font-size: .8em; display: inline-flex;align-items: center;justify-content: center;flex-direction: column; font-style:normal;
                         margin-bottom:2em;}
         address b       {margin-top: 1rem;}
-        h5              {margin-top:2em;text-transform: uppercase}
+        #subheader nav[role=tablist] a[aria-selected=true] {border-radius: 10px 10px 0 0; color: #000;}
+
     </style>
 @endsection
 
@@ -34,7 +36,6 @@
             @if($organization->abbreviation)
                 <small>{{ $organization->abbreviation }}</small>
             @endif
-            <h5>{{ $organization->id }}</h5>
             <address>
                 <b>Address: </b>{{ $organization->address }}
                 <b>Country: </b>{{ $organization->country }}
@@ -82,6 +83,7 @@
         </aside>
 
         <div class="medium-9">
+            <div class="row org-name">{{ $organization->name }}</div>
             <section role="tabpanel" id="bibles" aria-hidden="{{ $bibles->count() == 0 ? 'true' : 'false' }}">
             <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
                 <thead>
