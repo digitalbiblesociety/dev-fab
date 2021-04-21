@@ -21,8 +21,8 @@
 
 @section('subnav')
     <nav role="tablist">
-        <a id="view_bibles" href="#bibles">{{ trans('shin::fields.bibles') }}</a>
-        <a id="view_resources" href="#resources">{{ trans('shin::fields.resources') }}</a>
+        <a id="view_bibles" href="#bibles">{{ trans('shin::fields.bibles') }} ({{ count($bibles) }})</a>
+        <a id="view_resources" href="#resources">{{ trans('shin::fields.resources') }} ({{ count($resources) }})</a>
     </nav>
 @endsection
 
