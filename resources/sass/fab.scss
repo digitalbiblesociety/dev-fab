@@ -37,7 +37,7 @@ main {padding:0}
 .copyright  {text-align: center; color:#ddd}
 
 #subheader  {background-color:#222;}
-
+#subheader nav[role=tablist]  {padding:0;}
 
 #subheader input, #translation_wrap {
     height: 30px;color: #222;font-size: .9rem;

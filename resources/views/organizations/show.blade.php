@@ -15,14 +15,16 @@
                         margin-bottom:2em;}
         address b       {margin-top: 1rem;}
         #subheader nav[role=tablist] a[aria-selected=true] {border-radius: 10px 10px 0 0; color: #000;}
+        .count {background-color: var(--primary-color);width: 2.7em; color: #fff;
+            border-radius: 16px; margin: 0 3px 0 9px; font-size:.8em; padding:3px; text-decoration: none;}
 
     </style>
 @endsection
 
 @section('subnav')
     <nav role="tablist">
-        <a id="view_bibles" href="#bibles">{{ trans('shin::fields.bibles') }} ({{ count($bibles) }})</a>
-        <a id="view_resources" href="#resources">{{ trans('shin::fields.resources') }} ({{ count($resources) }})</a>
+        <a id="view_bibles" href="#bibles"><span class="count">{{ count($bibles) }}</span>{{ trans('shin::fields.bibles') }} </a>
+        <a id="view_resources" href="#resources"><span class="count">{{ count($resources) }}</span>{{ trans('shin::fields.resources') }} </a>
     </nav>
 @endsection
 
@@ -114,17 +116,21 @@
                 <table id="resources_table" class="table responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
+                        <th>{{ trans('shin::fields.languages') }}</th>
                         <th>{{ trans('shin::fields.title') }}</th>
                         <th>{{ trans('shin::fields.title_vernacular') }}</th>
-                        <th>{{ trans('shin::fields.languages') }}</th>
+                       {{-- <th>{{ trans('shin::fields.type') }}</th>  --}}
+                        <th>ISO</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($resources as $resource)
                         <tr>
+                            <td><a href="{{ $resource['link'] }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title'] }}</a></td>
                             <td><a href="{{ $resource['link'] }}">{{ $resource['title_vernacular'] }}</a></td>
-                            <td><a href="{{ i18n_link("/languages/".$resource['iso']) }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
+                            {{-- <td>{{ $resource['type'] }}</td> --}}
+                            <td>{{ $resource['iso'] }}</td>
                         </tr>
                     @endforeach
                     </tbody>
