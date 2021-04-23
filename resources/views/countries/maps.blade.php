@@ -12,6 +12,6 @@
 
 @section('main')
 
-    @include('shin::countries.index')
+    @include('shin::countries.maps')
 
 @endsection
