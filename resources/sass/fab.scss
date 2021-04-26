@@ -10,15 +10,30 @@
 @import "vendor/digitalbiblesociety/shin/src/resources/sass/components/datatables";
 @import "map";
 
-nav[role=tablist] a {
-  background-color: #FFF;
-}
+header, #subheader, main, footer, .row
+                {max-width: 1380px;margin: 0 auto;}
+body            {background-color: #ffffff; background-image: url(/img/fabric-plaid.png);}
+header          {background-color: #ffffff;}
+main            {padding:0 1em; background-color: #fff;}
 
-main {padding:0}
+                @media (min-width:1380px){ main, header, #subheader, footer {border: 1px solid #d2d2d2; border-width: 0 1px;}
+                            header  {border-radius: 16px 16px 0 0; border-top-width:1px}}
 
-.row, #header   {max-width: 1200px;margin: 0 auto;}
-#header .logo-text {font-size: 1.7em;text-indent: .5em;color:#222; text-transform: uppercase};
+#header .logo-text  {font-size: 1.7em;text-indent: .5em;color: var(--primary-color); text-transform: uppercase};
 #header #logo img   {width:50px; height:50px;}
+#subheader          {background-color:#222;}
+
+#subheader nav[role=tablist]  {padding:0;}
+
+#subheader input, #translation_wrap {
+    height: 30px;color: #222;font-size: .9rem;
+    box-shadow: inset 2px 4px 7px -2px rgb(51 51 51 / 25%);border: thin solid #e8e8e8;}
+
+#subheader input {
+    margin: 0 1rem; text-indent: 2.6rem; position:absolute; right:36px;
+    background: url(/img/search_glass.svg) no-repeat 6px #f2f2f2; background-size: 16px 16px;}
+#i18n_wrap_open     {margin: 0; background-color: #f2f2f2; position:absolute; right:12px;}
+
 
 .banner.gradient .banner-image:after    {content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
                     background: linear-gradient(180deg,rgba(167,207,223,.65) 0,rgba(35,83,138,.8));}
@@ -36,20 +51,14 @@ main {padding:0}
 .footer-logo  {min-width:260px; height:auto;}
 .copyright  {text-align: center; color:#ddd}
 
-#subheader  {background-color:#222;}
-#subheader nav[role=tablist]  {padding:0;}
 
-#subheader input, #translation_wrap {
-    height: 30px;color: #222;font-size: .9rem;
-    box-shadow: inset 2px 4px 7px -2px rgb(51 51 51 / 25%);border: thin solid #e8e8e8;}
-
-#subheader input {
-    margin: 0 1rem; text-indent: 2.6rem; position:absolute; right:36px;
-    background: url(/img/search_glass.svg) no-repeat 6px #f2f2f2; background-size: 16px 16px;}
-#i18n_wrap_open     {margin: 0; background-color: #f2f2f2; position:absolute; right:12px;}
 
 nav[role=tablist] a {background:none;}
 
+// DataTables Asides
 
-
+.aside-page     {padding:0 0 0 1em; margin: 1.25em 0 1.75em 0;}
+.aside-icon     {width: 1.6em; height:1.6em; fill:var(--primary-color);}
+.aside-title    {font-size: 1.6em; padding-left: .5em; color: var(--primary-color); text-transform: uppercase;}
+            @media all and (max-width:940px) { .aside-icon {width: 1.4em; height: 1.4em;} .aside-title {font-size:1.35em; padding-left: .25em;}}
 
