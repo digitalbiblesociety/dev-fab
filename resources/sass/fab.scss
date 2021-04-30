@@ -11,18 +11,25 @@
 @import "map";
 
 header, #subheader, main, footer, .row
-                {max-width: 1380px;margin: 0 auto;}
+                {max-width: 1290px;margin: 0 auto;}
 body            {background-color: #ffffff; background-image: url(/img/fabric-plaid.png);}
 header          {background-color: #ffffff;}
 main            {padding:0 1em; background-color: #fff;}
 
-                @media (min-width:1380px){ main, header, #subheader, footer {border: 1px solid #d2d2d2; border-width: 0 1px;}
+                @media (min-width:1290px){ main, header, #subheader, footer {border: 1px solid #d2d2d2; border-width: 0 1px;}
                             header  {border-radius: 16px 16px 0 0; border-top-width:1px}}
 
-#header .logo-text  {font-size: 1.7em;text-indent: .5em;color: var(--primary-color); text-transform: uppercase};
+#header .logo-text  {font-size: clamp(1.3rem, 3vw, 1.6rem); text-indent: .45em;color: var(--primary-color); text-transform: uppercase};
 #header #logo img   {width:50px; height:50px;}
-#subheader          {background-color:#222;}
-
+#header nav a       {padding: .8rem 1rem;}
+#subheader {
+    border-top: thin solid #ddd;
+    background: #EFEFEF;
+    background: -webkit-linear-gradient(top, #EFEFEF, #CDCDCD);
+    background: -moz-linear-gradient(top, #EFEFEF, #CDCDCD);
+    background: linear-gradient(to bottom, #EFEFEF, #CDCDCD);
+}
+#subheader nav a    {color:#4a4a4a;}
 #subheader nav[role=tablist]  {padding:0;}
 
 #subheader input, #translation_wrap {
@@ -57,7 +64,7 @@ nav[role=tablist] a {background:none;}
 
 // DataTables Asides
 
-.aside-page     {padding:0 0 0 1em; margin: 1.25em 0 1.75em 0;}
+.aside-page     {padding:0; margin: 1.25em 0 1.75em 0;}
 .aside-icon     {width: 1.6em; height:1.6em; fill:var(--primary-color);}
 .aside-title    {font-size: 1.6em; padding-left: .5em; color: var(--primary-color); text-transform: uppercase;}
             @media all and (max-width:940px) { .aside-icon {width: 1.4em; height: 1.4em;} .aside-title {font-size:1.35em; padding-left: .25em;}}
