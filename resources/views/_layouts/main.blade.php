@@ -44,7 +44,6 @@
             ['url' => i18n_link('about'), 'icon' => 'nav_info', 'name' => trans('shin::fields.about'), 'class' => 'nav-about']
         ]
     ])
-    @include('shin::_partials.nav.subheader')
 
     <main>
         <div id="search_results"></div>

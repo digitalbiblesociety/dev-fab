@@ -25,5 +25,11 @@ class CountriesController extends Controller
         return view('countries.show', compact('country'));
     }
 
+    public function maps($id)
+    {
+        $country = Country::with('languages.currentTranslation', 'languages.bibles', 'languages.resources', 'languages.films', 'currentTranslation')->find($id);
+        return view('countries.maps.countrymap', compact('country'));
+    }
+
 
 }

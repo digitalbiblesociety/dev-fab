@@ -18,6 +18,7 @@ Route::group(['prefix' => $iso], function()
 
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
+    Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
     Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
     Route::get('countries',           [CountriesController::class, 'index'])->name('countries.index');
     Route::get('organizations/{id}',  [OrganizationsController::class, 'show'])->name('organizations.show');
@@ -26,6 +27,7 @@ Route::group(['prefix' => $iso], function()
     Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
     Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');
 
+    Route::view('world-maps',         'countries.maps.worldmap');
     Route::view('about',              'about.index')->name('about');
     Route::view('about/contact',      'about.contact')->name('contact');
     Route::view('about/privacy',      'about.privacy')->name('privacy');
