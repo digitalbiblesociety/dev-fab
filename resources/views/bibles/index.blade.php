@@ -10,11 +10,24 @@
 
 @section('main')
 
-    @include('shin::_partials.nav.breadcrumbs', [
-       'breadcrumbs' => [
-            i18n_link('/')  => trans('shin::fields.home'),
-            '#'   => trans('shin::fields.bibles')
-        ]])
+    @include('shin::_partials.banner', [
+    'title'           => trans('shin::fields.bibles'),
+    'subtitle'        => trans('shin::fab.bibles.subtitle'),
+    'icon'            => 'bible',
+    'iconClass'       => 'banner-icon',
+    'iconType'        => 'icons',
+    'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg',
+    'tabs' => [
+        '#' => trans('shin::fields.information'),
+        i18n_link('/bibles')  => trans('shin::fields.films'),
+        i18n_link('/bibles')  => trans('shin::fields.resources'),
+    ],
+    'breadcrumbs' => [
+        i18n_link('/')  => trans('shin::fields.home'),
+     '#'   => trans('shin::fields.bibles')
+    ]
+])
+
 
 
     @include('shin::bibles.index')

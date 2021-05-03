@@ -22,19 +22,26 @@
 
 @endsection
 
-@section('subnav')
+@section('main')
 
-    @include('shin::_partials.nav.subnav', [
-    'links' => [
+    @include('shin::_partials.banner', [
+    'title'           => trans('shin::fab.about.contact.title'),
+    'subtitle'        => trans('shin::fab.about.contact.subtitle'),
+    'icon'            => 'people_agencies',
+    'iconClass'       => 'banner-icon',
+    'iconType'        => 'icons',
+    'backgroundImage' => 'https://images.bible.cloud/fab/banners/contributors.jpg',
+    'tabs' => [
         i18n_link('/about')     => trans('shin::fields.about'),
         i18n_link('/about/faq') => trans('shin::fields.faq'),
         '#'                     => trans('shin::fields.contact')
-     ]
-    ])
-
-@endsection
-
-@section('main')
+    ],
+    'breadcrumbs' => [
+            i18n_link('/')  => trans('shin::fields.home'),
+            i18n_link('/about')   => trans('shin::fields.about'),
+            '#'                         => trans('shin::fields.contact'),
+    ]
+])
 
 
     <form action="https://formspree.io/jon@dbs.org" method="POST" _lpchecked="1" >

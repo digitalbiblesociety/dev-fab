@@ -12,19 +12,27 @@
 @endsection
 
 
-@section('subnav')
 
-    @include('shin::_partials.nav.subnav', [
-    'links' => [
+@section('main')
+
+    @include('shin::_partials.banner', [
+    'title'           => trans('shin::fab.about.faq.title'),
+    'subtitle'        => trans('shin::fab.about.faq.subtitle'),
+    'icon'            => 'people_agencies',
+    'iconClass'       => 'banner-icon',
+    'iconType'        => 'icons',
+    'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg',
+    'tabs' => [
         i18n_link('/about')         => trans('shin::fields.about'),
         '#'                         => trans('shin::fields.faq'),
         i18n_link('/about/contact') => trans('shin::fields.contact')
-     ]
-    ])
-
-@endsection
-
-@section('main')
+    ],
+    'breadcrumbs' => [
+            i18n_link('/')  => trans('shin::fields.home'),
+            i18n_link('/about')   => trans('shin::fields.about'),
+            '#'                         => trans('shin::fields.faq'),
+    ]
+])
 
 
     <div class="row small-center" id="faq">

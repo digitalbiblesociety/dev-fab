@@ -11,11 +11,11 @@
 
     @include('shin::_partials.banner', [
         'title'           => $country->currentTranslation->name ?? $country->name,
-        'subtitle'        => 'A country of Asia',
+        'subtitle'        => trans('shin::fab.countries.of_region'),
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/country/'.$country->id.'.jpg',
-        'icon'            => $country->id,
+        'icon'            => 'https://images.bible.cloud/flags/'.strtolower($country->id).'.svg',
         'iconClass'       => 'banner-flag',
-        'iconType'        => 'flags',
+        'iconType'        => 'link',
         'tabs' => [
             '#'                                        => trans('shin::fields.languages'),
             i18n_link("/countries/$country->id/maps")  => trans('shin::fields.geo.maps')

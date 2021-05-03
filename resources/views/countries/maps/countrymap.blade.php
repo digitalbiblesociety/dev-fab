@@ -4,13 +4,11 @@
     @parent
     <title>{{ $country->name }} | {{ trans('app.title') }}</title>
     <style>
-        #subheader          {margin-top:82px; background:#fff;}
         a.nav-countries     {color: var(--primary-color)!important}
-        .country-aside      {padding:1.2em;max-width:300px;}
-        .country-aside p    {font-size:.9rem; line-height: 1rem;}
-        .country-overview   {margin: 1em 0; font-size:.78em;}
-        .country-location   {margin:2em auto 1em auto; max-width:240px;}
-        .country-facts      {margin: 0 0 1.5em 0;}
+        .banner.gradient .banner-image:after       {background: linear-gradient(180deg, rgba(167, 207, 223, 0.4) 0, rgba(35, 83, 138, 0.6));}
+
+
+
     </style>
 @endsection
 
@@ -18,11 +16,13 @@
 
     @include('shin::_partials.banner', [
         'title'           => $country->currentTranslation->name ?? $country->name,
-        'subtitle'        => 'A country of Asia',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/country/'.$country->id.'.jpg',
+        'subtitle'        => trans('shin::fab.countries.of_region'),
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/satellite/'.$country->id.'.jpg',
         'icon'            => 'https://images.bible.cloud/maps/icons/'.strtolower($country->id).'_white.png',
+        'iconClass'       => 'banner-country',
+        'iconType'        => 'link',
         'tabs' => [
-            i18n_link('/countries/') => trans('shin::fields.languages'),
+            i18n_link("/countries/$country->id") => $country->name,
             '#'                      => trans('shin::fields.geo.maps')
         ],
         'breadcrumbs' => [
