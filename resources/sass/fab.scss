@@ -29,17 +29,7 @@ main            {padding:0 1em; background-color: #fff;}
     background: -moz-linear-gradient(top, #EFEFEF, #CDCDCD);
     background: linear-gradient(to bottom, #EFEFEF, #CDCDCD);
 }
-#subheader nav a    {color:#4a4a4a;}
-#subheader nav[role=tablist]  {padding:0;}
 
-#subheader input, #translation_wrap {
-    height: 30px;color: #222;font-size: .9rem;
-    box-shadow: inset 2px 4px 7px -2px rgb(51 51 51 / 25%);border: thin solid #e8e8e8;}
-
-#subheader input {
-    margin: 0 1rem; text-indent: 2.6rem; position:absolute; right:36px;
-    background: url(/img/search_glass.svg) no-repeat 6px #f2f2f2; background-size: 16px 16px;}
-#i18n_wrap_open     {margin: 0; background-color: #f2f2f2; position:absolute; right:12px;}
 
 
 .banner.gradient .banner-image:after    {content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
@@ -64,7 +54,7 @@ nav[role=tablist] a {background:none;}
 
 // DataTables Asides
 
-.aside-page     {padding:0; margin: 1.25em 0 1.75em 0;}
+.aside-page     {padding:0; margin: 1em 0 1.75em 0;}
 .aside-icon     {width: 1.6em; height:1.6em; fill:var(--primary-color);}
 .aside-title    {font-size: 1.6em; padding-left: .5em; color: var(--primary-color); text-transform: uppercase;}
             @media all and (max-width:940px) { .aside-icon {width: 1.4em; height: 1.4em;} .aside-title {font-size:1.35em; padding-left: .25em;}}

@@ -1,17 +1,13 @@
 @extends('_layouts.main')
-
 @section('header')
     @parent
     <style>
-        #subheader          {margin-top:82px; background:#fff;}
         a.nav-languages     {color: var(--primary-color)!important}
     </style
 @endsection
 
-
 @section('subnav')
-
-@include('shin::_partials.banner', [
+    @include('shin::_partials.banner', [
     'title'           => $language->name,
     'subtitle'        => '',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',

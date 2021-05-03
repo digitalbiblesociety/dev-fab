@@ -20,6 +20,8 @@
         <a id="view_christians">{{ trans('shin::fields.christians') }}</a>
         <a id="view_organizations">{{ trans('shin::fields.organizations') }}</a>
         <a id="view_persecution">{{ trans('shin::fields.world_watch_list') }}</a>
+
+    @include('shin::_partials.nav.subnav-buttons')
     </nav>
 @endsection
 

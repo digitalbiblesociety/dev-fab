@@ -1,3 +1,4 @@
+@extends('_layouts.main')
 @section('header')
     @parent
     <title>{{ $country->name }} | {{ trans('app.title') }}</title>
@@ -12,15 +13,20 @@
     </style>
 @endsection
 
-@extends('_layouts.main')
 
 @section('subnav')
-    @include('shin::_partials.nav.subnav', [
-        'links' => [
-            '#'  => trans('shin::fields.countries'),
-            i18n_link('/countries/maps')   => trans('shin::fields.geo.maps')]
-    ])
+    @include('shin::_partials.banner-country', [
+    'title'           => $country->currentTranslation->name ?? $country->name,
+    'subtitle'        => 'A country of Asia',
+    'backgroundImage' => 'https://images.bible.cloud/fab/banners/country/'.$country->id.'.jpg',
+    'icon'            => 'https://images.bible.cloud/maps/icons/'.strtolower($country->id).'_white.png',
+    'tabs' => [
+        i18n_link('/countries/') => trans('shin::fields.languages'),
+        '#'  => trans('shin::fields.geo.maps')
+        ]
+])
 @endsection
+
 
 
 
