@@ -1,4 +1,3 @@
-#map1                       {margin:0 -1rem;}
 .jvectormap-container       {width:100%;height:100%;position:relative;overflow:hidden; margin:0}
 .jvectormap-tip             {position:absolute;display:none;background:#222;color:#fff;padding:3px;text-transform: capitalize}
 .jvectormap-zoomin,
@@ -72,25 +71,3 @@
 }
 .continent-nav a:hover                      {cursor:pointer; fill:var(--secondary-color);}
 .text-left  {text-align: left}
-
-#search_input {
-    position: relative;
-    vertical-align: top;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 383px;
-    display: block;
-    height: 46px;
-    border: none;
-    background-image: none;
-    margin-top: -1px;
-    box-shadow: none;
-    text-indent: 10px;
-    color: #FFF;
-}
-#search_input::placeholder {
-    color: #FFF;
-}
-
-#search_input:focus {
-    outline: 3px solid #222;
-}

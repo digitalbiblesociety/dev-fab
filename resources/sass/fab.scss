@@ -14,7 +14,7 @@ header, #subheader, main, footer, .row
                 {max-width: 1290px;margin: 0 auto;}
 body            {background-color: #ffffff; background-image: url(/img/fabric-plaid.png);}
 header          {background-color: #ffffff;}
-main            {padding:0 1em; background-color: #fff;}
+main            {background-color: #fff;}
 
                 @media (min-width:1290px){ main, header, #subheader, footer {border: 1px solid #d2d2d2; border-width: 0 1px;}
                             header  {border-radius: 16px 16px 0 0; border-top-width:1px}}
@@ -22,7 +22,6 @@ main            {padding:0 1em; background-color: #fff;}
 #header .logo-text  {font-size: clamp(1.3rem, 3vw, 1.6rem); text-indent: .45em;color: var(--primary-color); text-transform: uppercase};
 #header #logo img   {width:50px; height:50px;}
 #header nav a       {padding: .8rem 1rem;}
-#banner             {margin: 0 -1rem;}
 #subheader          {border-top: thin solid #ddd; background: #EFEFEF;
                     background: -webkit-linear-gradient(top, #EFEFEF, #CDCDCD);background: -moz-linear-gradient(top, #EFEFEF, #CDCDCD);
                     background: linear-gradient(to bottom, #EFEFEF, #CDCDCD);}

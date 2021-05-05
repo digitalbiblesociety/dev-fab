@@ -10,6 +10,9 @@
     </style>
 @endsection
 
+@section('page_info')
+    @include('shin::help.about')
+@endsection
 
 @section('main')
 
@@ -19,6 +22,7 @@
     'icon'            => 'people_agencies',
     'iconClass'       => 'banner-icon',
     'iconType'        => 'icons',
+    'page_info'       => true,
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/about.jpg',
     'tabs' => [
         '#'                         => trans('shin::fields.about'),
