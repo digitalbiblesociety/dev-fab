@@ -11,23 +11,24 @@
 @section('main')
 
     @include('shin::_partials.banner', [
-        'title'           => trans('shin::fields.countries'),
-        'subtitle'        => trans('shin::fab.countries.subtitle'),
-        'icon'            => 'menu_countries',
+        'title'           => trans('shin::fab.languages.language_maps'),
+        'subtitle'        => trans('shin::fab.languages.language_maps_subtitle'),
+        'icon'            => 'menu_languages',
         'iconClass'       => 'banner-icon',
         'iconType'        => 'icons',
         'tabs'            => [
-            i18n_link('/countries') => trans('shin::fields.information'),
+            i18n_link('/languages/') => trans('shin::fields.languages'),
             '#' => trans('shin::fields.geo.maps')
 
         ],
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
         'breadcrumbs' => [
             i18n_link('/')  => trans('shin::fields.home'),
-            '#'   => trans('shin::fields.countries')
+            i18n_link('/languages/')  => trans('shin::fields.languages'),
+            '#' => trans('shin::fab.languages.language_maps')
         ]
     ])
 
-    @include('shin::countries.maps.world-maps')
+    @include('shin::languages.language-maps')
 
 @endsection

@@ -47,7 +47,10 @@
 
     <main>
         <div id="search_results"></div>
-        @yield('main')
+            @yield('banner')
+        <div id="content">
+            @yield('main')
+        </div>
     </main>
 
     <footer id="footer">

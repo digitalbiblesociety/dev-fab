@@ -14,27 +14,26 @@
     @include('shin::help.about')
 @endsection
 
-@section('main')
-
-    @include('shin::_partials.banner', [
-    'title'           => trans('shin::fab.about.title'),
-    'subtitle'        => trans('shin::fab.about.subtitle'),
-    'icon'            => 'people_agencies',
-    'iconClass'       => 'banner-icon',
-    'iconType'        => 'icons',
-    'page_info'       => true,
-    'backgroundImage' => 'https://images.bible.cloud/fab/banners/about.jpg',
-    'tabs' => [
-        '#'                         => trans('shin::fields.about'),
-        i18n_link('/about/faq')     => trans('shin::fields.faq'),
-        i18n_link('/about/contact') => trans('shin::fields.contact')
-    ],
-    'breadcrumbs' => [
-            i18n_link('/')  => trans('shin::fields.home'),
-            '#'   => trans('shin::fields.about'),
-    ]
+@include('shin::_partials.banner', [
+'title'           => trans('shin::fab.about.title'),
+'subtitle'        => trans('shin::fab.about.subtitle'),
+'icon'            => 'people_agencies',
+'iconClass'       => 'banner-icon',
+'iconType'        => 'icons',
+'page_info'       => true,
+'backgroundImage' => 'https://images.bible.cloud/fab/banners/about.jpg',
+'tabs' => [
+'#'                         => trans('shin::fields.about'),
+i18n_link('/about/faq')     => trans('shin::fields.faq'),
+i18n_link('/about/contact') => trans('shin::fields.contact')
+],
+'breadcrumbs' => [
+    i18n_link('/')  => trans('shin::fields.home'),
+    '#'   => trans('shin::fields.about'),
+]
 ])
 
+@section('main')
 
     <section class="about-content">
         <div class="row">

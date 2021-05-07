@@ -19,7 +19,8 @@
 
     @include('shin::_partials.banner', [
         'noGradient' => true,
-        'map'  => 'map1'
+        'map'  => 'map1',
+        'page_info' => true
     ])
 
     <div class="christian-percent-key">
