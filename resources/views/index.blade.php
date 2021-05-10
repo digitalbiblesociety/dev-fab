@@ -10,6 +10,8 @@
         div.answers    {margin: 2em auto; width: 60%; display:flex;} @media (max-width:46em){div.answers {width:80%;}}
         .answers-image {margin-right:2em;}
         .answers-svg   {width:12em}
+        nav[role=tablist] a {background:none;border:none;}
+        nav[role=tablist] a:hover   {color:var(--primary-color);}
 
     </style>
     <title>World Map | Find a Bible</title>

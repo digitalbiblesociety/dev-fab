@@ -9,8 +9,6 @@
 
 @endsection
 
-
-
 @section('main')
 
     @include('shin::_partials.banner', [
@@ -21,8 +19,8 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
-        '#'  => trans('shin::fields.languages'),
-        i18n_link('/languages/language-maps')   => trans('shin::fields.geo.maps'),
+'#'                                    => trans('shin::fields.languages'),
+        i18n_link('/languages/maps')   => trans('shin::fields.geo.maps'),
     ],
     'breadcrumbs' => [
         i18n_link('/')  => trans('shin::fields.home'),

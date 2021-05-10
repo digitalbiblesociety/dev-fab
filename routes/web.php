@@ -16,6 +16,7 @@ Route::group(['prefix' => $iso], function()
 {
     Route::get('/',                   [HomeController::class, 'index'])->name('home');
 
+    Route::get('languages/{id}/maps', [CountriesController::class, 'maps'])->name('languages.maps');
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
     Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
