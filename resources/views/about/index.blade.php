@@ -4,6 +4,7 @@
     @parent
     <title>{{ trans('shin::fields.about') }} | {{ trans('app.title') }}</title>
     <style>
+        a.nav-about     {color: var(--primary-color)!important}
         .about-content  {margin: 1rem auto;max-width: 800px; padding:1em 10%;}
         .about          {margin-bottom:1.5em;}
         h4              {text-align:left;}
