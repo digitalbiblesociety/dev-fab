@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use DigitalBibleSociety\Shin\Models\Country\Country;
+use DigitalBibleSociety\Shin\Transformers\LanguageTableTransformer;
+use DigitalBibleSociety\Shin\Transformers\LanguageTransformer;
 use i18n;
+use League\Fractal\Serializer\DataArraySerializer;
+use Spatie\Fractal\Facades\Fractal;
 
 class CountriesController extends Controller
 {
@@ -22,7 +26,8 @@ class CountriesController extends Controller
     public function show($id)
     {
         $country = Country::with('languages.currentTranslation', 'languages.bibles', 'languages.resources', 'languages.films', 'currentTranslation')->find($id);
-        return view('countries.show', compact('country'));
+        $languages = Fractal::create($country->languages, LanguageTableTransformer::class, DataArraySerializer::class)->toArray();
+        return view('countries.show', compact('country','languages'));
     }
 
     public function maps($id)
