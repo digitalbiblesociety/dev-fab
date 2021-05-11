@@ -5,7 +5,7 @@
     <title>{{ trans('shin::fields.contact') }} | {{ trans('app.title') }}</title>
     <style>
         a.nav-about     {color: var(--primary-color)!important}
-        .fab-form        {margin: 2em auto; max-width:500px;}
+        .fab-form        {margin: 2em auto; max-width:600px;}
         .fab-form h4     {padding:0 2em; text-align: left;}
         .fbox            {max-width: 480px; margin:0 auto 1em auto;}
         .fbox input, .fbox textarea

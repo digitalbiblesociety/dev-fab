@@ -5,7 +5,7 @@
     <title>{{ trans('shin::fields.faq') }} | {{ trans('app.title') }}</title>
     <style>
         a.nav-about     {color: var(--primary-color)!important}
-        #faq            {padding:2em 10%;}
+        #faq            {padding:2em 15%;}
         #faq div        {margin-top:1em;}
         #faq h3, #faq p {padding:1rem; text-align: left;}
         .faq-icon       {}
