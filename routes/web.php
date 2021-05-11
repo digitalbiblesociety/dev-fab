@@ -16,7 +16,6 @@ Route::group(['prefix' => $iso], function()
 {
     Route::get('/',                   [HomeController::class, 'index'])->name('home');
 
-    Route::get('languages/{id}/maps', [CountriesController::class, 'maps'])->name('languages.maps');
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
     Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
@@ -28,6 +27,7 @@ Route::group(['prefix' => $iso], function()
     Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
     Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');
 
+    Route::view('language/maps',      'languages.maps')->name('languages.maps');
     Route::view('world-maps',         'countries.maps.worldmap');
     Route::view('about',              'about.index')->name('about');
     Route::view('about/contact',      'about.contact')->name('contact');
