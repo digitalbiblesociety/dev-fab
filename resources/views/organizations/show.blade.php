@@ -28,115 +28,18 @@
     </nav>
 @endsection
 
+@include('shin::_partials.banner', [
+    'title' => $organization->name,
+    'tabs' => [
+        'bibles' => 'Bibles',
+        'resources' => 'Resources'
+    ]
+])
+
 @section('main')
-
-    <div class="row">
-        <aside class="medium-3 small-hide org-info">
-            <div>
-                <div class="logo">{!! $organization->logo !!}</div>
-
-            @if($organization->abbreviation)
-                <small>{{ $organization->abbreviation }}</small>
-            @endif
-            <address>
-                <b>Address: </b>{{ $organization->address }}
-                <b>Country: </b>{{ $organization->country }}
-                <b>Phone: </b>{{ $organization->phone }}<br>
-                <b>Email: </b>{{ $organization->email }}<br>
-            </address>
-            <nav class="social-links">
-            <a href="{{ $organization->url_facebook }}" target="_blank">
-                <svg class="icon">
-                    <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social_facebook"></use>
-                </svg>
-            </a>
-            <a href="{{ $organization->url_twitter }}" target="_blank">
-                <svg class="icon">
-                    <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social_twitter"></use>
-                </svg>
-            </a>
-            <a href="{{ $organization->url_website }}" target="_blank">
-                <svg class="icon">
-                    <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#type_external"></use>
-                </svg>
-            </a>
-            </nav>
-            {{-- <a href="{{ $organization->url_website }}">website
-            <svg class="icon">
-                <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#url_website"></use>
-            </svg>
-            </a>
-            <a href="{{ $organization->url_donate }}">donate
-                <svg class="icon">
-                    <use xmlns:xlink="https://www.w3.org/1999/xlink"
-                         xlink:href="/img/icons.svg#menu_donate"></use>
-                </svg>
-            </a> --}}
-
-            {{--
-                {{ $organization->address }}
-                {{ $organization->address2 }}
-                {{ $organization->city }}
-                {{ $organization->state }}
-                {{ $organization->country }}
-                {{ $organization->zip }}
-            --}}
-            </div>
-        </aside>
-
-        <div class="medium-9">
-            <div class="row org-name">{{ $organization->name }}</div>
-            <section role="tabpanel" id="bibles" aria-hidden="{{ $bibles->count() == 0 ? 'true' : 'false' }}">
-            <table id="bibles_table" class="table responsive" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th data-sort-default="asc">{{ trans('shin::fields.languages') }}</th>
-                        <th>{{ trans('shin::fields.country') }}</th>
-                        <th>{{ trans('shin::fields.date') }}</th>
-                        <th>{{ trans('shin::fields.title') }}</th>
-                        <th>{{ trans('shin::fields.title_vernacular') }}</th>
-                        <th>ISO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @foreach($bibles as $bible)
-                    <tr>
-                        <td><a href="{{ i18n_link("/languages/$bible->iso") }}">{{ $bible->language->name ?? $bible->iso }}</a></td>
-                        <td><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/flags.svg#{{ $bible->country_id }}"></use></svg> {{ optional($bible->country)->name ?? '' }}</td>
-                        <td>{{ $bible->date }}</td>
-                        <td><a href="{{ i18n_link("/bibles/$bible->id") }}">{{ $bible->title }}</a></td>
-                        <td><a href="{{ i18n_link("/bibles/$bible->id") }}">{{ $bible->title_vernacular }}</a></td>
-                        <td data-hidden>{{ $bible->iso }}</td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-            </section>
-            <section id="resources" role="tabpanel" id="resources" aria-hidden="{{ $bibles->count() == 0 ? 'false' : 'true' }}">
-                <table id="resources_table" class="table responsive" cellspacing="0" width="100%">
-                    <thead>
-                    <tr>
-                        <th>{{ trans('shin::fields.languages') }}</th>
-                        <th>{{ trans('shin::fields.title') }}</th>
-                        <th>{{ trans('shin::fields.title_vernacular') }}</th>
-                       {{-- <th>{{ trans('shin::fields.type') }}</th>  --}}
-                        <th>ISO</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($resources as $resource)
-                        <tr>
-                            <td><a href="{{ $resource['link'] }}">{{ $resource['language'] ? $resource['language']['name'] : $resource['iso'] }}</a></td>
-                            <td><a href="{{ $resource['link'] }}">{{ $resource['title'] }}</a></td>
-                            <td><a href="{{ $resource['link'] }}">{{ $resource['title_vernacular'] }}</a></td>
-                            {{-- <td>{{ $resource['type'] }}</td> --}}
-                            <td>{{ $resource['iso'] }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </section>
-        </div>
-
-    </div>
+    @include('shin::organizations.show', [
+        'organization' => $organization,
+        'bibles' => $bibles,
+        'resources' => $resources
+    ])
 @endsection
