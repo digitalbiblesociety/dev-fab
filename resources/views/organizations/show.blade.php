@@ -4,13 +4,6 @@
     @parent
     <title>{{ $organization->name }} | {{ trans('app.title') }}</title>
     <style>
-        #banner         {margin-bottom: 3rem; text-align: center;}
-        .banner-image img  {filter: grayscale(1)}
-        .banner.gradient .banner-image:after {
-            opacity: .85;
-            background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }})
-        }
-
         .org-name       {font-size:1.8em; color: var(--primary-color); text-transform: uppercase; margin: 1.3em 0 .25em;}
         .org-info       {padding: 0 1.5em;}
         .logo           {margin: 0 auto;max-width: 200px;width: 100%;}
@@ -23,8 +16,6 @@
         .count {background-color: var(--primary-color);width: 2.7em; color: #fff;
             border-radius: 16px; margin: 0 3px 0 9px; font-size:.8em; padding:3px; text-decoration: none;}
 
-        .tab-badge {background-color: var(--primary-color); color: #fff;
-            border-radius: 1em;padding:3px;font-size:.8em}
 
     </style>
 @endsection
@@ -32,6 +23,9 @@
 @include('shin::_partials.banner', [
     'title'           => $organization->name,
     'backgroundImage' => "https://images.bible.cloud/fab/banners/agencies/$organization->id.jpg",
+    'icon'            => 'people_groups',
+    'iconClass'       => 'banner-icon',
+    'iconType'        => 'icons',
     'tabs' => [
         'bibles'    => "Bibles <span class='tab-badge'>". count($bibles['data']) . "</span>",
         'resources' => "Resources <span class='tab-badge'>". count($resources['data']) . "</span>"
