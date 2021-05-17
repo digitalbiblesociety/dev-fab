@@ -83,6 +83,7 @@
                 </div>
                 <div class="column">
                     <ul>
+                        <li><a href="{{ i18n_link('/sitemap') }}">Sitemap</a></li>
                         <li><a href="{{ i18n_link('/about/contact') }}">{{ trans('shin::fields.contact') }}</a></li>
                         <li><a href="{{ i18n_link('/about/privacy') }}">{{ trans('shin::fields.privacy') }}</a></li>
                     </ul>

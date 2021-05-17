@@ -27,6 +27,7 @@ Route::group(['prefix' => $iso], function()
     Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
     Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');
 
+    Route::view('sitemap',            'sitemap');
     Route::view('language/maps',      'languages.maps')->name('languages.maps');
     Route::view('world-maps',         'countries.maps.worldmap');
     Route::view('about',              'about.index')->name('about');
