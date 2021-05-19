@@ -18,14 +18,14 @@
         'iconType'        => 'icons',
         'tabs'            => [
             i18n_link('/languages/') => trans('shin::fields.languages'),
-        '#'                          => trans('shin::fields.geo.maps'),
+        '#'                          => trans('shin::fab.languages.family_maps'),
 
         ],
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
         'breadcrumbs' => [
             i18n_link('/')  => trans('shin::fields.home'),
             i18n_link('/languages/')  => trans('shin::fields.languages'),
-            '#' => trans('shin::fab.languages.language_maps'),
+            '#' => trans('shin::fab.languages.family_maps'),
         ]
     ])
 

@@ -20,7 +20,7 @@
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
         '#'                           => trans('shin::fields.languages'),
-        i18n_link('/language/maps')   => trans('shin::fields.geo.maps'),
+        i18n_link('/language/maps')   => trans('shin::fab.languages.family_maps'),
     ],
     'breadcrumbs' => [
         i18n_link('/')  => trans('shin::fields.home'),
