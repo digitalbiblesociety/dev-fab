@@ -3,7 +3,7 @@
 @php
 $languages = \DigitalBibleSociety\Shin\Models\Language\Language::select('iso','name')->get()->pluck('name','iso');
 $countries = \DigitalBibleSociety\Shin\Models\Country\Country::select('id','name')->get()->pluck('name','id');
-$bibles = \DigitalBibleSociety\Shin\Models\Bible\Bible::select('id','name')->get()->pluck('name','id');
+$bibles = \DigitalBibleSociety\Shin\Models\Bible\Bible::select('id','title')->get()->pluck('title','id');
 $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::select('id','name')->get()->pluck('name','id');
 @endphp
 
@@ -78,8 +78,8 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#bible"></use></svg>Bibles</h1>
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
         <div class="site_section">
-            @foreach($bibles as $id => $name)
-                <a href="/bibles/{{ $id }}">{{ $id }} - {{ $name }}</a><br>
+            @foreach($bibles as $id => $title)
+                <a href="/bibles/{{ $id }}">{{ $id }} - {{ $title }}</a><br>
             @endforeach
         </div>
 
