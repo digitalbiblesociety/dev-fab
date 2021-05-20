@@ -3,7 +3,7 @@
 @section('header')
     @parent
     <style>
-        a.nav-countries    {color: var(--primary-color)!important}
+        a.nav-languages   {color: var(--primary-color)!important}
         h3  {font-size: clamp(1rem, 3vw, 1.3rem); color: #666; text-align:center;margin-bottom: 1.5rem;}
     </style>
 @endsection
