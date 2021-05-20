@@ -7,12 +7,21 @@ $bibles = \DigitalBibleSociety\Shin\Models\Bible\Bible::select('id','title')->ge
 $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::select('id','name')->get()->pluck('name','id');
 @endphp
 
+@section('header')
+    @parent
+    <title>Sitemap</title>
+    <style>
+        .columns { column-count: 3 }
+    </style>
+@endsection
+
 
 @section('header')
     @parent
     <title>Sitemap</title>
     <style>
         .icon    {margin-right:.5em;}
+        .list {display: flex;flex-direction: row;flex-wrap: wrap}
         .site {margin:1em; padding-bottom: 1em;border-bottom: thin solid #ccc;}
         .site_section { column-count: 5 }
         .site_section a {font-size:.75em;}
@@ -21,7 +30,7 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
         #siteFilter {
             background-position: 10px 12px;background-repeat: no-repeat;width: 35%;min-width: 280px;font-size: 12px; border-radius: 6px;
             padding: 12px 20px 12px 9px;border: 1px solid #ddd;margin: 0px auto 16px auto;display: block;-webkit-box-shadow: 5px 5px 4px -5px rgb(0 0 0 / 95%);
-            box-shadow: 5px 5px 4px -5px rgb(0 0 0 / 95%);}
+            box-shadow: 5px 5px 4px -5px #222}
 
         /* Media Queries 1200px 960px 720px 480px 384px */
         @media all and (max-width:75em) {}
@@ -54,74 +63,55 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
     ]
 ])
 
-    <input type="text" id="siteFilter" onkeyup="filterSitemap()" placeholder="Filter by Language or Name here...">
 
-    <div id="siteMapList">
+
+    <div id="sitemap-list">
+        <input type="search" class="search" placeholder="Filter by Language or Name here...">
         <h1 id="countries" class="site">
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#menu_countries"></use></svg>Countries</h1>
-        <div class="site_section">
+
+        <ul class="list">
         @foreach($countries as $id => $name)
-            <a href="/countries/{{ $id }}">{{ $id }} - {{ $name }}</a><br>
+            <li class="medium-3"><a class="name" href="/countries/{{ $id }}">{{ $id }} - {{ $name }}</a></li>
         @endforeach
-        </div>
 
         <h1 id="languages" class="site">
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#menu_languages"></use></svg>Languages</h1>
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
-        <div class="site_section">
+
         @foreach($languages as $iso => $name)
-                <a href="/languages/{{ $iso }}">{{ $iso }} - {{ $name }}</a><br>
+                <li class="medium-2"><a class="name" href="/languages/{{ $iso }}">{{ $iso }} - {{ $name }}</a></li>
             @endforeach
-        </div>
+
 
         <h1 id="bibles" class="site">
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#bible"></use></svg>Bibles</h1>
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
-        <div class="site_section">
+
             @foreach($bibles as $id => $title)
-                <a href="/bibles/{{ $id }}">{{ $id }} - {{ $title }}</a><br>
+                <li class="medium-4"><a class="name" href="/bibles/{{ $id }}">{{ $id }} - {{ $title }}</a></li>
             @endforeach
-        </div>
+
 
         <h1 id="organizations" class="site">
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#people_agencies"></use></svg>Organizations</h1>
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
-        <div class="site_section">
+
             @foreach($organizations as $id => $name)
-                <a href="/organizations/{{ $id }}">{{ $name }}</a><br>
+                <li class="medium-4"><a class="name" href="/organizations/{{ $id }}">{{ $name }}</a></li>
             @endforeach
-        </div>
+        </ul>
     </div>
         <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
+@endsection
 
-
-
-    <script type="text/template" id="no-results-found">
-        <h1 class="text-center">No Results Found</h1>
-    </script>
-    <script async defer src="/js/main.js"></script>
-
-    <div id="amzn-assoc-ad-809c9919-55af-41cb-9d4a-453c79707d25"></div>
-    <script async src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=809c9919-55af-41cb-9d4a-453c79707d25"></script>
+@section('footer')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script>
-        function filterSitemap() {
-            // Declare variables
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('siteFilter');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("siteMapList");
-            li = ul.getElementsByTagName('a');
+        var options = {
+            valueNames: [ 'name' ]
+        };
 
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
+        var hackerList = new List('sitemap-list', options);
     </script>
 @endsection
