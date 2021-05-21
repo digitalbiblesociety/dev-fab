@@ -3,6 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers as Ctr;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LanguagesController;
+use App\Http\Controllers\ResourcesController;
+use App\Http\Controllers\BiblesController;
+use App\Http\Controllers\OrganizationsController;
+use App\Http\Controllers\CountriesController;
+use App\Http\Controllers\FilmsController;
 
 foreach (i18n::getSupportedLocales() as $iso => $locale) {
     if($iso == 'eng') {
@@ -10,19 +17,19 @@ foreach (i18n::getSupportedLocales() as $iso => $locale) {
     }
 Route::group(['prefix' => $iso], function()
 {
-    Route::get('/',                   [Ctr\HomeController::class, 'index'])->name('home');
-    Route::get('languages/{id}',      [Ctr\LanguagesController::class, 'show'])->name('languages.show');
-    Route::get('resources',           [Ctr\ResourcesController::class, 'index'])->name('resources.index');
-    Route::get('languages',           [Ctr\LanguagesController::class, 'index'])->name('languages.index');
-    Route::get('countries/{id}/maps', [Ctr\CountriesController::class, 'maps'])->name('countries.maps');
-    Route::get('countries/{id}',      [Ctr\CountriesController::class, 'show'])->name('countries.show');
-    Route::get('countries',           [Ctr\CountriesController::class, 'index'])->name('countries.index');
-    Route::get('organizations/{id}',  [Ctr\OrganizationsController::class, 'show'])->name('organizations.show');
-    Route::get('fobai',               [Ctr\OrganizationsController::class, 'fobai'])->name('organizations.fobai');
-    Route::get('organizations',       [Ctr\OrganizationsController::class, 'index'])->name('organizations.index');
-    Route::get('bibles/{id}',         [Ctr\BiblesController::class, 'show'])->name('bibles.show');
-    Route::get('bibles',              [Ctr\BiblesController::class, 'index'])->name('bibles.index');
-    Route::get('films',               [Ctr\FilmsController::class, 'index'])->name('films.index');
+    Route::get('/',                   [HomeController::class, 'index'])->name('home');
+    Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
+    Route::get('resources',           [ResourcesController::class, 'index'])->name('resources.index');
+    Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
+    Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
+    Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
+    Route::get('countries',           [CountriesController::class, 'index'])->name('countries.index');
+    Route::get('organizations/{id}',  [OrganizationsController::class, 'show'])->name('organizations.show');
+    Route::get('fobai',               [OrganizationsController::class, 'fobai'])->name('organizations.fobai');
+    Route::get('organizations',       [OrganizationsController::class, 'index'])->name('organizations.index');
+    Route::get('bibles/{id}',         [BiblesController::class, 'show'])->name('bibles.show');
+    Route::get('bibles',              [BiblesController::class, 'index'])->name('bibles.index');
+    Route::get('films',               [FilmsController::class, 'index'])->name('films.index');
 
     Route::view('sitemap',            'sitemap');
     Route::view('language/maps',      'languages.maps')->name('languages.maps');
@@ -41,7 +48,6 @@ Route::group(['prefix' => $iso], function()
 Route::group(['prefix' => i18n::setLocale()], function()
 {
     Route::get('/',                   [HomeController::class, 'index'])->name('home');
-
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
     Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
