@@ -9,7 +9,7 @@ Route::get('/languages/{iso}/resources',  [Ctrl\LanguagesController::class, 'sho
 Route::get('/languages/{iso}/bibles',     [Ctrl\LanguagesController::class, 'showBiblesAPI']);
 Route::get('/languages/{iso}',            [Ctrl\LanguagesController::class, 'showAPI']);
 Route::get('/languages/',                 [Ctrl\LanguagesController::class, 'indexAPI']);
-
+Route::get('/films/',                     [Ctrl\FilmsController::class, 'indexAPI']);
 Route::get('/resources/',                 [Ctrl\ResourcesController::class, 'indexAPI']);
 
 Route::get('/bibles/{id}',                [Ctrl\BiblesController::class, 'showAPI']);
