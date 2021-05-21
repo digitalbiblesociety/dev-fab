@@ -29,6 +29,6 @@
 ])
 
 
-@include('shin::languages.index', ['languages' => $languages])
+@include('shin::languages.index')
 
 @endsection
