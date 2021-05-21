@@ -10,11 +10,11 @@ use DigitalBibleSociety\Shin\Models\Resource\Film;
 use DigitalBibleSociety\Shin\Models\Resource\Resource;
 use DigitalBibleSociety\Shin\Transformers\BibleTableTransformer;
 use DigitalBibleSociety\Shin\Transformers\ResourcesTableTransformer;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\DB;
 use League\Fractal\Serializer\DataArraySerializer;
 use Spatie\Fractal\Fractal;
-use Spatie\Fractalistic\ArraySerializer;
+
 
 class OrganizationsController extends Controller
 {

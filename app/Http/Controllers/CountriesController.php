@@ -8,9 +8,13 @@ use DigitalBibleSociety\Shin\Transformers\LanguageTransformer;
 use i18n;
 use League\Fractal\Serializer\DataArraySerializer;
 use Spatie\Fractal\Facades\Fractal;
+use DigitalBibleSociety\Shin\Traits\CountriesTrait;
 
 class CountriesController extends Controller
 {
+
+    use CountriesTrait;
+
     /*
      *
      */
