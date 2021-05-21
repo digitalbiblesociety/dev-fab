@@ -7,6 +7,7 @@ use App\Http\Controllers\CountriesController;
 use App\Http\Controllers\OrganizationsController;
 use App\Http\Controllers\BiblesController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ResourcesController;
 
 foreach (i18n::getSupportedLocales() as $iso => $locale) {
     if($iso == 'eng') {
@@ -17,6 +18,7 @@ Route::group(['prefix' => $iso], function()
     Route::get('/',                   [HomeController::class, 'index'])->name('home');
 
     Route::get('languages/{id}',      [LanguagesController::class, 'show'])->name('languages.show');
+    Route::get('resources',           [ResourcesController::class, 'index'])->name('resources.index');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
     Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
     Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
