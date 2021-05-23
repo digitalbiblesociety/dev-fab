@@ -18,9 +18,9 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/bibles2.jpg',
     'tabs' => [
-        '#' => trans('shin::fields.information'),
-        i18n_link('/bibles')  => trans('shin::fields.films'),
-        i18n_link('/bibles')  => trans('shin::fields.resources'),
+        '#' => trans('shin::fields.bibles'),
+        i18n_link('films')  => trans('shin::fields.films'),
+        i18n_link('resources')  => trans('shin::fields.resources'),
     ],
     'breadcrumbs' => [
         i18n_link('/')  => trans('shin::fields.home'),

@@ -17,7 +17,7 @@
         'iconClass'       => 'banner-icon',
         'iconType'        => 'icons',
         'tabs'            => [
-            i18n_link('/countries') => trans('shin::fields.information'),
+            i18n_link('/countries') => trans('shin::fields.countries'),
             '#' => trans('shin::fields.geo.maps')
 
         ],

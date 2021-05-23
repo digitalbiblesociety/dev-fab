@@ -18,9 +18,9 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
     'tabs' => [
-            i18n_link('/resources')  => trans('shin::fields.resources'),
-            '#'                      => trans('shin::fields.films')
-    ],
+        i18n_link('bibles') => trans('shin::fields.bibles'),
+        '#'  => trans('shin::fields.films'),
+        i18n_link('resources')  => trans('shin::fields.resources'), ],
     'breadcrumbs' => [
             i18n_link('/')  => trans('shin::fields.home'),
             i18n_link('/resources')  => 'Resources',

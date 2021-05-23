@@ -19,7 +19,7 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
     'tabs' => [
-        '#' => trans('shin::fields.information'),
+        '#' => trans('shin::fields.countries'),
         i18n_link('/world-maps')  => trans('shin::fields.geo.maps')
     ],
     'breadcrumbs' => [

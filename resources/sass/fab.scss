@@ -3,7 +3,8 @@
   --primary-color: #0970a5;
   --secondary-color: #368a0f;
   --third-color  : #48b;
-  --primary-background-color: #fcd5ce;
+  --primary-font-color : #222222;
+  --primary-background-color: #f8f8f8;
   --subnav-bg: transparent;
 }
 @import "vendor/digitalbiblesociety/shin/src/resources/sass/global";
@@ -13,9 +14,10 @@
 
 header, #subheader, main, footer, .row
                 {max-width: 1290px;margin: 0 auto;}
-body            {background-color: #ffffff; background-image: url(/img/fabric-plaid.png);}
-header          {background-color: #ffffff;}
-main            {background-color: #fff;}
+header          {background-color: #fff;}
+body            {background-image: url(/img/fabric-plaid.png);}
+.filters        {background-color: #ffffff;}
+
 
                 @media (min-width:1290px){ main, header, #subheader, footer {border: 1px solid #d2d2d2; border-width: 0 1px;}
                             header  {border-radius: 16px 16px 0 0; border-top-width:1px}}

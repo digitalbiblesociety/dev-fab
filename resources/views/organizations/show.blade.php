@@ -4,19 +4,9 @@
     @parent
     <title>{{ $organization->name }} | {{ trans('app.title') }}</title>
     <style>
-        .org-name       {font-size:1.8em; color: var(--primary-color); text-transform: uppercase; margin: 1.3em 0 .25em;}
-        .org-info       {padding: 0 1.5em;}
-        .logo           {margin: 0 auto;max-width: 200px;width: 100%;}
-        .social-links   {text-align: center;}
-        .social-links a {font-size: 1.5em; padding:0 .25em;}
-        address         {font-size: .8em; display: inline-flex;align-items: center;justify-content: center;flex-direction: column; font-style:normal;
-                        margin-bottom:2em;}
-        address b       {margin-top: 1rem;}
-        #subheader nav[role=tablist] a[aria-selected=true] {border-radius: 10px 10px 0 0; color: #000;}
-        .count {background-color: var(--primary-color);width: 2.7em; color: #fff;
-            border-radius: 16px; margin: 0 3px 0 9px; font-size:.8em; padding:3px; text-decoration: none;}
-
-
+        a.nav-agencies  {color: var(--primary-color)!important}
+        .banner-image img  {filter: grayscale(1)}
+        .banner.gradient .banner-image:after {opacity: .85;background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }})}
     </style>
 @endsection
 

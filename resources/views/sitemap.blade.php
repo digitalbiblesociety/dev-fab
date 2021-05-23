@@ -20,16 +20,18 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
     @parent
     <title>Sitemap</title>
     <style>
+        li    {list-style-type: none;}
         .icon    {margin-right:.5em;}
-        .list {display: flex;flex-direction: row;flex-wrap: wrap}
+        .list {display: flex;flex-direction: row;flex-wrap: wrap;}
+        .list h1        {width:100%;}
         .site {margin:1em; padding-bottom: 1em;border-bottom: thin solid #ccc;}
         .site_section { column-count: 5 }
-        .site_section a {font-size:.75em;}
-        .top         {font-size: 1.5em; color:var(--primary-color); text-align:right;}
+        #sitemap-list a {font-size:.7em;}
+        .top         {font-size: 1.5em; color:var(--primary-color); text-align:right;width:100%;}
 
-        #siteFilter {
+        #sitemap-list input {
             background-position: 10px 12px;background-repeat: no-repeat;width: 35%;min-width: 280px;font-size: 12px; border-radius: 6px;
-            padding: 12px 20px 12px 9px;border: 1px solid #ddd;margin: 0px auto 16px auto;display: block;-webkit-box-shadow: 5px 5px 4px -5px rgb(0 0 0 / 95%);
+            padding: 12px 20px 12px 9px;border: 1px solid #ddd;margin: 0px auto;display: block;-webkit-box-shadow: 5px 5px 4px -5px rgb(0 0 0 / 95%);
             box-shadow: 5px 5px 4px -5px #222}
 
         /* Media Queries 1200px 960px 720px 480px 384px */
@@ -67,10 +69,12 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
 
     <div id="sitemap-list">
         <input type="search" class="search" placeholder="Filter by Language or Name here...">
+
+        <ul class="list">
         <h1 id="countries" class="site">
             <svg class="icon"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#menu_countries"></use></svg>Countries</h1>
 
-        <ul class="list">
+
         @foreach($countries as $id => $name)
             <li class="medium-3"><a class="name" href="/countries/{{ $id }}">{{ $id }} - {{ $name }}</a></li>
         @endforeach
