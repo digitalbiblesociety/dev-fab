@@ -18,8 +18,8 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
     'tabs' => [
-            i18n_link('/fobai')  => 'FOBAI',
-            '#'                  => trans('shin::fields.agencies')
+            i18n_link('/fobai')  => 'FOBAI ('. \DigitalBibleSociety\Shin\Models\Organization\OrganizationRelationship::where('organization_parent_id','the-forum-of-bible-agencies')->count().')',
+            '#'                  => trans('shin::fields.agencies') . ' ('.\DigitalBibleSociety\Shin\Models\Organization\Organization::count().')'
     ],
     'breadcrumbs' => [
             i18n_link('/')  => trans('shin::fields.home'),

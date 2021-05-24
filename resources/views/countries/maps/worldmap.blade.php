@@ -17,9 +17,8 @@
         'iconClass'       => 'banner-icon',
         'iconType'        => 'icons',
         'tabs'            => [
-            i18n_link('/countries') => trans('shin::fields.countries'),
-            '#' => trans('shin::fields.geo.maps')
-
+            i18n_link('/countries') => trans('shin::fields.countries').' <span class="tab-badge">'.\DigitalBibleSociety\Shin\Models\Country\Country::count().'</span>',
+            '#'                     => trans('shin::fields.geo.maps').' <span class="tab-badge">22</span>',
         ],
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/countries.jpg',
         'breadcrumbs' => [

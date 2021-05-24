@@ -19,8 +19,8 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
-        '#'                           => trans('shin::fields.languages'),
-        i18n_link('/language/maps')   => trans('shin::fab.languages.family_maps'),
+        '#'                           => trans('shin::fields.languages').' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Language\Language::count()).'</span>',
+        i18n_link('/language/maps')   => trans('shin::fab.languages.family_maps') .' <span class="tab-badge">15</span>',
     ],
     'breadcrumbs' => [
         i18n_link('/')  => trans('shin::fields.home'),

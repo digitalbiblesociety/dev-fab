@@ -18,9 +18,9 @@
         'iconType'        => 'icons',
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
         'tabs' => [
-            i18n_link('bibles') => trans('shin::fields.bibles'),
-            i18n_link('films')  => trans('shin::fields.films'),
-            '#'  => trans('shin::fields.resources'),
+            i18n_link('bibles') => trans('shin::fields.bibles') .' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Bible\Bible::count()).'</span>',
+            i18n_link('films')  => trans('shin::fields.films') .' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Resource\Film::count()).'</span>',
+            '#'                 => trans('shin::fields.resources') .' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Resource\Resource::count()).'</span>',
             ],
         'breadcrumbs' => [
                 i18n_link('/')  => trans('shin::fields.home'),
