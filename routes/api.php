@@ -11,6 +11,7 @@ Route::get('/languages/{iso}',            [Ctrl\LanguagesController::class, 'sho
 Route::get('/languages/',                 [Ctrl\LanguagesController::class, 'indexAPI']);
 Route::get('/films/',                     [Ctrl\FilmsController::class, 'indexAPI']);
 Route::get('/resources/',                 [Ctrl\ResourcesController::class, 'indexAPI']);
+Route::get('/organizations/',             [Ctrl\OrganizationsController::class, 'indexAPI']);
 
 Route::get('/bibles/{id}',                [Ctrl\BiblesController::class, 'showAPI']);
 Route::get('/bibles/',                    [Ctrl\BiblesController::class, 'indexAPI']);
