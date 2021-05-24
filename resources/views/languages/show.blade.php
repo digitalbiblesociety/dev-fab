@@ -3,9 +3,12 @@
     @parent
     <style>
         a.nav-languages     {color: var(--primary-color)!important}
-        .link-container a[href^="https://find.bible"] {
-            display: none;
-        }
+        .link-container a[href^="https://find.bible"] {display: none;}
+        table.infobox      {border: thin solid #d7d7d7; border-radius: 6px;}
+        .dataTables_header  {margin: 0 0 16px 0; padding:0;}
+        .dataTables_filter, .dataTables_length, .dataTables_length select {padding:0;}
+        .dataTables_header .dataTables_filter       {left:65px;}
+
     </style
 @endsection
 
