@@ -16,6 +16,7 @@
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
         'bibles-tab' => 'Bibles',
+        'films-tab' => 'Films',
         'resources-tab' => 'Resources'
     ]
 ])
