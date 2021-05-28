@@ -16,7 +16,7 @@
 
     @include('shin::_partials.banner', [
         'title'           => $country->currentTranslation->name ?? $country->name,
-        'subtitle'        => trans('shin::fab.countries.of_region'),
+        'subtitle'        => trans('shin::fab.countries.of_region') . ' ' . trans("shin::fields.geo.continent.$country->continent_id"),
         'backgroundImage' => 'https://images.bible.cloud/fab/banners/satellite/'.$country->id.'.jpg',
         'icon'            => 'https://images.bible.cloud/maps/icons/'.strtolower($country->id).'_white.png',
         'iconClass'       => 'banner-country',
@@ -33,7 +33,13 @@
     ])
 
 
+Country Links:
 
+Wikipedia
+Prayer Casts
+Joshua Project
+World Fact Book
+Nations Online
 
 
 

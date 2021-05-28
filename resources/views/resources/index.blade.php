@@ -13,10 +13,10 @@
     @include('shin::_partials.banner', [
         'title'           => trans('shin::fab.resources.title'),
         'subtitle'        => trans('shin::fab.resources.subtitle'),
-        'icon'            => 'resources',
+        'icon'            => 'menu_library1',
         'iconClass'       => 'banner-icon',
         'iconType'        => 'icons',
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
+        'backgroundImage' => 'https://images.bible.cloud/fab/banners/books.jpg',
         'tabs' => [
             i18n_link('bibles') => trans('shin::fields.bibles') .' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Bible\Bible::count()).'</span>',
             i18n_link('films')  => trans('shin::fields.films') .' <span class="tab-badge">'. number_format(\DigitalBibleSociety\Shin\Models\Resource\Film::count()).'</span>',
