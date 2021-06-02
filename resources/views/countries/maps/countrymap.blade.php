@@ -5,6 +5,7 @@
     <title>{{ $country->name }} | {{ trans('app.title') }}</title>
     <style>
         a.nav-countries     {color: var(--primary-color)!important}
+        .link-container a[href^="https://find.bible"] {display: none;}
         .banner.gradient .banner-image:after       {background: linear-gradient(180deg, rgba(167, 207, 223, 0.4) 0, rgba(35, 83, 138, 0.6));}
 
 
@@ -23,24 +24,15 @@
         'iconType'        => 'link',
         'tabs' => [
             i18n_link("/countries/$country->id") => $country->name,
-            '#'                      => trans('shin::fields.geo.maps')
+            '#'                      => trans('shin::fields.geo.maps_info')
         ],
         'breadcrumbs' => [
             i18n_link('/')            => trans('shin::fields.home'),
             i18n_link('/countries')   => trans('shin::fields.countries'),
-            '#'                       =>  $country->name
+            i18n_link("/countries/$country->id") =>  $country->name,
+            '#'                     => trans('shin::fields.geo.maps')
         ]
     ])
-
-
-Country Links:
-
-Wikipedia
-Prayer Casts
-Joshua Project
-World Fact Book
-Nations Online
-
 
 
     @include('shin::countries.maps.country', ['country' => $country])
