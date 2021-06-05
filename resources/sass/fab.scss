@@ -26,6 +26,11 @@ body            {background-image: url(/img/fabric-plaid.png);}
 #header #logo img   {width:50px; height:50px;}
 #header nav a       {padding: .7rem .8rem;}
 
+#banner .banner-heading {margin-left: 1rem;}
+#banner .banner-title {margin: 0 1rem;text-align:left;}
+#banner h1             {text-align: left;}
+#breadcrumbs           {margin: 1em 0 1em 3rem}
+
 
 
 /* Media Queries 1200px 960px 720px 480px 384px */
@@ -35,6 +40,8 @@ body            {background-image: url(/img/fabric-plaid.png);}
 }
 @media all and (max-width:45em) {
     #header nav a             {padding: .3rem 0.6rem}
+    #banner .banner-heading {margin-left: 0;}
+    #breadcrumbs              {margin-left: 1rem;}
 }
 @media all and (max-width:30em) {
     #header                   {flex-direction:column;padding:0}
