@@ -15,9 +15,9 @@
     'subtitle'        => '',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
-        'bibles-tab' => 'Bibles',
-        'films-tab' => 'Films',
-        'resources-tab' => 'Resources'
+        'bibles-tab' => 'Bibles <span class="tab-badge">'. count($bibles['data']).'</span>',
+        'films-tab' => 'Films <span class="tab-badge">'. count($films['data']).'</span>',
+        'resources-tab' => 'Resources <span class="tab-badge">'.count($resources['data']).'</span>'
     ]
 ])
 @endsection

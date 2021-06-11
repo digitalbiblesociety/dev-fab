@@ -9,27 +9,6 @@
     </style>
 @endsection
 
-@section('translations')
-
-    <div id="i18n_wrap_open"></div>
-    <div id="i18n_wrap">
-        <nav>
-            @foreach(i18n::getSupportedLocales() as $iso => $language)
-                <a href="{{ i18n::getLocalizedURL($iso) }}">
-                    @if($iso != 'eng')
-                    {{ \DigitalBibleSociety\Shin\Models\Language\LanguageTranslation::where('source_iso',$iso)
-                        ->where('translation_iso',i18n::getCurrentLocale())->first()->name ?? $language['name'] }}
-                    @else
-                        {{ $language['name'] }}
-                    @endif
-                </a>
-            @endforeach
-            <div id="i18n_wrap_close">X</div>
-        </nav>
-    </div>
-
-@endsection
-
 @section('body')
 
     @include('shin::_partials.nav.header', [

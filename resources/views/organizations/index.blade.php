@@ -4,6 +4,8 @@
     @parent
     <style>
         a.nav-agencies                    {color: var(--primary-color)!important}
+        .table i {background-color: var(--primary-color);width: 2.7em; color: #fff;
+            border-radius: 16px; margin: 0 auto; font-size:.8em; padding:3px;}
     </style>
 @endsection
 
@@ -18,8 +20,8 @@
     'iconType'        => 'icons',
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/agencies.jpg',
     'tabs' => [
-            i18n_link('/fobai')  => 'FOBAI ('. \DigitalBibleSociety\Shin\Models\Organization\OrganizationRelationship::where('organization_parent_id','the-forum-of-bible-agencies')->count().')',
-            '#'                  => trans('shin::fields.agencies') . ' ('.\DigitalBibleSociety\Shin\Models\Organization\Organization::count().')'
+            i18n_link('/fobai')  => 'FOBAI <span class="tab-badge">'. \DigitalBibleSociety\Shin\Models\Organization\OrganizationRelationship::where('organization_parent_id','the-forum-of-bible-agencies')->count().'</span>',
+            '#'                  => trans('shin::fields.agencies') . ' <span class="tab-badge">'.\DigitalBibleSociety\Shin\Models\Organization\Organization::count().'</span>'
     ],
     'breadcrumbs' => [
             i18n_link('/')  => trans('shin::fields.home'),

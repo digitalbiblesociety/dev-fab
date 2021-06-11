@@ -4,8 +4,8 @@
     @parent
     <title>{{ $organization->name }} | {{ trans('app.title') }}</title>
     <style>
-        a.nav-agencies  {color: var(--primary-color)!important}
-        .banner-image img  {filter: grayscale(1)}
+        .nav-agencies                        {color: var(--primary-color)!important}
+        .banner-image img                    {filter: grayscale(1)}
         .banner.gradient .banner-image:after {opacity: .85;background: linear-gradient(to right, {{ $organization->primary_color ?? '#222' }}, {{ $organization->secondary_color ?? '#f1f1f1' }})}
     </style>
 @endsection
@@ -17,15 +17,14 @@
     'iconClass'       => 'banner-icon',
     'iconType'        => 'icons',
     'tabs' => [
-        'bibles'    => "Bibles <span class='tab-badge'>". count($bibles['data']) . "</span>",
-        'resources' => "Resources <span class='tab-badge'>". count($resources['data']) . "</span>"
+        'bibles'    => trans('shin::fields.bibles') . ' <span class="tab-badge">' . count($bibles['data']) . '</span>',
+        'resources' => trans('shin::fields.resources') . ' <span class="tab-badge">' . count($resources['data']) . '</span>'
     ]
 ])
 
 @section('main')
     @include('shin::organizations.show', [
         'organization' => $organization,
-        'bibles' => $bibles,
         'resources' => $resources
     ])
 @endsection
