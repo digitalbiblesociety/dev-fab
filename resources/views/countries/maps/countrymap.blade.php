@@ -7,7 +7,10 @@
         a.nav-countries     {color: var(--primary-color)!important}
         .link-container a[href^="https://find.bible"] {display: none;}
         .banner.gradient .banner-image:after       {background: linear-gradient(180deg, rgba(167, 207, 223, 0.4) 0, rgba(35, 83, 138, 0.6));}
-
+        .banner-country {
+            z-index: 1;
+            position: relative;
+        }
 
 
     </style>

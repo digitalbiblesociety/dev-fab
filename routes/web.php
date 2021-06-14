@@ -42,6 +42,8 @@ Route::group(['prefix' => $iso], function()
     Route::view('about/volunteer',    'about.volunteer')->name('volunteer');
     Route::view('about/api',          'about.api')->name('api');
     Route::view('about/feedback',     'about.api')->name('feedback');
+
+    Route::view('bible/reference',     'bibles.reference')->name('bibles.ref');
 });
 }
 
