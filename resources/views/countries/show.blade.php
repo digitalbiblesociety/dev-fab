@@ -4,6 +4,7 @@
     @parent
     <style>
         a.nav-countries     {color: var(--primary-color)!important}
+        .link-container a[href^="https://find.bible"] {display: none;}
     </style
 @endsection
 
@@ -18,7 +19,7 @@
         'iconType'        => 'link',
         'tabs' => [
             '#'                                        => trans('shin::fields.languages'),
-            i18n_link("/countries/$country->id/maps")  => trans('shin::fields.geo.maps_info')
+            i18n_link("/countries/$country->id/maps")  => $country->name." ".trans('shin::fields.geo.maps_info')
         ],
         'breadcrumbs' => [
             i18n_link('/')          => trans('shin::fields.home'),
