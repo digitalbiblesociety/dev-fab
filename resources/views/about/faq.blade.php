@@ -25,6 +25,7 @@
         'tabs' => [
             i18n_link('/about')         => trans('shin::fields.about'),
             '#'                         => trans('shin::fields.faq'),
+            i18n_link('/about/add')     => trans('shin::fab.bibles.suggest_bibles'),
             i18n_link('/about/contact') => trans('shin::fields.contact')
         ],
         'breadcrumbs' => [

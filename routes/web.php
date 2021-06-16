@@ -62,6 +62,7 @@ Route::group(['prefix' => i18n::setLocale()], function()
 
     Route::view('about',              'about.index')->name('about');
     Route::view('about/contact',      'about.contact')->name('contact');
+    Route::view('about/add',          'about.add')->name('add');
     Route::view('about/privacy',      'about.privacy')->name('privacy');
     Route::view('about/progress',     'about.progress')->name('progress');
     Route::view('about/faq',          'about.faq')->name('faq');
