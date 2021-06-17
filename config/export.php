@@ -14,7 +14,14 @@ return [
      *
      * For example: "about", "posts/featured"
      */
-    'paths' => [],
+    'paths' => [
+        '/api/bibles',
+        '/api/films',
+        '/api/resources',
+        '/api/languages',
+        '/api/countries',
+        '/api/organizations',
+    ],
 
     /*
      * Files and folders that should be included in the build. Expects
