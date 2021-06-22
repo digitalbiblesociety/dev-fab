@@ -17,9 +17,9 @@
     'subtitle'  => $bible->title_vernacular,
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/language/'.substr($bible->id,0,3).'.jpg',
     'breadcrumbs' => [
-        i18n_link('/')  => trans('shin::fields.home'),
-        i18n_link('/bibles')   => trans('shin::fields.bibles'),
-        i18n_link('/languages/[ $bible->iso ]')   => $bible->iso,
+        i18n_link('/')        => trans('shin::fields.home'),
+        i18n_link('/bibles')  => trans('shin::fields.bibles'),
+        '#'                   => $bible->title,
     ],
     'tabs' => collect($bible->children->mapWithKeys(function ($bible) {
         return [$bible->id => $bible->title];
