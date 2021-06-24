@@ -5,6 +5,8 @@
         a.nav-languages     {color: var(--primary-color)!important}
         .link-container a[href^="https://find.bible"] {display: none;}
         table.infobox      {border: thin solid #d7d7d7; border-radius: 6px;}
+        .table i {background-color: var(--primary-color);width: 2.7em; color: #fff;
+            border-radius: 16px; margin: 0 auto; font-size:.8em; padding:3px;}
 
     </style
 @endsection
