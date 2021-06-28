@@ -19,6 +19,11 @@
     'tabs' => [
         'bibles'    => trans('shin::fields.bibles') . ' <span class="tab-badge">' . count($bibles['data']) . '</span>',
         'resources' => trans('shin::fields.resources') . ' <span class="tab-badge">' . count($resources['data']) . '</span>'
+    ],
+    'breadcrumbs' => [
+        i18n_link('/')  => trans('shin::fields.home'),
+        i18n_link('/organizations/')   => trans('shin::fields.agencies'),
+        '#'             => $organization->name
     ]
 ])
 

@@ -23,7 +23,7 @@
             ['url' => i18n_link('languages'), 'icon' => 'menu_languages', 'name' => trans('shin::fields.languages'), 'class' => 'nav-languages nav-wide'],
             ['url' => i18n_link('countries'),'icon' => 'menu_countries', 'name' => trans('shin::fields.countries'), 'class' => 'nav-countries'],
             ['url' => i18n_link('fobai'),'icon' => 'people_agencies', 'name' => trans('shin::fields.agencies'), 'class' => 'nav-agencies'],
-            ['url' => i18n_link('about'), 'icon' => 'nav_info', 'name' => trans('shin::fields.about'), 'class' => 'nav-about']
+            ['url' => i18n_link('about'), 'icon' => 'menu_about', 'name' => trans('shin::fields.about'), 'class' => 'nav-about']
         ]
     ])
 

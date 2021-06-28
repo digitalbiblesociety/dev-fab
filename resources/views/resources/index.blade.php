@@ -24,6 +24,7 @@
             ],
         'breadcrumbs' => [
                 i18n_link('/')  => trans('shin::fields.home'),
+                i18n_link('/bibles')  => 'Bibles',
                 '#'             => 'Resources',
            ]
     ])
