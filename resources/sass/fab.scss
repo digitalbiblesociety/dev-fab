@@ -80,7 +80,7 @@ nav[role=tablist] a[aria-selected=true] {color: var(--primary-color);}
 .footer-box ul  {margin: 0 20px;text-transform: capitalize;}
 
 #footer a {color:#ccc}
-#footer h4  {color:#ccc; text-decoration: underline;font-size:.9rem; margin-bottom: .5rem;}
+#footer h4  {color:#ccc; font-size:.9rem; margin-bottom: .5rem; text-transform: uppercase;}
 #footer h5  {color:#ccc; text-align: left;text-decoration: underline;}
 .footer-logo  {min-width:260px; height:auto;}
 .copyright  {text-align: center; color:#ddd}
