@@ -53,6 +53,6 @@ i18n_link('/about/contact') => trans('shin::fields.contact'),
                     width="100%" height="1381" frameborder="0" marginheight="0" marginwidth="0">
                 Loading…</iframe>
         </div>
-    </d
+    </div>
 
 @endsection
