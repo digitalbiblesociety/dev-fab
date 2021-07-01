@@ -36,6 +36,7 @@ Route::group(['prefix' => $iso], function()
     Route::view('world-maps',         'countries.maps.worldmap');
     Route::view('about',              'about.index')->name('about');
     Route::view('about/contact',      'about.contact')->name('contact');
+    Route::view('about/help',         'about.help')->name('help');
     Route::view('about/privacy',      'about.privacy')->name('privacy');
     Route::view('about/progress',     'about.progress')->name('progress');
     Route::view('about/faq',          'about.faq')->name('faq');
