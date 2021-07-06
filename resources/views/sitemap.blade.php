@@ -7,19 +7,12 @@ $bibles = \DigitalBibleSociety\Shin\Models\Bible\Bible::select('id','title')->ge
 $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::select('id','name')->get()->pluck('name','id');
 @endphp
 
+
 @section('header')
     @parent
     <title>Sitemap</title>
     <style>
         .columns { column-count: 3 }
-    </style>
-@endsection
-
-
-@section('header')
-    @parent
-    <title>Sitemap</title>
-    <style>
         li    {list-style-type: none;}
         .icon    {margin-right:.5em;}
         .list {display: flex;flex-direction: row;flex-wrap: wrap;}
@@ -42,6 +35,14 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
         @media all and (max-width:24em) {}
 
     </style>
+@endsection
+
+@section('page_info')
+    <div class="modal-info">
+        {!!  trans('shin::fab.help.introduction') !!}
+        {!!  trans('shin::fab.help.mission') !!}
+        {!!  trans('shin::fab.help.more') !!}
+    </div>
 @endsection
 
 @section('main')

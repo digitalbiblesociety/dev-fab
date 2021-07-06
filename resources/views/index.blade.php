@@ -17,6 +17,16 @@
     <title>World Map | Find a Bible</title>
 @endsection
 
+
+@section('page_info')
+    <div class="modal-info">
+        {!!  trans('shin::fab.help.introduction') !!}
+        {!!  trans('shin::fab.help.mission') !!}
+        {!!  trans('shin::fab.help.front') !!}
+        {!!  trans('shin::fab.help.more') !!}
+    </div>
+@endsection
+
 @section('main')
 
     @include('shin::_partials.banner', [

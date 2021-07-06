@@ -7,6 +7,13 @@
     </style>
 @endsection
 
+@section('page_info')
+    <div class="modal-info">
+        {!!  trans('shin::fab.help.bibles') !!}
+        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_1') !!}<div>
+        {!!  trans('shin::fab.help.more') !!}
+    </div>
+@endsection
 
 @section('main')
 

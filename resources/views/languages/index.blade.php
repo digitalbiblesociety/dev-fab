@@ -6,8 +6,16 @@
         .table i {background-color: var(--primary-color);width: 2.7em; color: #fff;
                     border-radius: 16px; margin: 0 auto; font-size:.8em; padding:3px;}
     </style>
-
 @endsection
+
+@section('page_info')
+    <div class="modal-info">
+        {!!  trans('shin::fab.help.languages') !!}
+        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_2') !!}<div>
+        {!!  trans('shin::fab.help.more') !!}
+    </div>
+@endsection
+
 
 @section('main')
 
