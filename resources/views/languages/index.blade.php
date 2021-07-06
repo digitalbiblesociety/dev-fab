@@ -11,7 +11,7 @@
 @section('page_info')
     <div class="modal-info">
         {!!  trans('shin::fab.help.languages') !!}
-        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_2') !!}<div>
+        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_2') !!}</div>
         {!!  trans('shin::fab.help.more') !!}
     </div>
 @endsection

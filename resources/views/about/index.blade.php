@@ -16,7 +16,7 @@
         {!!  trans('shin::fab.help.introduction') !!}
         {!!  trans('shin::fab.help.mission') !!}
         {!!  trans('shin::fab.help.about') !!}
-        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_1') !!}<div>
+        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_1') !!}</div>
         {!!  trans('shin::fab.help.more') !!}
     </div>
 @endsection

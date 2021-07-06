@@ -47,6 +47,6 @@ i18n_link('/about/contact') => trans('shin::fields.contact'),
 
 @section('main')
 
-    
+
 
 @endsection

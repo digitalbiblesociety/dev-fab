@@ -12,7 +12,7 @@
 @section('page_info')
     <div class="modal-info">
         {!!  trans('shin::fab.help.agencies') !!}
-        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_3') !!}<div>
+        <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_3') !!}</div>
         {!!  trans('shin::fab.help.more') !!}
     </div>
 @endsection
