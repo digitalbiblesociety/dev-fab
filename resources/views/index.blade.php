@@ -119,14 +119,16 @@
                 @foreach($organizations as $organization)
                     {
                         latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
-                        name: "{{ $organization->id }}",
+                        id: "{{ $organization->id }}",
+                        name: "{{ $organization->name }}",
                         fobai: 0
                     },
                 @endforeach
                 @foreach($fobai as $organization)
                 {
                     latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
-                    name: "{{ $organization->id }}",
+                    id: "{{ $organization->id }}",
+                    name: "{{ $organization->name }}",
                     fobai: 1
                 },
                 @endforeach
