@@ -4,10 +4,7 @@
     <style>
         a.nav-bibles  {color: var(--primary-color)!important}
         [role="tablist"] {display: flex;flex-wrap: wrap}
-        nav[role=tablist] a {
-            background: white;
-            border-radius: 0;
-        }
+        nav[role=tablist] a {background-color: rgba(250, 250, 250, 0.75)}
     </style>
 @endsection
 
@@ -19,6 +16,7 @@
     'breadcrumbs' => [
         i18n_link('/')        => trans('shin::fields.home'),
         i18n_link('/bibles')  => trans('shin::fields.bibles'),
+        i18n_link('/languages/'.$bible->iso) =>  $bible->language->name,
         '#'                   => $bible->title,
     ],
     'tabs' => collect($bible->children->mapWithKeys(function ($bible) {
