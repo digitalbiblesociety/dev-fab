@@ -1,4 +1,5 @@
 import './components/tabs'
+import './components/accordion'
 import '../../vendor/digitalbiblesociety/shin/src/resources/js/components/i18n'
 import '../../vendor/digitalbiblesociety/shin/src/resources/js/components/search'
 import '../../vendor/digitalbiblesociety/shin/src/resources/js/components/modal'
