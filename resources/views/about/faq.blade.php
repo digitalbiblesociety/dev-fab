@@ -17,7 +17,7 @@
         {!!  trans('shin::fab.help.introduction') !!}
         {!!  trans('shin::fab.help.mission') !!}
         {!!  trans('shin::fab.help.about') !!}
-        {!!  trans('shin::fab.help.more') !!}
+        {!!  trans('shin::fab.help.more', ['url' => i18n_link('/about/help')]) !!}
     </div>
 @endsection
 

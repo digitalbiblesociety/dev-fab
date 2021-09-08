@@ -1,5 +1,3 @@
-#footer,
-#subheader,
-#header nav {
-  display: none !important;
-}
+#footer,#header,#subheader{display:none!important}#map1,.christian-percent-key{display:none}
+
+/*# sourceMappingURL=print.css.map*/

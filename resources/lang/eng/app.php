@@ -14,6 +14,8 @@ return [
     ],
     'bibles' => [
         'subtitle'                  => 'Searching the Worldwide Directory of Bibles in every Language.',
+        'publisher'                 => 'Publisher',
+        'publisher-audio'           => 'Audio Publisher',
         'types' => [
             'text_plain'            => 'Unformatted Text',
             'text_format'           => 'Formatted Text',

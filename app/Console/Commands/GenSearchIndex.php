@@ -2,10 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Common\Modals\Bible\Bible;
-use Common\Modals\Country\Country;
-use Common\Modals\Language\Language;
-use Common\Modals\Organization\Organization;
+use DigitalBibleSociety\Shin\Models\Bible\Bible;
+use DigitalBibleSociety\Shin\Models\Language\Language;
+use DigitalBibleSociety\Shin\Models\Country\Country;
 use Illuminate\Console\Command;
 
 class GenSearchIndex extends Command
@@ -39,16 +38,25 @@ class GenSearchIndex extends Command
                             'bibles.title as tt',
                             'bibles.title_vernacular as tv',
                             'languages.iso as iso',
-                            'bibles.date as dt',
                             'languages.name as ln',
                             'bibles.id as id',
-                            'bibles as type'
                        )->get()->toArray();
 
-
-        $languages = Language::select('iso as id','name as tt','autonym as tv','languages as type')->get()->toArray();
-        $countries = Country::select('iso as id','name as tt', 'autonym as tv','countries as type')->get()->toArray();
+        $languages = Language::select('iso as id','name as tt','autonym as tv')->get()->toArray();
+        $countries = Country::select('id','name as tt', 'autonym as tv')->get()->toArray();
 //        $organizations = Organization::select('slug as id')->get();
+
+        foreach ($bibles as $key => $bible) {
+            $bibles[$key]['type'] = 'bibles';
+        }
+
+        foreach ($languages as $key => $language) {
+            $languages[$key]['type'] = 'languages';
+        }
+
+        foreach ($countries as $key => $country) {
+            $countries[$key]['type'] = 'countries';
+        }
 
 
         $site = json_encode($bibles + $languages + $countries);

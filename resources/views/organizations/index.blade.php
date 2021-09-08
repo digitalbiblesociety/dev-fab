@@ -13,7 +13,7 @@
     <div class="modal-info">
         {!!  trans('shin::fab.help.agencies') !!}
         <div class="small-hide">{!!  trans('shin::fab.help.started') !!}{!!  trans('shin::fab.help.scenario_3') !!}</div>
-        {!!  trans('shin::fab.help.more') !!}
+        {!!  trans('shin::fab.help.more', ['url' => i18n_link('/about/help')]) !!}
     </div>
 @endsection
 
