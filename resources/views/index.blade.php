@@ -14,7 +14,7 @@
         nav[role=tablist] a:hover   {color:var(--primary-color);}
 
     </style>
-    <title>World Map | Find a Bible</title>
+    <title>Find a Bible</title>
 @endsection
 
 
@@ -172,7 +172,7 @@
                     }],
                     markers: [{
                         attribute: 'fill',
-                        scale: ['#73d321', '#1486dc','#EB720E'],
+                        scale: ['#73d321', '#1486dc','#FFFE00'],
                         values: organizations.reduce(function(p, c, i){ p[i] = c.parent_id; return p }, {}),
                         min: 0,
                         max: 2
