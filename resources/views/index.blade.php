@@ -56,6 +56,7 @@
             <div class="legend-title">{{ trans('shin::fields.agencies') }}:</div>
             <div class="legend-key fobai">{{ trans('shin::fields.fobai') }}</div>
             <div class="legend-key org">{{ trans('shin::fields.organizations') }}</div>
+            <div class="legend-key ubs">UBS</div>
             <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
                 <svg class="legend-info"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#nav_info"></use></svg></a>
         </div>
@@ -121,7 +122,7 @@
                         latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
                         id: "{{ $organization->id }}",
                         name: "{{ $organization->name }}",
-                        fobai: 0
+                        parent_id: 0
                     },
                 @endforeach
                 @foreach($fobai as $organization)
@@ -129,7 +130,15 @@
                     latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
                     id: "{{ $organization->id }}",
                     name: "{{ $organization->name }}",
-                    fobai: 1
+                    parent_id: 1
+                },
+                @endforeach
+                @foreach($ubs as $organization)
+                {
+                    latLng: [{{ $organization->latitude }}, {{$organization->longitude}}],
+                    id: "{{ $organization->id }}",
+                    name: "{{ $organization->name }}",
+                    parent_id: 2
                 },
                 @endforeach
             ];
@@ -163,10 +172,10 @@
                     }],
                     markers: [{
                         attribute: 'fill',
-                        scale: ['#73d321', '#1486dc'],
-                        values: organizations.reduce(function(p, c, i){ p[i] = c.fobai; return p }, {}),
+                        scale: ['#73d321', '#1486dc','#EB720E'],
+                        values: organizations.reduce(function(p, c, i){ p[i] = c.parent_id; return p }, {}),
                         min: 0,
-                        max: 1
+                        max: 2
                     }]
                 },
                 markers: organizations,
