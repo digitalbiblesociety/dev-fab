@@ -56,11 +56,11 @@
 ])
 
 
-    <form action="https://formspree.io/f/jon@dbs.org" method="POST" _lpchecked="1" >
+    <form id="contact-form" action="https://formspree.io/f/xgerrbpe" method="POST">
         <div class="fab-form">
             <div class="form-head row">
                 <img class="form-icon" src="/img/fab_color_language.svg" alt="Contact Us" />
-                <h4>{{ trans('app.index.answer_contact') }}</h4>
+                <h4 id="contact-form-status">{{ trans('app.index.answer_contact') }}</h4>
             </div>
 
             <div class="form-name fbox">
@@ -81,10 +81,35 @@
             <div class="form-submit">
                 <input type="submit" value="Send">
             </div>
-
         </div>
     </form>
 
+
+@endsection
+
+@section('footer')
+    <script>
+        var form = document.getElementById("contact-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("contact-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 @endsection
 
 
