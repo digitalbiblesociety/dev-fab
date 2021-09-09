@@ -56,7 +56,7 @@
 ])
 
 
-    <form action="https://formspree.io/jon@dbs.org" method="POST" _lpchecked="1" >
+    <form action="https://formspree.io/f/jon@dbs.org" method="POST" _lpchecked="1" >
         <div class="fab-form">
             <div class="form-head row">
                 <img class="form-icon" src="/img/fab_color_language.svg" alt="Contact Us" />
