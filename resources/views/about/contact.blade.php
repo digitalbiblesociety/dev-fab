@@ -64,17 +64,17 @@
             </div>
 
             <div class="form-name fbox">
-                <label data-i18n="field.name" for="name">{{ trans('shin::fields.name') }}:</label>
+                <label data-i18n="field.name" for="name">{{ trans('shin::fab.about.contact.your_name') }}:</label>
                 <input type="text" name="name" id="name" />
             </div>
 
             <div class="form-email fbox">
-                <label data-i18n="field.email" for="email">{{ trans('shin::fields.email') }}:</label>
+                <label data-i18n="field.email" for="email">{{ trans('shin::fab.about.contact.your_email') }}:</label>
                 <input type="email" name="_replyto" id="email" />
             </div>
 
             <div class="form-message fbox">
-                <label data-i18n="field.body" for="body">{{ trans('shin::fields.message') }}:</label>
+                <label data-i18n="field.body" for="body">{{ trans('shin::fab.about.contact.your_message') }}:</label>
                 <textarea name="body" id="body"></textarea>
             </div>
 

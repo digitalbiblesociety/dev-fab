@@ -96,3 +96,4 @@ nav[role=tablist] a[aria-selected=true] {color: var(--primary-color);}
 .aside-title    {font-size: 1.6em; padding-left: .5em; color: var(--primary-color); text-transform: uppercase;}
             @media all and (max-width:940px) { .aside-icon {width: 1.4em; height: 1.4em;} .aside-title {font-size:1.35em; padding-left: .25em;}}
 
+.search svg .icon--cross  {fill:#ffffff;}
