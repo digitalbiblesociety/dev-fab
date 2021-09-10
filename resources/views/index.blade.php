@@ -56,7 +56,7 @@
             <div class="legend-title">{{ trans('shin::fields.agencies') }}:</div>
             <div class="legend-key fobai">{{ trans('shin::fields.fobai') }}</div>
             <div class="legend-key org">{{ trans('shin::fields.organizations') }}</div>
-            <div class="legend-key ubs">UBS</div>
+            <div class="legend-key ubs">{{ trans('shin::fields.bible_societies') }}</div>
             <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/" title="World Watch List" target="_blank">
                 <svg class="legend-info"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#nav_info"></use></svg></a>
         </div>
@@ -172,7 +172,7 @@
                     }],
                     markers: [{
                         attribute: 'fill',
-                        scale: ['#73d321', '#1486dc','#FFFE00'],
+                        scale: ['#f0c087', '#0093ff','#FFFE00'],
                         values: organizations.reduce(function(p, c, i){ p[i] = c.parent_id; return p }, {}),
                         min: 0,
                         max: 2

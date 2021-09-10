@@ -3,7 +3,7 @@
 @section('header')
     @parent
     <style>
-        a.nav-agencies                    {color: var(--primary-color)!important}
+        a.nav-bibles                    {color: var(--primary-color)!important}
     </style>
 @endsection
 
