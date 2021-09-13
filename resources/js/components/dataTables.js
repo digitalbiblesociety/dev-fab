@@ -92,7 +92,9 @@ $(document).ready(function () {
                 let path = (column.data('path')) ? column.data('path') : table.data('route')
                 let url = '/' + path + '/' + Object.byString(row, column.data('link'))
 
-                return '<a href="' + url + '"' + '>' + sprite_html + '</a>'
+
+
+                return '<a href="' + url + '"' + (isExternal(url) ? ' target="_blank" rel="noreferrer"' : '') + '>' + sprite_html + '</a>'
               }
 
               return sprite_html
