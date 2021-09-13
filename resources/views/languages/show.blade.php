@@ -23,7 +23,7 @@
 @section('subnav')
     @include('shin::_partials.banner', [
     'title'           => $language->name,
-    'subtitle'        => '',
+    'subtitle'        => $language->translations->pluck('name')->implode(', '),
     'backgroundImage' => 'https://images.bible.cloud/fab/banners/languages_list.jpg',
     'tabs' => [
         'bibles-tab' => 'Bibles <span class="tab-badge">'. count($bibles['data']).'</span>',
