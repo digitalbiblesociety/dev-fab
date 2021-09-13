@@ -25,8 +25,8 @@
     'iconClass'       => 'banner-icon',
     'iconType'        => 'icons',
     'tabs' => [
-        'bibles'    => trans('shin::fields.bibles') . ' <span class="tab-badge">' . count($bibles['data']) . '</span>',
-        'resources' => trans('shin::fields.resources') . ' <span class="tab-badge">' . count($resources['data']) . '</span>'
+        'bibles'    => (count($bibles['data'])) ? trans('shin::fields.bibles') . ' <span class="tab-badge">' . count($bibles['data']) . '</span>' : '',
+        'resources' => (count($resources['data'])) ? trans('shin::fields.resources') . ' <span class="tab-badge">' . count($resources['data']) . '</span>' : ''
     ],
     'breadcrumbs' => [
         i18n_link('/')  => trans('shin::fields.home'),
