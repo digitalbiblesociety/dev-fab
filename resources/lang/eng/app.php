@@ -53,7 +53,7 @@ return [
         'description'               => 'About the Find a Bible project and the process of archiving Bibles',
         'index' => [
             'project_title'         => 'The Project',
-            'project_description'   => 'Find-A-Bible is a collaborative project by the Forum of Bible Agencies International built to increase the Bible\'s accessibility and to facilitate access to scripture. Design, interphase, and database is maintained freely by the Digital Bible Society (dbs.org).',
+            'project_description'   => 'Find-A-Bible is a collaborative project by the Forum of Bible Agencies International built to increase the Bible\'s accessibility and to facilitate access to scripture. The Find-A-Bible design, interphase, and database was created and is maintained by the Digital Bible Society (dbs.org).',
             'symposium_title'       => 'Find-A-Bible Conference',
             'symposium_description' => 'During annual gatherings of the International Bible Forum (FOBAI), friendly people meet to collaborate around Find-A-Bible. Perhaps you would like to join us? Contact us for details, or join us at an upcoming FOBAI annual meeting.',
             'volunteer_title'       => 'Adding Resources',

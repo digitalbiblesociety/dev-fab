@@ -7,7 +7,7 @@
         a.nav-about     {color: var(--primary-color)!important}
         .about-content  {margin: 1rem auto; padding:1em 15%;}
         .about          {margin-bottom:1.5em; max-width: 860px;}
-        .about p, .about li   {font-size: .82em; line-height: 1.3em;}
+        .about p, .about li   {font-size: .95em; line-height: 1.3em;}
         .about h3        {font-size: 1.2em; text-align:left;margin: .5em 0; font-weight:normal;}
         .aside p         {font-size: .8em;margin-top: 1em}
         .about img          {margin: 1.5em 1em 0 0 ; float:left; width: 80px; height: 80px;}
