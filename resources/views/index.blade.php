@@ -64,10 +64,10 @@
 
     <div class="tagline text-center">
         <h4> {!! trans('app.index.stat_line', [
-                'numBibles'        => "<a href='".i18n_link('bibles')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Bible\Bible::count())."</a>",
+                'numBibles'        => "<a href='".i18n_link('bibles')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral($bible_count)."</a>",
                 'numOrganizations' => "<a href='".i18n_link('organizations')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Organization\Organization::count())."</a>",
-                'numLangs'         => "<a href='".i18n_link('languages')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Language\Language::count())."</a>",
-                'numResources'     => "<a href='".i18n_link('languages')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral(\DigitalBibleSociety\Shin\Models\Resource\Resource::count())."</a>"
+                'numLangs'         => "<a href='".i18n_link('languages')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral($language_count)."</a>",
+                'numResources'     => "<a href='".i18n_link('languages')."'>".\DigitalBibleSociety\Shin\Shin::i18n_numeral($resource_count)."</a>"
             ])  !!}.</h4>
     </div>
 
