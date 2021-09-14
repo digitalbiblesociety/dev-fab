@@ -3,7 +3,7 @@
 return [
     'title'                            => 'Find a Bible',
     'index' => [
-        "stat_line"                    => 'Currently cataloging :numBibles Bibles and :numResources Resources<br> in :numLangs Languages representing :numOrganizations Agencies',
+        "stat_line"                    => 'Cataloging :numBibles Bible Versions and :numResources Scripture Resources<br> in :numLangs Languages representing :numOrganizations Agencies',
         'question_looking_for_bible'   => 'Do you know someone who speaks another language and may be looking for a Bible?',
         'question_traveling'           => 'Are you traveling abroad with plans to share Bibles and resources across regions?',
         'question_missionary'          => 'Do you support missionaries who serve among multi-language people groups?',
