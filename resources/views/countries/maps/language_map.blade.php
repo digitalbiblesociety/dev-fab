@@ -2,7 +2,7 @@
 
 @section('header')
     @parent
-    <title>{{ $country->name }} | {{ trans('app.title') }}</title>
+    <title>{{ $country->name }} {{trans('shin::fields.geo.language_map')}} | {{ trans('app.title') }}</title>
     <style>
         a.nav-countries     {color: var(--primary-color)!important}
         .link-container a[href^="https://find.bible"] {display: none;}
@@ -32,8 +32,8 @@
         'iconType'        => 'link',
         'tabs' => [
             i18n_link("/countries/$country->id") => $country->name." ".trans('shin::fields.languages'),
-            '#'                      => trans('shin::fields.geo.maps_info'),
-            i18n_link("/countries/$country->id/language_map")  => trans('shin::fields.geo.language_map')
+            i18n_link("/countries/$country->id/maps")       => trans('shin::fields.geo.maps_info'),
+            '#'   => trans('shin::fields.geo.language_map')
 
         ],
         'breadcrumbs' => [
@@ -45,6 +45,6 @@
     ])
 
 
-    @include('shin::countries.maps.country', ['country' => $country])
+    @include('shin::countries.map.language_map', ['country' => $country])
 
 @endsection

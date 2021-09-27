@@ -27,7 +27,8 @@
         'iconType'        => 'link',
         'tabs' => [
             '#'                                        => trans('shin::fields.languages'),
-            i18n_link("/countries/$country->id/maps")  => $country->name." ".trans('shin::fields.geo.maps_info')
+            i18n_link("/countries/$country->id/maps")  => $country->name." ".trans('shin::fields.geo.maps_info'),
+            i18n_link("/countries/$country->id/language_map")  => trans('shin::fields.geo.language_map')
         ],
         'breadcrumbs' => [
             i18n_link('/')          => trans('shin::fields.home'),

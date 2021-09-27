@@ -22,6 +22,7 @@ Route::group(['prefix' => $iso], function()
     Route::get('resources',           [ResourcesController::class, 'index'])->name('resources.index');
     Route::get('languages',           [LanguagesController::class, 'index'])->name('languages.index');
     Route::get('countries/{id}/maps', [CountriesController::class, 'maps'])->name('countries.maps');
+    Route::get('countries/{id}/language_map', [CountriesController::class, 'language_map'])->name('countries.maps.language_map');
     Route::get('countries/{id}',      [CountriesController::class, 'show'])->name('countries.show');
     Route::get('countries',           [CountriesController::class, 'index'])->name('countries.index');
     Route::get('organizations/{id}',  [OrganizationsController::class, 'show'])->name('organizations.show');

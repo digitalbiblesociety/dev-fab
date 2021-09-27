@@ -28,4 +28,10 @@ class CountriesController extends Controller
     }
 
 
+    public function language_map($id)
+    {
+        $country = Country::with('languages.currentTranslation', 'languages.bibles', 'languages.resources', 'languages.films', 'currentTranslation','maps')->find($id);
+        return view('countries.maps.language_map', compact('country'));
+    }
+
 }
