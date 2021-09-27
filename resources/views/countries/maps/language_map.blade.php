@@ -45,6 +45,6 @@
     ])
 
 
-    @include('shin::countries.map.language_map', ['country' => $country])
+    @include('shin::countries.maps.language_map', ['country' => $country])
 
 @endsection
