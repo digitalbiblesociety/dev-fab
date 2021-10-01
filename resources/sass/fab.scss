@@ -70,7 +70,7 @@ nav[role=tablist] a[aria-selected=true] {color: var(--primary-color);}
 
 
 .banner.gradient .banner-image:after    {content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-                    background: linear-gradient(180deg,rgba(167,207,223,.65) 0,rgba(35,83,138,.8));}
+                    background: linear-gradient(180deg,rgba(167,207,223,.7) 0,rgba(35,83,138,.95));}
 
 
 #footer         {background-color: #222; font-size:.92rem; display:flex; flex-direction: row; justify-content: space-around;

@@ -47,20 +47,64 @@ i18n_link('/about/contact') => trans('shin::fields.contact'),
     <section class="about-content">
         <div class="row">
             <div class="about row">
-                <div class="medium-2 flex-center"><img class="small-8" src="/img/about/project.svg"/></div>
+                <div class="medium-2 flex-center"><img class="small-8" src="/img/about/fab_color_introduction.svg"/></div>
                 <div class="medium-10">
                     <h4 class="medium-mb2">{{ trans('app.about.index.project_title') }}</h4>
+                    <p>{{ trans('app.about.faq.1_description') }}</p>
                     <p>{{ trans('app.about.index.project_description') }}</p>
                 </div>
             </div>
 
+
             <div class="about row">
-                <div class="medium-2 flex-center"><img class="small-8" src="/img/about/resources.svg"/></div>
+                <div class="medium-2 flex-center"><img class="small-8" src="/img/about/faq.svg"/></div>
+                <div class="medium-10">
+                    <h4 class="medium-mb2">{{ trans('app.about.index.faq_title') }}</h4>
+                    <p>{{ trans('app.about.index.faq_description') }}</p>
+                    <p><a href="{{ i18n_link('about/faq') }}">{{ trans('shin::fields.learn_more') }}</a></p>
+                </div>
+            </div>
+
+            <div class="about row">
+                <div class="medium-2 flex-center">
+                    <img class="small-8" src="/img/about/resources.svg"/>
+                </div>
                 <div class="medium-10">
                     <h4 class="medium-mb2">{{ trans('app.about.index.volunteer_title') }}</h4>
                     <p>{{ trans('app.about.index.volunteer_description') }}</p>
                     <p><a href="{{ i18n_link('about/contact') }}">{{ trans('shin::fields.contact') }}</a></p>
                 </div>
+            </div>
+
+
+            <div class="about row">
+                <div class="medium-2 flex-center">
+                    <img class="small-8" src="/img/about/project.svg"/>
+                </div>
+                <div class="medium-10">
+                    <h4 class="medium-mb2">{{ trans('app.about.sources.data_sources') }}</h4>
+                    <p>{!! trans('app.about.sources.1') !!}</p>
+                    <p>{!! trans('app.about.sources.2') !!}</p>
+                </div>
+
+                <div class="medium-2 flex-center">
+                    <img class="small-8" src="/img/about/fab_color_bibles.svg"/>
+                </div>
+                <div class="medium-10">
+                    <p>{!! trans('app.about.sources.3') !!}</p>
+                    <p>{!! trans('app.about.sources.4') !!}</p>
+                    <p>{!! trans('app.about.sources.5') !!}</p>
+                </div>
+
+                <div class="medium-2 flex-center">
+                    <img class="small-8" src="/img/about/fab_color_countries.svg"/>
+                </div>
+                <div class="medium-10">
+                    <p>{!! trans('app.about.sources.6') !!}</p>
+                    <p>{!! trans('app.about.sources.7') !!}</p>
+                </div>
+
+
             </div>
 
             <div class="about row">
@@ -72,14 +116,6 @@ i18n_link('/about/contact') => trans('shin::fields.contact'),
                 </div>
             </div>
 
-            <div class="about row">
-                <div class="medium-2 flex-center"><img class="small-8" src="/img/about/faq.svg"/></div>
-                <div class="medium-10">
-                    <h4 class="medium-mb2">{{ trans('app.about.index.faq_title') }}</h4>
-                    <p>{{ trans('app.about.index.faq_description') }}</p>
-                    <p><a href="{{ i18n_link('about/faq') }}">{{ trans('shin::fields.learn_more') }}</a></p>
-                </div>
-            </div>
         </div>
     </section>
 
