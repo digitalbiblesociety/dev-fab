@@ -21,7 +21,6 @@
     @include('shin::_partials.banner', [
         'title'           => $country->currentTranslation->name ?? $country->name,
         'subtitle'        => trans('shin::fab.countries.of_region') . ' ' . trans("shin::fields.geo.continent.$country->continent_id"),
-        'backgroundImage' => 'https://images.bible.cloud/fab/banners/country/'.$country->id.'.jpg',
         'icon'            => 'https://images.bible.cloud/flags/'.strtolower($country->id).'.svg',
         'iconClass'       => 'banner-flag',
         'iconType'        => 'link',
