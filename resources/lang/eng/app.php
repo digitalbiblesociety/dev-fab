@@ -39,7 +39,7 @@ return [
             'pdf'                   => 'PDF',
             'pdf_description'       => 'The Bible in Adobe Acrobat format.',
             'print'                 => 'Print Bibles',
-            'print_description'     => 'Purchase this printed (or Print-on-Demand) Bible',
+            'print_description' => 'Purchase a "Print Version" of this Bible',
             'video'                 => 'Video',
             'video_description'     => 'Watch Bible based Videos',
             'video_web'             => 'Video',
