@@ -2,7 +2,7 @@
 
 @section('header')
     @parent
-    <title>{{ trans('shin::fields.countries') }} | {{ trans('app.title') }}</title>
+    <title>{{ trans('shin::fab.organizations.map') }} | {{ trans('app.title') }}</title>
 
     <style>
         .map-img        {padding: 1em 1.5em;}
@@ -43,7 +43,7 @@
         'tabs' => [
                 i18n_link('/organizations/') => trans('shin::fields.agencies'),
                 i18n_link('/fobai')          => 'FOBAI',
-                '#'                          => 'Organization Map',
+                '#'                          => trans('shin::fab.organizations.agencies_map'),
 
 
         ]
@@ -51,8 +51,8 @@
 
 {{-- Grab all languages in country / check for lat longs / and create pins --}}
 {{--OpenStreenMap Display  --}}
-<div class="map-img row">
-    <h4>Organizations Map</h4>
+<h4 class="map-img row">
+    <h4>{{ trans('shin::fab.organizations.map') }}<small>({{ trans('shin::fields.geo.zoomable') }})</small></h4>
 </div>
 <div id="mapid"></div>
 
@@ -62,9 +62,9 @@
 @section('footer_scripts')
     @parent('footer_scripts')
     <script>
-        var mymap = L.map('mapid').setView([0,0], 3);
+        var mymap = L.map('mapid').setView([0,0], 2);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
+            maxZoom: 6,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             id: 'mapbox/streets-v11',
@@ -72,48 +72,54 @@
             zoomOffset: -1,
         }).addTo(mymap);
 
-        var FOBAI = new L.Icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
+        var Agency = new L.Icon({
+            iconUrl: 'https://images.bible.cloud/maps/pins/map-pin-yellow.svg',
+            shadowUrl: '',
+            iconSize: [16, 26],
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
-            shadowSize: [41, 41]
+            shadowSize: [20, 20]
         });
 
         var UBS = new L.Icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
+            iconUrl: 'https://images.bible.cloud/maps/pins/map-flag-green.svg',
+            shadowUrl: '',
+            iconSize: [14, 23],
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
-            shadowSize: [41, 41]
+            shadowSize: [0, 0]
         });
+
 
         var Library = new L.Icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
+            iconUrl: 'https://images.bible.cloud/maps/pins/map-library-red.svg',
+            shadowUrl: '',
+            iconSize: [16, 18],
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
-            shadowSize: [41, 41]
+            shadowSize: [20, 20]
         });
 
-        var Agency = new L.Icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
+        var FOBAI = new L.Icon({
+            iconUrl: 'https://images.bible.cloud/maps/pins/map-pin-blue1.svg',
+            shadowUrl: 'https://images.bible.cloud/maps/pins/map-shadow.png',
+            iconSize: [20, 32],
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
-            shadowSize: [41, 41]
+            shadowSize: [20, 20]
         });
+
+
 
         @foreach($organizations as $key => $organization)
         @if($organization->latitude && $organization->longitude)
         let marker_{{$key}} = L.marker([{{ $organization->latitude }}, {{ $organization->longitude }}], {icon: {{ $organization->type ?? 'Agency' }} }).addTo(mymap);
-        marker_{{$key}}.bindPopup('<a href="/organizations/{{$organization->id}}">{{ $organization->name }}</a>').openPopup();
+        marker_{{$key}}.bindPopup('<a href="/organizations/{{$organization->id}}">{{ $organization->name }}</a>');
         @endif
         @endforeach
+
+
+
 
     </script>
 @endsection

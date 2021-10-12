@@ -29,7 +29,7 @@
     'tabs' => [
             '#'                  => trans('shin::fields.agencies') . ' <span class="tab-badge">'.\DigitalBibleSociety\Shin\Models\Organization\Organization::count().'</span>',
             i18n_link('/fobai')  => 'FOBAI <span class="tab-badge">'. \DigitalBibleSociety\Shin\Models\Organization\OrganizationRelationship::where('organization_parent_id','the-forum-of-bible-agencies')->count().'</span>',
-            i18n_link('/organization-map')  => 'Organization Map',
+            i18n_link('/organization-map')  => trans('shin::fab.organizations.agencies_map'),
 
 
     ],
