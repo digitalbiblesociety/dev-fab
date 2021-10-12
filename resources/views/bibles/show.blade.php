@@ -7,7 +7,9 @@
         nav[role=tablist] a {background-color: rgba(250, 250, 250, 0.75)}
     </style>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jonbitgood/fontable/fonts/{{$bible->script}}/default.css">
+    @if($bible->script != "Sign")
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jonbitgood/fontable/fonts/{{$bible->script}}/default.css">
+    @endif
 
 @endsection
 
@@ -20,7 +22,7 @@
     'breadcrumbs' => [
         i18n_link('/')        => trans('shin::fields.home'),
         i18n_link('/bibles')  => trans('shin::fields.bibles'),
-        i18n_link('/languages/'.$bible->iso) =>  $bible->language->name,
+        i18n_link('/languages/'.$bible->iso) =>  optional($bible->language)->name ?? $bible->iso,
         '#'                   => $bible->title,
     ],
     'tabs' => collect($bible->children->mapWithKeys(function ($bible) {

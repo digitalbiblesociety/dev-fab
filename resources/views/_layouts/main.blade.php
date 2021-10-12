@@ -53,7 +53,7 @@
                 </div>
                 <div class="column footer-links">
                     <ul>
-                        <li><a rel="noopener" href="https://forum-intl.org/membership" target="_blank">{{ trans('shin::fields.partners') }}</a></li>
+                        <li><a href="{{ i18n_link('/fobai') }}">{{ trans('shin::fields.partners') }}</a></li>
                         <li><a rel="noopener" href="https://www.facebook.com/fobai" target="_blank">Facebook</a></li>
                     </ul>
                 </div>
@@ -67,13 +67,13 @@
                     <ul>
                         <li><a href="{{ i18n_link('/about/faq') }}">{{ trans('shin::fields.faq') }}</a></li>
                         <li><a href="{{ i18n_link('/organizations') }}">{{ trans('shin::fields.partners') }}</a></li>
+                        <li><a rel="noopener" href="https://forum-intl.org/legal/privacy/" target="_blank">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <ul>
                         <li><a href="{{ i18n_link('/sitemap') }}">Sitemap</a></li>
                         <li><a href="{{ i18n_link('/about/contact') }}">{{ trans('shin::fields.contact') }}</a></li>
-                        <li><a href="{{ i18n_link('/about/privacy') }}">{{ trans('shin::fields.privacy') }}</a></li>
                     </ul>
                 </div>
             </div>
