@@ -77,7 +77,7 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
 
 
         @foreach($countries as $id => $name)
-            <li class="medium-3"><a class="name" href="/countries/{{ $id }}">{{ $id }} - {{ $name }}</a></li>
+            <li class="medium-3"><a class="name" href="{{ i18n_link("/countries/$id") }}">{{ $id }} - {{ $name }}</a></li>
         @endforeach
 
         <h1 id="languages" class="site">
@@ -85,7 +85,7 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
 
         @foreach($languages as $iso => $name)
-                <li class="medium-2"><a class="name" href="/languages/{{ $iso }}">{{ $iso }} - {{ $name }}</a></li>
+                <li class="medium-2"><a class="name" href="{{ i18n_link("/languages/$iso") }}">{{ $iso }} - {{ $name }}</a></li>
             @endforeach
 
 
@@ -94,7 +94,7 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
 
             @foreach($bibles as $id => $title)
-                <li class="medium-4"><a class="name" href="/bibles/{{ $id }}">{{ $id }} - {{ $title }}</a></li>
+                <li class="medium-4"><a class="name" href="{{ i18n_link("/bibles/$id") }}">{{ $id }} - {{ $title }}</a></li>
             @endforeach
 
 
@@ -103,7 +103,7 @@ $organizations = \DigitalBibleSociety\Shin\Models\Organization\Organization::sel
             <div class="top"><a href="#" alt="To Top"> ↑ </a></div>
 
             @foreach($organizations as $id => $name)
-                <li class="medium-4"><a class="name" href="/organizations/{{ $id }}">{{ $name }}</a></li>
+                <li class="medium-4"><a class="name" href="{{ i18n_link("/organizations/$id") }}">{{ $name }}</a></li>
             @endforeach
         </ul>
     </div>
