@@ -208,7 +208,7 @@
                 $(this).addClass("active")
                 $(this).siblings().removeClass("active")
                 $(".world-watch-list-key").slideUp("slow");
-                $(".christian-percent-key").slideUp("slow");
+                $(".christian-percent-key").slideDown("slow");
                 $(".organizations-key").slideUp("slow");
                 $('.jvectormap-marker').hide();
 
