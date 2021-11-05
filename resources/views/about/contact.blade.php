@@ -65,17 +65,17 @@
 
             <div class="form-name fbox">
                 <label data-i18n="field.name" for="name">{{ trans('shin::fab.about.contact.your_name') }}:</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
             </div>
 
             <div class="form-email fbox">
                 <label data-i18n="field.email" for="email">{{ trans('shin::fab.about.contact.your_email') }}:</label>
-                <input type="email" name="_replyto" id="email" />
+                <input type="email" name="_replyto" id="email" required />
             </div>
 
             <div class="form-message fbox">
                 <label data-i18n="field.body" for="body">{{ trans('shin::fab.about.contact.your_message') }}:</label>
-                <textarea name="body" id="body"></textarea>
+                <textarea name="body" id="body" required></textarea>
             </div>
 
             <div class="form-submit">
