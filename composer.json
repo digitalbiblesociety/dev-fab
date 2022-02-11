@@ -15,7 +15,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "mcamara/laravel-localization": "^1.6",
-        "spatie/laravel-export": "^0.3.9"
+        "spatie/laravel-export": "@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
