@@ -1,0 +1,1570 @@
+[
+		{
+			"rank": 1,
+			"score": 98,
+			"year": 2022,
+			"country_id": "AF",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/afghanistan/"
+		},
+		{
+			"rank": 2,
+			"score": 96,
+			"year": 2022,
+			"country_id": "KP",
+			"persecution_type": "Communist and post-communist oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/north-korea/"
+		},
+		{
+			"rank": 3,
+			"score": 91,
+			"year": 2022,
+			"country_id": "SO",
+			"persecution_type": "Clan oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/somalia/"
+		},
+		{
+			"rank": 4,
+			"score": 91,
+			"year": 2022,
+			"country_id": "LY",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/libya/"
+		},
+		{
+			"rank": 5,
+			"score": 88,
+			"year": 2022,
+			"country_id": "YE",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/yemen/"
+		},
+		{
+			"rank": 6,
+			"score": 88,
+			"year": 2022,
+			"country_id": "ER",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/eritrea/"
+		},
+		{
+			"rank": 7,
+			"score": 87,
+			"year": 2022,
+			"country_id": "NG",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nigeria/"
+		},
+		{
+			"rank": 8,
+			"score": 87,
+			"year": 2022,
+			"country_id": "PK",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/pakistan/"
+		},
+		{
+			"rank": 9,
+			"score": 85,
+			"year": 2022,
+			"country_id": "IR",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iran/"
+		},
+		{
+			"rank": 10,
+			"score": 82,
+			"year": 2022,
+			"country_id": "IN",
+			"persecution_type": "Religious nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/india/"
+		},
+		{
+			"rank": 11,
+			"score": 81,
+			"year": 2022,
+			"country_id": "SA",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/saudi-arabia/"
+		},
+		{
+			"rank": 12,
+			"score": 79,
+			"year": 2022,
+			"country_id": "MM",
+			"persecution_type": "Religious nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/myanmar/"
+		},
+		{
+			"rank": 13,
+			"score": 79,
+			"year": 2022,
+			"country_id": "SD",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sudan/"
+		},
+		{
+			"rank": 14,
+			"score": 78,
+			"year": 2022,
+			"country_id": "IQ",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iraq/"
+		},
+		{
+			"rank": 15,
+			"score": 78,
+			"year": 2022,
+			"country_id": "SY",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/syria/"
+		},
+		{
+			"rank": 16,
+			"score": 77,
+			"year": 2022,
+			"country_id": "MV",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/maldives/"
+		},
+		{
+			"rank": 17,
+			"score": 76,
+			"year": 2022,
+			"country_id": "CN",
+			"persecution_type": "Communist and post-communist oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/china/"
+		},
+		{
+			"rank": 18,
+			"score": 74,
+			"year": 2022,
+			"country_id": "QA",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/qatar/"
+		},
+		{
+			"rank": 19,
+			"score": 71,
+			"year": 2022,
+			"country_id": "VN",
+			"persecution_type": "Communist and post-communist oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/vietnam/"
+		},
+		{
+			"rank": 20,
+			"score": 71,
+			"year": 2022,
+			"country_id": "EG",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/egypt/"
+		},
+		{
+			"rank": 21,
+			"score": 71,
+			"year": 2022,
+			"country_id": "UZ",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/uzbekistan/"
+		},
+		{
+			"rank": 22,
+			"score": 71,
+			"year": 2022,
+			"country_id": "DZ",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/algeria/"
+		},
+		{
+			"rank": 23,
+			"score": 70,
+			"year": 2022,
+			"country_id": "MR",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mauritania/"
+		},
+		{
+			"rank": 24,
+			"score": 70,
+			"year": 2022,
+			"country_id": "ML",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mali/"
+		},
+		{
+			"rank": 25,
+			"score": 69,
+			"year": 2022,
+			"country_id": "TM",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkmenistan/"
+		},
+		{
+			"rank": 26,
+			"score": 69,
+			"year": 2022,
+			"country_id": "LA",
+			"persecution_type": "Communist and post-communist oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/laos/"
+		},
+		{
+			"rank": 27,
+			"score": 69,
+			"year": 2022,
+			"country_id": "MA",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/morocco/"
+		},
+		{
+			"rank": 28,
+			"score": 68,
+			"year": 2022,
+			"country_id": "ID",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/indonesia/"
+		},
+		{
+			"rank": 29,
+			"score": 68,
+			"year": 2022,
+			"country_id": "BD",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bangladesh/"
+		},
+		{
+			"rank": 30,
+			"score": 68,
+			"year": 2022,
+			"country_id": "CO",
+			"persecution_type": "Organized crime and corruption",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/colombia/"
+		},
+		{
+			"rank": 31,
+			"score": 68,
+			"year": 2022,
+			"country_id": "CF",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/centra"
+		},
+		{
+			"rank": 32,
+			"score": 68,
+			"year": 2022,
+			"country_id": "BF",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/burkina-faso/"
+		},
+		{
+			"rank": 33,
+			"score": 68,
+			"year": 2022,
+			"country_id": "NE",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/niger/"
+		},
+		{
+			"rank": 34,
+			"score": 67,
+			"year": 2022,
+			"country_id": "BT",
+			"persecution_type": "Religious nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bhutan/"
+		},
+		{
+			"rank": 35,
+			"score": 66,
+			"year": 2022,
+			"country_id": "TN",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tunisia/"
+		},
+		{
+			"rank": 36,
+			"score": 66,
+			"year": 2022,
+			"country_id": "OM",
+			"persecution_type": "Clan oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/oman/"
+		},
+		{
+			"rank": 37,
+			"score": 66,
+			"year": 2022,
+			"country_id": "CU",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/cuba/"
+		},
+		{
+			"rank": 38,
+			"score": 66,
+			"year": 2022,
+			"country_id": "ET",
+			"persecution_type": "Denominational protectionism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/ethiopia/"
+		},
+		{
+			"rank": 39,
+			"score": 66,
+			"year": 2022,
+			"country_id": "JO",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/jordan/"
+		},
+		{
+			"rank": 40,
+			"score": 66,
+			"year": 2022,
+			"country_id": "CD",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/democrati"
+		},
+		{
+			"rank": 41,
+			"score": 65,
+			"year": 2022,
+			"country_id": "MZ",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mozambique/"
+		},
+		{
+			"rank": 42,
+			"score": 65,
+			"year": 2022,
+			"country_id": "TR",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkey/"
+		},
+		{
+			"rank": 43,
+			"score": 65,
+			"year": 2022,
+			"country_id": "MX",
+			"persecution_type": "Organized crime and corruption",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mexico/"
+		},
+		{
+			"rank": 44,
+			"score": 65,
+			"year": 2022,
+			"country_id": "CM",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/cameroon/"
+		},
+		{
+			"rank": 45,
+			"score": 65,
+			"year": 2022,
+			"country_id": "TJ",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tajikistan/"
+		},
+		{
+			"rank": 46,
+			"score": 64,
+			"year": 2022,
+			"country_id": "BN",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/brunei/"
+		},
+		{
+			"rank": 47,
+			"score": 64,
+			"year": 2022,
+			"country_id": "KZ",
+			"persecution_type": "Dictatorial paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kazakhstan/"
+		},
+		{
+			"rank": 48,
+			"score": 64,
+			"year": 2022,
+			"country_id": "NP",
+			"persecution_type": "Religious nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nepal/"
+		},
+		{
+			"rank": 49,
+			"score": 64,
+			"year": 2022,
+			"country_id": "KW",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kuwait/"
+		},
+		{
+			"rank": 50,
+			"score": 63,
+			"year": 2022,
+			"country_id": "MY",
+			"persecution_type": "Islamic oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/malaysia/"
+		},
+		{
+			"rank": 1,
+			"score": 94,
+			"year": 2021,
+			"country_id": "KP",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/north-korea/"
+		},
+		{
+			"rank": 2,
+			"score": 94,
+			"year": 2021,
+			"country_id": "AF",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/afghanistan/"
+		},
+		{
+			"rank": 3,
+			"score": 92,
+			"year": 2021,
+			"country_id": "SO",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/somalia/"
+		},
+		{
+			"rank": 4,
+			"score": 92,
+			"year": 2021,
+			"country_id": "LY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/libya/"
+		},
+		{
+			"rank": 5,
+			"score": 88,
+			"year": 2021,
+			"country_id": "PK",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/pakistan/"
+		},
+		{
+			"rank": 6,
+			"score": 88,
+			"year": 2021,
+			"country_id": "ER",
+			"persecution_type": "Denominational Protectionism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/eritrea/"
+		},
+		{
+			"rank": 7,
+			"score": 87,
+			"year": 2021,
+			"country_id": "YE",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/yemen/"
+		},
+		{
+			"rank": 8,
+			"score": 86,
+			"year": 2021,
+			"country_id": "IR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iran/"
+		},
+		{
+			"rank": 9,
+			"score": 85,
+			"year": 2021,
+			"country_id": "NG",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nigeria/"
+		},
+		{
+			"rank": 10,
+			"score": 83,
+			"year": 2021,
+			"country_id": "IN",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/india/"
+		},
+		{
+			"rank": 11,
+			"score": 82,
+			"year": 2021,
+			"country_id": "IQ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iraq/"
+		},
+		{
+			"rank": 12,
+			"score": 81,
+			"year": 2021,
+			"country_id": "SY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/syria/"
+		},
+		{
+			"rank": 13,
+			"score": 79,
+			"year": 2021,
+			"country_id": "SD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sudan/"
+		},
+		{
+			"rank": 14,
+			"score": 78,
+			"year": 2021,
+			"country_id": "SA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/saudi-arabia/"
+		},
+		{
+			"rank": 15,
+			"score": 77,
+			"year": 2021,
+			"country_id": "MV",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/maldives/"
+		},
+		{
+			"rank": 16,
+			"score": 75,
+			"year": 2021,
+			"country_id": "EG",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/egypt/"
+		},
+		{
+			"rank": 17,
+			"score": 74,
+			"year": 2021,
+			"country_id": "CN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/china/"
+		},
+		{
+			"rank": 18,
+			"score": 74,
+			"year": 2021,
+			"country_id": "MM",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/myanmar/"
+		},
+		{
+			"rank": 19,
+			"score": 72,
+			"year": 2021,
+			"country_id": "VN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/vietnam/"
+		},
+		{
+			"rank": 20,
+			"score": 71,
+			"year": 2021,
+			"country_id": "MR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mauritania/"
+		},
+		{
+			"rank": 21,
+			"score": 71,
+			"year": 2021,
+			"country_id": "UZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/uzbekistan/"
+		},
+		{
+			"rank": 22,
+			"score": 71,
+			"year": 2021,
+			"country_id": "LA",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/laos/"
+		},
+		{
+			"rank": 23,
+			"score": 70,
+			"year": 2021,
+			"country_id": "TM",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkmenistan/"
+		},
+		{
+			"rank": 24,
+			"score": 70,
+			"year": 2021,
+			"country_id": "DZ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/algeria/"
+		},
+		{
+			"rank": 25,
+			"score": 69,
+			"year": 2021,
+			"country_id": "TR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkey/"
+		},
+		{
+			"rank": 26,
+			"score": 67,
+			"year": 2021,
+			"country_id": "TN",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tunisia/"
+		},
+		{
+			"rank": 27,
+			"score": 67,
+			"year": 2021,
+			"country_id": "MA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/morocco/"
+		},
+		{
+			"rank": 28,
+			"score": 67,
+			"year": 2021,
+			"country_id": "ML",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mali/"
+		},
+		{
+			"rank": 29,
+			"score": 67,
+			"year": 2021,
+			"country_id": "QA",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/qatar/"
+		},
+		{
+			"rank": 30,
+			"score": 67,
+			"year": 2021,
+			"country_id": "CO",
+			"persecution_type": "Organized Crime and Corruption",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/colombia/"
+		},
+		{
+			"rank": 31,
+			"score": 67,
+			"year": 2021,
+			"country_id": "BD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bangladesh/"
+		},
+		{
+			"rank": 32,
+			"score": 67,
+			"year": 2021,
+			"country_id": "BF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/burkina-faso/"
+		},
+		{
+			"rank": 33,
+			"score": 66,
+			"year": 2021,
+			"country_id": "TJ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tajikistan/"
+		},
+		{
+			"rank": 34,
+			"score": 66,
+			"year": 2021,
+			"country_id": "NP",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nepal/"
+		},
+		{
+			"rank": 35,
+			"score": 66,
+			"year": 2021,
+			"country_id": "CF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/central-african-republic/"
+		},
+		{
+			"rank": 36,
+			"score": 65,
+			"year": 2021,
+			"country_id": "ET",
+			"persecution_type": "Denominational Protectionism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/ethiopia/"
+		},
+		{
+			"rank": 37,
+			"score": 64,
+			"year": 2021,
+			"country_id": "MX",
+			"persecution_type": "Organized Crime and Corruption",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mexico/"
+		},
+		{
+			"rank": 38,
+			"score": 64,
+			"year": 2021,
+			"country_id": "JO",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/jordan/"
+		},
+		{
+			"rank": 39,
+			"score": 64,
+			"year": 2021,
+			"country_id": "BN",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/brunei/"
+		},
+		{
+			"rank": 40,
+			"score": 64,
+			"year": 2021,
+			"country_id": "CD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/democratic-republic-of-congo/"
+		},
+		{
+			"rank": 41,
+			"score": 64,
+			"year": 2021,
+			"country_id": "KZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kazakhstan/"
+		},
+		{
+			"rank": 42,
+			"score": 64,
+			"year": 2021,
+			"country_id": "CM",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/cameroon/"
+		},
+		{
+			"rank": 43,
+			"score": 64,
+			"year": 2021,
+			"country_id": "BT",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bhutan/"
+		},
+		{
+			"rank": 44,
+			"score": 63,
+			"year": 2021,
+			"country_id": "OM",
+			"persecution_type": "Clan Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/oman/"
+		},
+		{
+			"rank": 45,
+			"score": 63,
+			"year": 2021,
+			"country_id": "MZ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mozambique/"
+		},
+		{
+			"rank": 46,
+			"score": 63,
+			"year": 2021,
+			"country_id": "MY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/malaysia/"
+		},
+		{
+			"rank": 47,
+			"score": 63,
+			"year": 2021,
+			"country_id": "ID",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/indonesia/"
+		},
+		{
+			"rank": 48,
+			"score": 63,
+			"year": 2021,
+			"country_id": "KW",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kuwait/"
+		},
+		{
+			"rank": 49,
+			"score": 62,
+			"year": 2021,
+			"country_id": "KE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kenya/"
+		},
+		{
+			"rank": 50,
+			"score": 62,
+			"year": 2021,
+			"country_id": "KM",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/comoros/"
+		},
+		{
+			"rank": 1,
+			"score": 94,
+			"year": 2020,
+			"country_id": "KP",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/north-korea/"
+		},
+		{
+			"rank": 2,
+			"score": 93,
+			"year": 2020,
+			"country_id": "AF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/afghanistan/"
+		},
+		{
+			"rank": 3,
+			"score": 92,
+			"year": 2020,
+			"country_id": "SO",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/somalia/"
+		},
+		{
+			"rank": 4,
+			"score": 89,
+			"year": 2020,
+			"country_id": "LY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/libya/"
+		},
+		{
+			"rank": 5,
+			"score": 88,
+			"year": 2020,
+			"country_id": "PK",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/pakistan/"
+		},
+		{
+			"rank": 6,
+			"score": 87,
+			"year": 2020,
+			"country_id": "ER",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/eritrea/"
+		},
+		{
+			"rank": 7,
+			"score": 85,
+			"year": 2020,
+			"country_id": "SD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sudan/"
+		},
+		{
+			"rank": 8,
+			"score": 85,
+			"year": 2020,
+			"country_id": "YE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/yemen/"
+		},
+		{
+			"rank": 9,
+			"score": 85,
+			"year": 2020,
+			"country_id": "IR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iran/"
+		},
+		{
+			"rank": 10,
+			"score": 83,
+			"year": 2020,
+			"country_id": "IN",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/india/"
+		},
+		{
+			"rank": 11,
+			"score": 82,
+			"year": 2020,
+			"country_id": "SY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/syria/"
+		},
+		{
+			"rank": 12,
+			"score": 80,
+			"year": 2020,
+			"country_id": "NG",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nigeria/"
+		},
+		{
+			"rank": 13,
+			"score": 79,
+			"year": 2020,
+			"country_id": "SA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/saudi-arabia/"
+		},
+		{
+			"rank": 14,
+			"score": 78,
+			"year": 2020,
+			"country_id": "MV",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/maldives/"
+		},
+		{
+			"rank": 15,
+			"score": 76,
+			"year": 2020,
+			"country_id": "IQ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iraq/"
+		},
+		{
+			"rank": 16,
+			"score": 76,
+			"year": 2020,
+			"country_id": "EG",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/egypt/"
+		},
+		{
+			"rank": 17,
+			"score": 73,
+			"year": 2020,
+			"country_id": "DZ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/algeria/"
+		},
+		{
+			"rank": 18,
+			"score": 73,
+			"year": 2020,
+			"country_id": "UZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/uzbekistan/"
+		},
+		{
+			"rank": 19,
+			"score": 73,
+			"year": 2020,
+			"country_id": "MM",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/myanmar/"
+		},
+		{
+			"rank": 20,
+			"score": 72,
+			"year": 2020,
+			"country_id": "LA",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/laos/"
+		},
+		{
+			"rank": 21,
+			"score": 72,
+			"year": 2020,
+			"country_id": "VN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/vietnam/"
+		},
+		{
+			"rank": 22,
+			"score": 70,
+			"year": 2020,
+			"country_id": "TM",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkmenistan/"
+		},
+		{
+			"rank": 23,
+			"score": 70,
+			"year": 2020,
+			"country_id": "CN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/china/"
+		},
+		{
+			"rank": 24,
+			"score": 68,
+			"year": 2020,
+			"country_id": "MR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mauritania/"
+		},
+		{
+			"rank": 25,
+			"score": 68,
+			"year": 2020,
+			"country_id": "CF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/central-african-republic/"
+		},
+		{
+			"rank": 26,
+			"score": 66,
+			"year": 2020,
+			"country_id": "MA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/morocco/"
+		},
+		{
+			"rank": 27,
+			"score": 66,
+			"year": 2020,
+			"country_id": "QA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/qatar/"
+		},
+		{
+			"rank": 28,
+			"score": 66,
+			"year": 2020,
+			"country_id": "BF",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/burkina-faso/"
+		},
+		{
+			"rank": 29,
+			"score": 66,
+			"year": 2020,
+			"country_id": "ML",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mali/"
+		},
+		{
+			"rank": 30,
+			"score": 65,
+			"year": 2020,
+			"country_id": "LK",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sri-lanka-2/"
+		},
+		{
+			"rank": 31,
+			"score": 65,
+			"year": 2020,
+			"country_id": "TJ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tajikistan/"
+		},
+		{
+			"rank": 32,
+			"score": 64,
+			"year": 2020,
+			"country_id": "NP",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nepal/"
+		},
+		{
+			"rank": 33,
+			"score": 64,
+			"year": 2020,
+			"country_id": "JO",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/jordan/"
+		},
+		{
+			"rank": 34,
+			"score": 64,
+			"year": 2020,
+			"country_id": "TN",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tunisia/"
+		},
+		{
+			"rank": 35,
+			"score": 64,
+			"year": 2020,
+			"country_id": "KZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kazakhstan/"
+		},
+		{
+			"rank": 36,
+			"score": 63,
+			"year": 2020,
+			"country_id": "TR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkey/"
+		},
+		{
+			"rank": 37,
+			"score": 63,
+			"year": 2020,
+			"country_id": "BN",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/brunei/"
+		},
+		{
+			"rank": 38,
+			"score": 63,
+			"year": 2020,
+			"country_id": "BD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bangladesh/"
+		},
+		{
+			"rank": 39,
+			"score": 63,
+			"year": 2020,
+			"country_id": "ET",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/ethiopia/"
+		},
+		{
+			"rank": 40,
+			"score": 62,
+			"year": 2020,
+			"country_id": "MY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/malaysia/"
+		},
+		{
+			"rank": 41,
+			"score": 62,
+			"year": 2020,
+			"country_id": "CO",
+			"persecution_type": "Ethnic Antagonism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/colombia/"
+		},
+		{
+			"rank": 42,
+			"score": 62,
+			"year": 2020,
+			"country_id": "OM",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/oman/"
+		},
+		{
+			"rank": 43,
+			"score": 62,
+			"year": 2020,
+			"country_id": "KW",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kuwait/"
+		},
+		{
+			"rank": 44,
+			"score": 61,
+			"year": 2020,
+			"country_id": "KE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kenya/"
+		},
+		{
+			"rank": 45,
+			"score": 61,
+			"year": 2020,
+			"country_id": "BT",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bhutan/"
+		},
+		{
+			"rank": 46,
+			"score": 60,
+			"year": 2020,
+			"country_id": "RU",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/russian-federation/"
+		},
+		{
+			"rank": 47,
+			"score": 60,
+			"year": 2020,
+			"country_id": "AE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/united-arab-emirates/"
+		},
+		{
+			"rank": 48,
+			"score": 60,
+			"year": 2020,
+			"country_id": "CM",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/cameroon/"
+		},
+		{
+			"rank": 49,
+			"score": 60,
+			"year": 2020,
+			"country_id": "ID",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/indonesia/"
+		},
+		{
+			"rank": 50,
+			"score": 60,
+			"year": 2020,
+			"country_id": "NE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/niger/"
+		},
+		{
+			"rank": 1,
+			"score": 94,
+			"year": 2019,
+			"country_id": "KP",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/north-korea/"
+		},
+		{
+			"rank": 2,
+			"score": 93,
+			"year": 2019,
+			"country_id": "AF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/afghanistan/"
+		},
+		{
+			"rank": 3,
+			"score": 92,
+			"year": 2019,
+			"country_id": "SO",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/somalia/"
+		},
+		{
+			"rank": 4,
+			"score": 89,
+			"year": 2019,
+			"country_id": "LY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/libya/"
+		},
+		{
+			"rank": 5,
+			"score": 88,
+			"year": 2019,
+			"country_id": "PK",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/pakistan/"
+		},
+		{
+			"rank": 7,
+			"score": 87,
+			"year": 2019,
+			"country_id": "ER",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/eritrea/"
+		},
+		{
+			"rank": 6,
+			"score": 85,
+			"year": 2019,
+			"country_id": "SD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sudan/"
+		},
+		{
+			"rank": 8,
+			"score": 85,
+			"year": 2019,
+			"country_id": "YE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/yemen/"
+		},
+		{
+			"rank": 9,
+			"score": 85,
+			"year": 2019,
+			"country_id": "IR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iran/"
+		},
+		{
+			"rank": 10,
+			"score": 83,
+			"year": 2019,
+			"country_id": "IN",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/india/"
+		},
+		{
+			"rank": 11,
+			"score": 82,
+			"year": 2019,
+			"country_id": "SY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/syria/"
+		},
+		{
+			"rank": 12,
+			"score": 80,
+			"year": 2019,
+			"country_id": "NG",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nigeria/"
+		},
+		{
+			"rank": 15,
+			"score": 79,
+			"year": 2019,
+			"country_id": "SA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/saudi-arabia/"
+		},
+		{
+			"rank": 14,
+			"score": 78,
+			"year": 2019,
+			"country_id": "MV",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/maldives/"
+		},
+		{
+			"rank": 13,
+			"score": 76,
+			"year": 2019,
+			"country_id": "IQ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/iraq/"
+		},
+		{
+			"rank": 16,
+			"score": 76,
+			"year": 2019,
+			"country_id": "EG",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/egypt/"
+		},
+		{
+			"rank": 22,
+			"score": 73,
+			"year": 2019,
+			"country_id": "DZ",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/algeria/"
+		},
+		{
+			"rank": 17,
+			"score": 73,
+			"year": 2019,
+			"country_id": "UZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/uzbekistan/"
+		},
+		{
+			"rank": 19,
+			"score": 72,
+			"year": 2019,
+			"country_id": "LA",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/laos/"
+		},
+		{
+			"rank": 20,
+			"score": 72,
+			"year": 2019,
+			"country_id": "VN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/vietnam/"
+		},
+		{
+			"rank": 23,
+			"score": 70,
+			"year": 2019,
+			"country_id": "TM",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkmenistan/"
+		},
+		{
+			"rank": 27,
+			"score": 70,
+			"year": 2019,
+			"country_id": "CN",
+			"persecution_type": "Communist and Post Communist Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/china/"
+		},
+		{
+			"rank": 25,
+			"score": 68,
+			"year": 2019,
+			"country_id": "MR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mauritania/"
+		},
+		{
+			"rank": 21,
+			"score": 68,
+			"year": 2019,
+			"country_id": "CF",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/central-african-republic/"
+		},
+		{
+			"rank": 35,
+			"score": 66,
+			"year": 2019,
+			"country_id": "MA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/morocco/"
+		},
+		{
+			"rank": 38,
+			"score": 66,
+			"year": 2019,
+			"country_id": "QA",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/qatar/"
+		},
+		{
+			"rank": 24,
+			"score": 66,
+			"year": 2019,
+			"country_id": "ML",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/mali/"
+		},
+		{
+			"rank": 46,
+			"score": 65,
+			"year": 2019,
+			"country_id": "LK",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/sri-lanka-2/"
+		},
+		{
+			"rank": 29,
+			"score": 65,
+			"year": 2019,
+			"country_id": "TJ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tajikistan/"
+		},
+		{
+			"rank": 32,
+			"score": 64,
+			"year": 2019,
+			"country_id": "NP",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/nepal/"
+		},
+		{
+			"rank": 31,
+			"score": 64,
+			"year": 2019,
+			"country_id": "JO",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/jordan/"
+		},
+		{
+			"rank": 37,
+			"score": 64,
+			"year": 2019,
+			"country_id": "TN",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/tunisia/"
+		},
+		{
+			"rank": 34,
+			"score": 64,
+			"year": 2019,
+			"country_id": "KZ",
+			"persecution_type": "Dictatorial Paranoia",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kazakhstan/"
+		},
+		{
+			"rank": 26,
+			"score": 63,
+			"year": 2019,
+			"country_id": "TR",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/turkey/"
+		},
+		{
+			"rank": 36,
+			"score": 63,
+			"year": 2019,
+			"country_id": "BN",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/brunei/"
+		},
+		{
+			"rank": 48,
+			"score": 63,
+			"year": 2019,
+			"country_id": "BD",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bangladesh/"
+		},
+		{
+			"rank": 28,
+			"score": 63,
+			"year": 2019,
+			"country_id": "ET",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/ethiopia/"
+		},
+		{
+			"rank": 42,
+			"score": 62,
+			"year": 2019,
+			"country_id": "MY",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/malaysia/"
+		},
+		{
+			"rank": 47,
+			"score": 62,
+			"year": 2019,
+			"country_id": "CO",
+			"persecution_type": "Ethnic Antagonism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/colombia/"
+		},
+		{
+			"rank": 44,
+			"score": 62,
+			"year": 2019,
+			"country_id": "OM",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/oman/"
+		},
+		{
+			"rank": 43,
+			"score": 62,
+			"year": 2019,
+			"country_id": "KW",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kuwait/"
+		},
+		{
+			"rank": 40,
+			"score": 61,
+			"year": 2019,
+			"country_id": "KE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/kenya/"
+		},
+		{
+			"rank": 33,
+			"score": 61,
+			"year": 2019,
+			"country_id": "BT",
+			"persecution_type": "Religious Nationalism",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/bhutan/"
+		},
+		{
+			"rank": 41,
+			"score": 60,
+			"year": 2019,
+			"country_id": "RU",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/russian-federation/"
+		},
+		{
+			"rank": 45,
+			"score": 60,
+			"year": 2019,
+			"country_id": "AE",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/united-arab-emirates/"
+		},
+		{
+			"rank": 30,
+			"score": 60,
+			"year": 2019,
+			"country_id": "ID",
+			"persecution_type": "Islamic Oppression",
+			"url": "https://www.opendoorsusa.org/christian-persecution/world-watch-list/indonesia/"
+		}
+]
